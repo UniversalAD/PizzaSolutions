@@ -1,0 +1,28 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">            
+            <button class="js-menu menu navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" type="button">
+                <span class="bar"></span>
+            </button>
+            <div class="row">
+                <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3">
+                    <a href="@Url.Action("Index", "Home")">
+                        <img alt="Totes 2 Go" class="img-responsive" src="~/Content/Images/Logo_02.png">
+                    </a>
+                </div>
+                <nav class="nav navbar-nav col-xs-12 col-sm-9 col-md-9 col-md-push-1 col-lg-9">
+                    <ul class="navbar">
+                        <li>@Html.ActionLink("Magnets", "Magnets", "Home")</li>
+                        <li>@Html.ActionLink("Advertisers", "Advertisers", "Home")</li>
+                        <li>@Html.ActionLink("Distributors", "Distributors", "Home")</li>
+                        <li>@Html.ActionLink("Partnership", "Partnership", "Home")</li>
+                        <li>@Html.ActionLink("Agreement", "Agreement", "Home")</li>
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                    @Html.TextBox("id", ViewBag.CurrentFilter as string, new { placeholder = "Search..." })<span class="glyphicon glyphicon-search"></span>
+
+                </nav>
+            </div>                  
+        </div>
+    </div>
+</div>
