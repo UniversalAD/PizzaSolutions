@@ -1,4 +1,10 @@
-﻿.navbar-inverse {
+﻿@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.navbar-inverse {
   background-color: #000;
   height: 110px; }
   @media (max-width: 767px) {
@@ -8,6 +14,34 @@
     background-color: transparent; }
   .navbar-inverse .navbar-toggle:focus {
     background-color: transparent; }
+  .navbar-inverse .border-bottom {
+    background-color: #ed1c24;
+    position: absolute;
+    bottom: -30px;
+    width: 100%; }
+    .navbar-inverse .border-bottom p {
+      transform: translate(-20%, 0);
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 24px;
+      letter-spacing: 1px;
+      font-family: "Impact"; }
+      @media (min-width: 590px) and (max-width: 767px) {
+        .navbar-inverse .border-bottom p {
+          transform: translate(-1.5%, 0%);
+          padding: 5px 0;
+          font-size: 2.5vw; } }
+      @media (min-width: 480px) and (max-width: 588px) {
+        .navbar-inverse .border-bottom p {
+          font-size: 2.9vw;
+          transform: translate(-1%, 0);
+          padding: 5px 0; } }
+      @media (min-width: 360px) and (max-width: 479px) {
+        .navbar-inverse .border-bottom p {
+          font-size: 4.5vw;
+          padding: 5px 0;
+          transform: translate(-3.5%, 0); } }
 
 @media (max-width: 767px) {
   nav {
@@ -35,7 +69,7 @@ nav ul li {
       opacity: .8;
       text-decoration: none; }
 
-@media (min-width: 1024px) and (max-width: 1299px) {
+@media (min-width: 1024px) and (max-width: 2300px) {
   .navbar-nav {
     transform: translate(0, 85%); } }
 
@@ -116,6 +150,12 @@ nav ul li {
   /* Microsoft Edge */
   color: #fff;
   padding-left: 5px; }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 nav ul {
   padding-top: 0;

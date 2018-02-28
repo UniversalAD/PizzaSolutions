@@ -222,6 +222,8 @@
     </None>
     <Content Include="Content\scss\Typography.scss" />
     <Content Include="Content\scss\Globals.scss" />
+    <Content Include="Content\Fonts\futuran-webfont.woff" />
+    <Content Include="Content\Fonts\futuran-webfont.woff2" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
