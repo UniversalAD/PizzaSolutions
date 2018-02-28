@@ -249,12 +249,6 @@ nav {
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s; }
 
-.partners {
-  background-image: url("~/Content/Images/Backgrounds/partner-bg_02.png");
-  background-size: cover;
-  width: 100%;
-  height: 100%; }
-
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
