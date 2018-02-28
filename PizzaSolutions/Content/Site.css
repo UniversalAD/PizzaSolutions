@@ -249,6 +249,40 @@ nav {
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s; }
 
+.partners {
+  background-image: url("~/Content/Images/Backgrounds/partner-bg_02.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.partners {
+  background-image: url("Images/Backgrounds/partner-bg_02.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 89px; }
+  .partners .left-curve {
+    background-color: #ed1c24;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 102%;
+    height: 300px;
+    margin-top: 54px; }
+    .partners .left-curve p {
+      color: #fff;
+      font-family: "futura_bk_btbook";
+      margin: 35px 0;
+      font-size: 16px; }
+    .partners .left-curve iframe {
+      height: 250px;
+      margin: 25px 0; }
+
 body {
   padding-top: 50px;
   padding-bottom: 20px; }
