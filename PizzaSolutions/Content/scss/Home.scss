@@ -1,1 +1,140 @@
-﻿
+﻿@import 'Typography.scss';
+
+.slices {
+    background-image: url('Images/Backgrounds/slices_bg_02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pan-text {
+        position: relative;
+
+        img {
+            padding: 35px 15px 35px 15px;
+            width: 220px;
+            min-width: 220px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+
+        h3 {
+            position: absolute;
+            font-family: $futura_bdcn_btbold;
+            color: #fff;
+            top: 27%;
+            right: 24%;
+            width: 53%;
+            border-bottom: solid 1px #c0bfc0;
+
+            @media (min-width: 1399px) {
+                right: 26%;
+                width: 48%;
+            }
+
+            @media (max-width: 1250px) and (min-width: 1024px) {
+                width: 48%;
+                right: 25%;
+            }
+
+            @media (max-width: 900px) and (min-width: 768px) {
+                width: 65%;
+                right: 19%;
+            }
+
+            @media (max-width: 767px) and (min-width: 640px) {
+                width: 40%;
+                right: 30%;
+                top: 23%;
+                font-size: 28px;
+            }
+
+            @media (max-width: 480px) and (min-width: 360px) {
+                top: 21%;
+                right: 26%;
+                width: 46%;
+            }
+        }
+
+        p {
+            font-family: $futura-bt-book;
+            position: absolute;
+            top: 53%;
+            right: 27%;
+            width: 46%;
+            color: #fff;
+            font-size: 10px;
+
+            @media (max-width: 900px) and (min-width: 768px) {
+                width: 60%;
+                right: 20%;
+            }
+
+            @media (max-width: 767px) and (min-width: 480px) {
+                width: 45%;
+                right: 27%;
+                font-size: 18px;
+                top: 41%;
+                padding: 0 14px;
+            }
+
+            @media (max-width: 480px) and (min-width: 360px) {
+                width: 60%;
+                right: 18%;
+                font-size: 17px;
+                top: 40%;
+            }
+
+            &.p-offset-top {
+                top: 44%;
+
+                @media (max-width: 767px) and (min-width: 480px) {
+                    top: 38%;
+                }
+
+                @media (max-width: 480px) and (min-width: 360px) {
+                    top: 35%;
+                }
+            }
+        }
+    }
+}
+
+.about-us {
+    background-color: #000;
+    padding: 0 0 25px 0;
+
+    p {
+        border-top: solid 2px #fff;
+        color: #fff;
+    }
+
+    h2 {
+        font-size: 47px;
+        color: #ed1c24;
+        font-style: italic;
+        margin-top: 0;
+
+        span {
+            color: #3d0709;
+        }
+
+        span + span {
+            color: #ed1c24;
+        }
+    }
+
+    h3 {
+        color: #fff;
+        font-size: 35px;
+        font-family: $futura_hv_heavy;
+    }
+}

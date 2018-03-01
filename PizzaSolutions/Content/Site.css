@@ -4,6 +4,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .navbar-inverse {
   background-color: #000;
   height: 110px; }
@@ -41,7 +53,10 @@
         .navbar-inverse .border-bottom p {
           font-size: 4.5vw;
           padding: 5px 0;
-          transform: translate(-3.5%, 0); } }
+          transform: translate(-5.5%, 0); } }
+  @media (max-width: 767px) {
+    .navbar-inverse .navbar-header {
+      height: 0; } }
 
 @media (max-width: 767px) {
   nav {
@@ -95,10 +110,13 @@ nav ul li {
   position: absolute;
   top: -20px;
   width: 200px;
-  left: 16%;
+  left: 31%;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #000; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-nav input {
+      left: 30%; } }
   @media (max-width: 767px) {
     .navbar-nav input {
       position: relative;
@@ -114,15 +132,15 @@ nav ul li {
   width: 35px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  right: 53.2%;
+  right: 34.2%;
   background-color: #ed1c24;
   height: 25.5px; }
   @media (min-width: 1024px) and (max-width: 1200px) {
     .navbar-nav span {
-      right: 51.5%; } }
+      right: 33.7%; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .navbar-nav span {
-      right: 42.2%; } }
+      right: 28%; } }
   @media (max-width: 767px) {
     .navbar-nav span {
       position: relative;
@@ -154,6 +172,18 @@ nav ul li {
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -249,9 +279,149 @@ nav {
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s; }
 
+.center-block {
+  margin: 0 auto;
+  display: block;
+  float: none; }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.slices {
+  background-image: url("Images/Backgrounds/slices_bg_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 270px;
+  width: 100%; }
+  @media (max-width: 767px) {
+    .slices {
+      height: 100%;
+      width: 100%; } }
+  .slices .pan-text {
+    position: relative; }
+    .slices .pan-text img {
+      padding: 35px 15px 35px 15px;
+      width: 220px;
+      min-width: 220px; }
+      @media (max-width: 767px) {
+        .slices .pan-text img {
+          width: 100%;
+          max-width: 360px; } }
+    .slices .pan-text h3 {
+      position: absolute;
+      font-family: "futura_bdcn_btbold";
+      color: #fff;
+      top: 27%;
+      right: 24%;
+      width: 53%;
+      border-bottom: solid 1px #c0bfc0; }
+      @media (min-width: 1399px) {
+        .slices .pan-text h3 {
+          right: 26%;
+          width: 48%; } }
+      @media (max-width: 1250px) and (min-width: 1024px) {
+        .slices .pan-text h3 {
+          width: 48%;
+          right: 25%; } }
+      @media (max-width: 900px) and (min-width: 768px) {
+        .slices .pan-text h3 {
+          width: 65%;
+          right: 19%; } }
+      @media (max-width: 767px) and (min-width: 640px) {
+        .slices .pan-text h3 {
+          width: 40%;
+          right: 30%;
+          top: 23%;
+          font-size: 28px; } }
+      @media (max-width: 480px) and (min-width: 360px) {
+        .slices .pan-text h3 {
+          top: 21%;
+          right: 26%;
+          width: 46%; } }
+    .slices .pan-text p {
+      font-family: "futura_bk_btbook";
+      position: absolute;
+      top: 53%;
+      right: 27%;
+      width: 46%;
+      color: #fff;
+      font-size: 10px; }
+      @media (max-width: 900px) and (min-width: 768px) {
+        .slices .pan-text p {
+          width: 60%;
+          right: 20%; } }
+      @media (max-width: 767px) and (min-width: 480px) {
+        .slices .pan-text p {
+          width: 45%;
+          right: 27%;
+          font-size: 18px;
+          top: 41%;
+          padding: 0 14px; } }
+      @media (max-width: 480px) and (min-width: 360px) {
+        .slices .pan-text p {
+          width: 60%;
+          right: 18%;
+          font-size: 17px;
+          top: 40%; } }
+      .slices .pan-text p.p-offset-top {
+        top: 44%; }
+        @media (max-width: 767px) and (min-width: 480px) {
+          .slices .pan-text p.p-offset-top {
+            top: 38%; } }
+        @media (max-width: 480px) and (min-width: 360px) {
+          .slices .pan-text p.p-offset-top {
+            top: 35%; } }
+
+.about-us {
+  background-color: #000;
+  padding: 0 0 25px 0; }
+  .about-us p {
+    border-top: solid 2px #fff;
+    color: #fff; }
+  .about-us h2 {
+    font-size: 47px;
+    color: #ed1c24;
+    font-style: italic;
+    margin-top: 0; }
+    .about-us h2 span {
+      color: #3d0709; }
+    .about-us h2 span + span {
+      color: #ed1c24; }
+  .about-us h3 {
+    color: #fff;
+    font-size: 35px;
+    font-family: "futura_hv_btheavy"; }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -260,7 +430,14 @@ nav {
   background-size: cover;
   width: 100%;
   height: 100%;
-  margin-top: 89px; }
+  margin-top: 89px;
+  padding: 15px 0; }
+  @media (max-width: 767px) {
+    .partners {
+      margin-top: 59px; } }
+  @media (max-width: 767px) {
+    .partners img {
+      margin-top: 25px; } }
   .partners .left-curve {
     background-color: #ed1c24;
     border-top-left-radius: 15px;
@@ -268,11 +445,24 @@ nav {
     width: 102%;
     height: 300px;
     margin-top: 54px; }
+    @media (max-width: 767px) {
+      .partners .left-curve {
+        height: 100%;
+        width: 100%; } }
     .partners .left-curve p {
       color: #fff;
       font-family: "futura_bk_btbook";
       margin: 35px 0;
       font-size: 16px; }
+      @media (min-width: 768px) and (max-width: 900px) {
+        .partners .left-curve p {
+          margin: 15px 0; } }
+      @media (max-width: 767px) {
+        .partners .left-curve p {
+          margin: 25px 0; } }
+      @media (max-width: 767px) {
+        .partners .left-curve p:nth-of-type(1) {
+          padding-top: 25px; } }
     .partners .left-curve iframe {
       height: 250px;
       margin: 25px 0; }
