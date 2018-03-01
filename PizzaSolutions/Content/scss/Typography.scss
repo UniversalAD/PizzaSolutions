@@ -7,5 +7,24 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'futura_bdcn_btbold';
+    src: url('Fonts/futurabc-webfont.woff2') format('woff2'), 
+         url('Fonts/futurabc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_hv_btheavy';
+    src: url('Fonts/futurah-webfont.woff2') format('woff2'), 
+         url('Fonts/futurah-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $futura-bt-book: 'futura_bk_btbook';
 $impact: 'Impact';
+$futura_bdcn_btbold: 'futura_bdcn_btbold';
+$futura_hv_heavy: 'futura_hv_btheavy';

@@ -46,8 +46,14 @@
             @media (min-width: 360px) and (max-width: 479px) {
                 font-size: 4.5vw;
                 padding: 5px 0;
-                transform: translate(-3.5%, 0);
+                transform: translate(-5.5%, 0);
             }
+        }
+    }
+
+    .navbar-header {
+        @media (max-width: 767px) {
+            height: 0;
         }
     }
 }
@@ -96,7 +102,7 @@ nav {
     @media (min-width: 1024px) and (max-width: 2300px) {
         transform: translate(0, 85%);
     }
-    
+
     @media (min-width: 900px) and (max-width: 1023px) {
         transform: translate(-5%, 85%);
     }
@@ -104,7 +110,7 @@ nav {
     @media (min-width: 768px) and (max-width: 899px) {
         transform: translate(-14%, 85%);
     }
-   
+
 
     @media (min-width: 481px) and (max-width: 767px) {
         margin-top: -5px;
@@ -120,10 +126,14 @@ nav {
         position: absolute;
         top: -20px;
         width: 200px;
-        left: 16%;
+        left: 31%;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
         background-color: #000;
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            left: 30%;
+        }
 
         @media (max-width: 767px) {
             position: relative;
@@ -142,16 +152,16 @@ nav {
         width: 35px;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-        right: 53.2%;
+        right: 34.2%;
         background-color: #ed1c24;
         height: 25.5px;
 
         @media (min-width: 1024px) and (max-width: 1200px) {
-            right: 51.5%;
+            right: 33.7%;
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
-            right: 42.2%;
+            right: 28%;
         }
 
         @media (max-width: 767px) {
