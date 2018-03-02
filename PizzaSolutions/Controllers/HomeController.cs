@@ -15,7 +15,7 @@ namespace PizzaSolutions.Controllers
 
         public ActionResult Magnets()
         {
-            return View("Index");
+            return View();
         }
     }
 }
