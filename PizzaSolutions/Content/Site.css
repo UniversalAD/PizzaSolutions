@@ -16,6 +16,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .navbar-inverse {
   background-color: #000;
   height: 110px; }
@@ -187,6 +193,12 @@ nav ul li {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 nav ul {
   padding-top: 0;
   list-style-type: none; }
@@ -284,6 +296,10 @@ nav {
   display: block;
   float: none; }
 
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -299,6 +315,12 @@ nav {
 @font-face {
   font-family: 'futura_hv_btheavy';
   src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -332,8 +354,9 @@ nav {
       border-bottom: solid 1px #c0bfc0; }
       @media (min-width: 1399px) {
         .slices .pan-text h3 {
-          right: 26%;
-          width: 48%; } }
+          right: 30%;
+          width: 100%;
+          max-width: 40%; } }
       @media (max-width: 1250px) and (min-width: 1024px) {
         .slices .pan-text h3 {
           width: 48%;
@@ -361,6 +384,11 @@ nav {
       width: 46%;
       color: #fff;
       font-size: 10px; }
+      @media (min-width: 1399px) {
+        .slices .pan-text p {
+          right: 30%;
+          width: 100%;
+          max-width: 40%; } }
       @media (max-width: 900px) and (min-width: 768px) {
         .slices .pan-text p {
           width: 60%;
@@ -388,24 +416,52 @@ nav {
             top: 35%; } }
 
 .about-us {
+  position: relative;
   background-color: #000;
-  padding: 0 0 25px 0; }
+  padding: 0 15px 25px 15px; }
   .about-us p {
     border-top: solid 2px #fff;
     color: #fff; }
   .about-us h2 {
-    font-size: 47px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 4.4vw;
     color: #ed1c24;
-    font-style: italic;
+    font-family: "webfontregular";
     margin-top: 0; }
     .about-us h2 span {
       color: #3d0709; }
     .about-us h2 span + span {
       color: #ed1c24; }
   .about-us h3 {
+    margin-top: 80px;
     color: #fff;
     font-size: 35px;
     font-family: "futura_hv_btheavy"; }
+  .about-us.choose {
+    padding: 25px 15px; }
+    .about-us.choose h3 {
+      margin-top: 0; }
+
+.clients {
+  background-image: url("Images/Backgrounds/slices_bg_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding: 35px 15px; }
+  .clients h3 {
+    color: #fff;
+    font-size: 35px;
+    font-family: "futura_hv_btheavy";
+    width: 100%;
+    border-bottom: 2px solid #fff; }
+
+footer {
+  background-color: #000;
+  height: 45px; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -422,6 +478,12 @@ nav {
 @font-face {
   font-family: 'futura_hv_btheavy';
   src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -456,7 +518,7 @@ nav {
       font-size: 16px; }
       @media (min-width: 768px) and (max-width: 900px) {
         .partners .left-curve p {
-          margin: 15px 0; } }
+          margin: 0; } }
       @media (max-width: 767px) {
         .partners .left-curve p {
           margin: 25px 0; } }

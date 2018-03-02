@@ -352,6 +352,8 @@
     <Content Include="Content\Fonts\futurabc-webfont.woff2" />
     <Content Include="Content\Fonts\futurah-webfont.woff" />
     <Content Include="Content\Fonts\futurah-webfont.woff2" />
+    <Content Include="Content\Fonts\myriadpro-boldit-webfont.woff" />
+    <Content Include="Content\Fonts\myriadpro-boldit-webfont.woff2" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
