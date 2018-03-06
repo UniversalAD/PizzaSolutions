@@ -1,0 +1,87 @@
+﻿@import 'Typography.scss';
+.partners {
+    iframe {
+        @media (max-width: 767px) {
+            height: 350px;
+        }
+        
+        @media (max-width: 480px) {
+            height: 100%;
+        }
+    }
+}
+
+.build-brand {
+    h2 {
+        position: relative;
+        top: -15px;
+        font-size: 38px;
+        color: #ed1c24;
+        border-bottom: solid 9px #ed1c24;
+        font-family: $myriad_pro_regular_boldit;
+        z-index: 5;
+
+        @media (max-width: 767px) {
+            font-size: 4vw;
+        }
+
+        &:before {
+            content: "WE KNOW YOU MAKE GREAT PIZZA";
+            position: absolute;
+            left: 0;
+            font-size: 38px;
+            color: #340608;
+            font-family: $myriad_pro_regular_boldit;
+            z-index: -1;
+
+            @media (max-width: 767px) {
+                font-size: 4vw;
+            }
+        }
+
+        &:after {
+            content: '///';
+            position: absolute;
+            top: -32px;
+            right: 11%;
+            height: 50px;
+            font-size: 120px;
+            letter-spacing: -13px;
+
+            @media (max-width: 900px) and (min-width: 768px) {
+                right: 0;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 15vw;
+                right: 5%;
+            }
+
+            @media (max-width: 560px) and (min-width: 360px) {
+                font-size: 19vw;
+            } 
+        }
+
+        span {
+
+            &:before {
+                content: 'LET US BUILD YOUR BRAND';
+                position: absolute;
+                left: 2%;
+                font-size: 38px;
+                color: #340608;
+                font-family: $myriad_pro_regular_boldit;
+                z-index: -1;
+
+                @media (max-width: 767px) {
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+}
+
+.clients {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}

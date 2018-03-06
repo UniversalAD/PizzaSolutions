@@ -17,5 +17,10 @@ namespace PizzaSolutions.Controllers
         {
             return View();
         }
+
+        public ActionResult Advertisers()
+        {
+            return View();
+        }
     }
 }
