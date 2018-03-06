@@ -22,5 +22,10 @@ namespace PizzaSolutions.Controllers
         {
             return View();
         }
+
+        public ActionResult Distributors()
+        {
+            return View();
+        }
     }
 }
