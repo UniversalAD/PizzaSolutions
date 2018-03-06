@@ -1,0 +1,16 @@
+﻿@import 'Typography.scss';
+
+.advertiser-header {
+
+    &.distributors {
+        h2 {
+            word-spacing: -1px;
+
+            &:after {
+                right: 1%;
+                top: -5px;
+                font-size: 7vw;
+            }
+        }
+    }
+}

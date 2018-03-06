@@ -32,8 +32,38 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'futura_mdcn_btmedium';
+    src: url('Fonts/futuramc-webfont.woff2') format('woff2'),
+         url('Fonts/futuramc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_bt_extrablack';
+    src: url('Fonts/futuraxk-webfont.woff2') format('woff2'), 
+         url('Fonts/futuraxk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriadpro-regular';
+    src: url('Fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 $futura-bt-book: 'futura_bk_btbook';
 $impact: 'Impact';
 $futura_bdcn_btbold: 'futura_bdcn_btbold';
 $futura_hv_heavy: 'futura_hv_btheavy';
 $myriad_pro_regular_boldit: 'webfontregular';
+$futura-bt-condensed: 'futura_mdcn_btmedium';
+$myriad_pro_regular: 'myriadpro-regular';
+$futura_bt_extra_black: 'futura_bt_extrablack';
+
+$font-white: #fff;
+$font-red: #ff0000;
