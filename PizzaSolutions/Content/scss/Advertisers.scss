@@ -90,6 +90,16 @@
             border-top: none;
             font-family: $myriad_pro_regular;
             font-size: 14px;
+
+            @media (min-width: 1400px) {
+                font-size: 17px;
+            }
+        }
+    }
+
+    #para2 {
+        @media (max-width: 767px) {
+            margin-top: 25px;
         }
     }
 }
@@ -154,6 +164,10 @@
             li {
                 color: $font-white;
                 font-family: $myriad_pro_regular;
+                
+                @media (min-width: 1400px) {
+                    font-size: 17px;
+                }
 
                 span {
                     color: $font-red;

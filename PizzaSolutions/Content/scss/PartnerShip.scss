@@ -1,4 +1,4 @@
-﻿
+﻿@import 'Typography.scss';
 .advertiser-header {
 
     &.partnership {
@@ -22,7 +22,11 @@
             }
 
             &:after {
-                top: -20px;
+                top: -23px;
+
+                @media (min-width: 1400px) {
+                    right: 1%;
+                }
             }
         }
 
@@ -35,11 +39,27 @@
 
             @media (max-width: 767px) {
                 height: 100%;
+            }          
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .btn-wrapper {
+            width: 100%;
+
+            .btn {
+                margin: 0 auto;
+                display: block;
+                float: none;
+                width: 250px;
+                padding: 10px;
+                margin-top: 25px;
+                font-size: 18px;
+                background-color: $font-red;
+                font-family: $futura-bt-book;
             }
         }
-         
-        p {
-            text-align: left;            
-         }
     }
 }
