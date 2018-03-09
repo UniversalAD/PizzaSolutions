@@ -12,5 +12,17 @@
                 font-size: 7vw;
             }
         }
+
+        .black-box {
+            height: 450px;
+
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+        }
+        
+        p {
+            text-align: left;
+        }
     }
 }

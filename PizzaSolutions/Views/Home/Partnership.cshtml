@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Partnership";
+}
+
+ViewBag.Message()
+
+@Html.Partial("_VideoPartial")
+
+@Html.Partial("_MagnetPartial")
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PartnershipModal">
+    Launch demo modal
+</button>
+
+@Html.Action("_PartnershipAgreementPartial")
+
+
