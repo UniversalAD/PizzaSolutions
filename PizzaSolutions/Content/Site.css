@@ -967,6 +967,62 @@ footer {
     top: -5px;
     font-size: 7vw; }
 
+.advertiser-header.distributors .black-box {
+  height: 450px; }
+  @media (max-width: 767px) {
+    .advertiser-header.distributors .black-box {
+      height: 100%; } }
+
+.advertiser-header.distributors p {
+  text-align: left; }
+
+.advertiser-header.partnership h2 {
+  position: relative;
+  text-align: right;
+  padding-right: 105px;
+  z-index: 5; }
+  @media (max-width: 768px) {
+    .advertiser-header.partnership h2 {
+      padding-right: 0; } }
+  .advertiser-header.partnership h2:before {
+    content: 'PARTNERSHIP AGREEMENT';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #3d0709;
+    z-index: -1; }
+  .advertiser-header.partnership h2:after {
+    top: -20px; }
+
+.advertiser-header.partnership .black-box {
+  height: 735px; }
+  @media (min-width: 1400px) {
+    .advertiser-header.partnership .black-box {
+      height: 800px; } }
+  @media (max-width: 767px) {
+    .advertiser-header.partnership .black-box {
+      height: 100%; } }
+
+.advertiser-header.partnership p {
+  text-align: left; }
+
+.modal-dialog {
+  width: 900px; }
+  .modal-dialog .disclaimer {
+    background-color: #d4d4d4;
+    height: 250px;
+    overflow: scroll;
+    padding: 5px; }
+    .modal-dialog .disclaimer ul {
+      list-style-type: decimal; }
+      .modal-dialog .disclaimer ul .special {
+        font-weight: 900; }
+    .modal-dialog .disclaimer h5 {
+      font-size: 24px;
+      font-weight: 900; }
+  .modal-dialog .form-horizontal {
+    padding: 15px 0; }
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;

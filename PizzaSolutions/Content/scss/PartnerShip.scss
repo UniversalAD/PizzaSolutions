@@ -1,0 +1,45 @@
+﻿
+.advertiser-header {
+
+    &.partnership {
+        h2 {
+            position: relative;
+            text-align: right;
+            padding-right: 105px;
+            z-index: 5;
+
+            @media (max-width: 768px) {
+                padding-right: 0;
+            }
+
+            &:before {
+                content: 'PARTNERSHIP AGREEMENT';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: #3d0709;
+                z-index: -1;
+            }
+
+            &:after {
+                top: -20px;
+            }
+        }
+
+        .black-box {
+            height: 735px;
+
+            @media (min-width: 1400px) {
+                height: 800px;
+            }
+
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+        }
+         
+        p {
+            text-align: left;            
+         }
+    }
+}
