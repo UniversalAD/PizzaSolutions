@@ -39,7 +39,13 @@ namespace PizzaSolutions.Controllers
         {
             return PartialView();
         }
-       
+
+        public ActionResult MessageSend()
+        {
+            ViewBag.Message = "We Will Be in Contact With You Soon, Thank You For Your Interest";
+            return View(); 
+        }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -48,7 +54,6 @@ namespace PizzaSolutions.Controllers
 
             if (ModelState.IsValid)
             {
-                TempData["msg"] = "<script>alert('work bitch')</script>";
                 var body = "First Name: {0} <br />  Last Name: {1} <br /> Restaurant: {2} <br /> Position: {3} <br /> Email: {4} <br /> Phone: {5} <br /> Address: {6} <br /> Zip Code: {7} <br /> State: {8} <br /> Avg. Deliveries Per Week: {9} <br /> Avg. Pickups Per Week: {10} <br /> Term Agreement: {11} <br /> E-Signature: {12}";
                 var message = new SendGridMessage();
                 message.AddTo("goodrow.chris4@gmail.com");
@@ -56,6 +61,8 @@ namespace PizzaSolutions.Controllers
                 message.From = new MailAddress("chrisg@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Partnership Agreement";
                 message.Html = string.Format(body, model.FirstName, model.LastName, model.Restaurant, model.Position, model.Email, model.Phone, model.StreetAddress, model.ZipCode, model.State, model.AverageDelWeek, model.AveragePickupsWeek, model.Agreement, model.ElectronicSignature);
+
+
 
                 //Azure credentials
                 var username = "azure_8b8a64638c6bdacad86023f15c2e402b@azure.com";
@@ -70,8 +77,9 @@ namespace PizzaSolutions.Controllers
                 transportWeb.DeliverAsync(message);
 
                 ViewBag.Message = "Message Sent";
+
                 ModelState.Clear(); //clears form when page reload
-                return RedirectToAction("Partnership", "Home");
+                return RedirectToAction("MessageSend", "Home");
 
             }
             return View(model);

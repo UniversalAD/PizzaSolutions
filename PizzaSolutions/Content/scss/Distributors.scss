@@ -16,6 +16,14 @@
         .black-box {
             height: 450px;
 
+            @media (min-width: 1600px) {
+                height: 650px !important;
+            }
+
+            @media (min-width: 1400px) {
+                height: 550px;
+            }
+            
             @media (max-width: 767px) {
                 height: 100%;
             }
