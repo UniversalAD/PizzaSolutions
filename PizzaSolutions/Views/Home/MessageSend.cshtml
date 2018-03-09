@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "MessageSend";
+}
+
+<div class="row" style="margin-top: 100px">
+    <div class="col-lg-10 center-block">
+        <h2 class="text-center font-white">@ViewBag.Message</h2>
+    </div>
+</div>
+
+}@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            var delay = 2000;
+            setTimeout(function () { window.location = "Partnership"; }, delay);
+        });
+    </script>
+}
+
