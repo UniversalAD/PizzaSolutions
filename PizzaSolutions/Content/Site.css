@@ -156,15 +156,15 @@ nav ul li {
   width: 35px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  right: 34.2%;
+  right: 36.5%;
   background-color: #ed1c24;
   height: 25.5px; }
   @media (min-width: 1024px) and (max-width: 1200px) {
     .navbar-nav span {
-      right: 33.7%; } }
+      right: 35.7%; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .navbar-nav span {
-      right: 28%; } }
+      right: 26.5%; } }
   @media (max-width: 767px) {
     .navbar-nav span {
       position: relative;
@@ -535,7 +535,8 @@ section {
   padding: 0 15px 25px 15px; }
   .about-us p {
     border-top: solid 2px #fff;
-    color: #fff; }
+    color: #fff;
+    font-family: "futura_bk_btbook"; }
     @media (min-width: 1400px) {
       .about-us p {
         font-size: 18px; } }
@@ -561,9 +562,11 @@ section {
     padding: 25px 15px; }
     .about-us.choose h3 {
       margin-top: 0; }
-    @media (min-width: 1400px) {
-      .about-us.choose p {
-        font-size: 18px; } }
+    .about-us.choose p {
+      font-family: "futura_bk_btbook"; }
+      @media (min-width: 1400px) {
+        .about-us.choose p {
+          font-size: 18px; } }
 
 .clients {
   background-image: url("Images/Backgrounds/slices_bg_02.png");
@@ -675,6 +678,18 @@ footer {
       @media (min-width: 1400px) {
         .partners .left-curve iframe {
           height: 400px; } }
+
+.contact-email h3 {
+  font-size: 35px;
+  font-family: "futura_hv_btheavy"; }
+
+.contact-email .form-horizontal .form-group label, .contact-email .form-horizontal .form-group p {
+  color: #fff;
+  font-family: "futura_bk_btbook"; }
+
+.contact-email .form-horizontal .form-group input[type="checkbox"] {
+  vertical-align: top;
+  margin-left: 5px; }
 
 @font-face {
   font-family: 'futura_bk_btbook';

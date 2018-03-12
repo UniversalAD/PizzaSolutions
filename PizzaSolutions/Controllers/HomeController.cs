@@ -84,5 +84,41 @@ namespace PizzaSolutions.Controllers
             }
             return View(model);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult _EmailContact(ContactEmail model)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var body = "Name: {0} <br />  Phone: {1} <br /> Email: {2} <br /> Message: {3} <br /> Phone Contact: {4} <br /> Email Contact: {5}";
+                var message = new SendGridMessage();
+                message.AddTo("goodrow.chris4@gmail.com");
+                message.AddTo("chrisg@universalad.com");  // replace with valid value 
+                message.From = new MailAddress("chrisg@universalad.com");  // replace with valid value
+                message.Subject = "Pizza Solutions Contact Message";
+                message.Html = string.Format(body, model.Name, model.Phone, model.Email, model.Message, model.PhoneContact, model.EmailContact);
+
+
+
+                //Azure credentials
+                var username = "azure_8b8a64638c6bdacad86023f15c2e402b@azure.com";
+                var pswd = "Cg090482?";
+
+                // variable to store azure credentials
+                var credentials = new NetworkCredential(username, pswd);
+                // Create an Web transport for sending email.
+                var transportWeb = new Web(credentials);
+
+                // Send the email, which returns an awaitable task.
+                transportWeb.DeliverAsync(message);
+
+                ModelState.Clear(); //clears form when page reload
+                return RedirectToAction("MessageSend", "Home");
+
+            }
+            return View(model);
+        }
     }
 }

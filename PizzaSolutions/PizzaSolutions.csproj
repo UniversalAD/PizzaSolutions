@@ -207,6 +207,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContactEmail.cs" />
     <Compile Include="Models\Extensions.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -459,6 +460,7 @@
     <Content Include="Views\Home\_PartnershipAgreementPartial.cshtml" />
     <Content Include="Views\Shared\_EmailSuccessModal.cshtml" />
     <Content Include="Views\Home\MessageSend.cshtml" />
+    <Content Include="Views\Shared\_EmailContact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
