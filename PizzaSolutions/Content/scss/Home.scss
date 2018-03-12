@@ -123,6 +123,7 @@
     p {
         border-top: solid 2px #fff;
         color: #fff;
+        font-family: $futura-bt-book;
 
         @media (min-width: 1400px) {
             font-size: 18px;
@@ -163,6 +164,8 @@
         }
 
         p {
+            font-family: $futura-bt-book;
+
             @media (min-width: 1400px) {
                 font-size: 18px;
             }

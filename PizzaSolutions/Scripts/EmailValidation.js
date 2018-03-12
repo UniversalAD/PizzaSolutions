@@ -2,7 +2,7 @@
 $('.submit').click(function (e) {
     var sEmail = $('#Email').val();
     // Checking Empty Fields
-    if ($.trim(sEmail).length == 0 ) {
+    if ($.trim(sEmail).length === 0 ) {
         e.preventDefault();
     } 
 
@@ -34,12 +34,12 @@ function validateEmail(sEmail) {
 ////Function to validate phone
 $('.submit').click(function (e) {
         if (validatePhone('Phone')) {
-            $('#spnPhoneStatus').html('Valid');
+            $('#spnPhoneStatus').html('Valid Phone');
             $('#spnPhoneStatus').css('color', 'green');
 
         }
         else {
-            $('#spnPhoneStatus').html('Invalid');
+            $('#spnPhoneStatus').html('Invalid Phone');
             $('#spnPhoneStatus').css('color', 'red');
             e.preventDefault();
         }       

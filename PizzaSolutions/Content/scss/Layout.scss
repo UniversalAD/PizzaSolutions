@@ -70,3 +70,26 @@
         }
     }
 }
+
+.contact-email {
+
+    h3 {
+        font-size: 35px;
+        font-family: "futura_hv_btheavy";
+    }
+
+    .form-horizontal {
+
+        .form-group {
+            label, p {
+                color: $font-white;
+                font-family: $futura-bt-book;
+            }
+
+            input[type="checkbox"] {
+                vertical-align: top;
+                margin-left: 5px;
+            }
+        }
+    }
+}
