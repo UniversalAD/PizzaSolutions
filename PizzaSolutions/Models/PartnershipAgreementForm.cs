@@ -20,6 +20,7 @@ namespace PizzaSolutions.Models
         public string Phone { get; set; }
         [Display(Name = "Address")]
         public string StreetAddress { get; set; }
+        [Display(Name = "City")]
         public string City { get; set; }
         [Display(Name = "State")]
         [RegularExpression("[A-Z]{2}")]

@@ -1,22 +1,22 @@
 ﻿
 $('.submit').click(function (e) {
-    console.log("submit click");
     var sEmail = $('#Email').val();
     // Checking Empty Fields
     if ($.trim(sEmail).length == 0 ) {
         e.preventDefault();
-    }
-    if (validateEmail(sEmail)) {
+    } 
+
+   if (validateEmail(sEmail)) {
 
         document.getElementById("error").innerHTML = "";
         document.getElementById("success").innerHTML = "Email Valid!";
 
     }
-    else {
+   else {
+       document.getElementById('success').innerHTML = "";
         document.getElementById("error").innerHTML = "Invalid Email"
         e.preventDefault();
-    }
-   
+    }     
 });
 
 // Function that validates email address through a regular expression.
@@ -27,26 +27,27 @@ function validateEmail(sEmail) {
     }
     else {
         return false;
+       
     }
 }
 
-//Function to validate phone
-$(document).ready(function () {
-    $('#Phone').blur(function (e) {
+////Function to validate phone
+$('.submit').click(function (e) {
         if (validatePhone('Phone')) {
             $('#spnPhoneStatus').html('Valid');
             $('#spnPhoneStatus').css('color', 'green');
+
         }
         else {
             $('#spnPhoneStatus').html('Invalid');
             $('#spnPhoneStatus').css('color', 'red');
-        }
-    });
+            e.preventDefault();
+        }       
 });
 
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
-    var filter = /^\d{10}$/;
+    var filter = /(\d{3})\-?(\d{3})\-?(\d{4})/;
     if (filter.test(a)) {
         return true;
     }
@@ -54,3 +55,9 @@ function validatePhone(txtPhone) {
         return false;
     }
 }
+
+$(document).ready(function () {
+    $("input[name='Phone']").keyup(function () {
+        $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'));
+    });
+});

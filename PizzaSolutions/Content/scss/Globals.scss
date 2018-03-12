@@ -8,6 +8,16 @@
 .row {
     margin-right: 0;
     margin-left: 0;
+    height: inherit;
+    z-index: -5;
+}
+
+.container-fluid {
+    z-index: 5;
+}
+
+section {
+    z-index: 10;
 }
 
 .no-gutters {
