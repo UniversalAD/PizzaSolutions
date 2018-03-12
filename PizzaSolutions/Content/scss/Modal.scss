@@ -1,7 +1,15 @@
 ﻿.modal-dialog {
     width: 900px;
 
-    .disclaimer {
+    @media (max-width: 900px) {
+        width: 100% !important;
+    }
+
+    .modal-header {
+        border: 0;
+    }
+        
+        .disclaimer {
         background-color: #d4d4d4;
         height: 250px;
         overflow: scroll;
