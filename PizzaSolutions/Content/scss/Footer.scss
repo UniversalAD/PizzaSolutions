@@ -1,0 +1,57 @@
+﻿@import 'Typography.scss';
+
+footer {
+    padding: 5px 0;
+    background-color: #ed1c24;
+
+    ul {
+        list-style-type: none;
+
+        @media (max-width: 767px) {
+            margin: 0 auto;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 2px 0;
+
+            @media (max-width: 767px) {
+                display: inline-block;
+                text-align: center;
+            }
+
+            @media (max-width: 480px) {
+                display: block;                
+            }
+
+            a {
+                color: $font-white;
+                font-family: $futura-bt-book;
+            }
+        }
+    }
+
+    h3 {
+        font-family: $futura-bt-book;
+    }
+
+    address {
+        font-family: $futura-bt-book;
+    }
+
+    iframe {
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .center-small {
+        @media (max-width: 480px) {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+    }
+}
