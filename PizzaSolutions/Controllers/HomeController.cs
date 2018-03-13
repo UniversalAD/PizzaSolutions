@@ -56,9 +56,9 @@ namespace PizzaSolutions.Controllers
             {
                 var body = "First Name: {0} <br />  Last Name: {1} <br /> Restaurant: {2} <br /> Position: {3} <br /> Email: {4} <br /> Phone: {5} <br /> Address: {6} <br /> Zip Code: {7} <br /> State: {8} <br /> Avg. Deliveries Per Week: {9} <br /> Avg. Pickups Per Week: {10} <br /> Term Agreement: {11} <br /> E-Signature: {12}";
                 var message = new SendGridMessage();
-                message.AddTo("goodrow.chris4@gmail.com");
-                message.AddTo("chrisg@universalad.com");  // replace with valid value 
-                message.From = new MailAddress("chrisg@universalad.com");  // replace with valid value
+                message.AddTo("partnerrelations@universalad.com");
+                message.AddTo("conner@universalad.com");  // replace with valid value 
+                message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Partnership Agreement";
                 message.Html = string.Format(body, model.FirstName, model.LastName, model.Restaurant, model.Position, model.Email, model.Phone, model.StreetAddress, model.ZipCode, model.State, model.AverageDelWeek, model.AveragePickupsWeek, model.Agreement, model.ElectronicSignature);
 
@@ -94,9 +94,9 @@ namespace PizzaSolutions.Controllers
             {
                 var body = "Name: {0} <br />  Phone: {1} <br /> Email: {2} <br /> Message: {3} <br /> Phone Contact: {4} <br /> Email Contact: {5}";
                 var message = new SendGridMessage();
-                message.AddTo("goodrow.chris4@gmail.com");
-                message.AddTo("chrisg@universalad.com");  // replace with valid value 
-                message.From = new MailAddress("chrisg@universalad.com");  // replace with valid value
+                message.AddTo("partnerrelations@universalad.com");
+                message.AddTo("conner@universalad.com");  // replace with valid value 
+                message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Contact Message";
                 message.Html = string.Format(body, model.Name, model.Phone, model.Email, model.Message, model.PhoneContact, model.EmailContact);
 
