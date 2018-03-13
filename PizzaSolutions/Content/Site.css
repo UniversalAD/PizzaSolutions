@@ -582,10 +582,6 @@ section {
     width: 100%;
     border-bottom: 2px solid #fff; }
 
-footer {
-  background-color: #000;
-  height: 45px; }
-
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -1144,6 +1140,84 @@ footer {
 
 #success {
   color: green; }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_mdcn_btmedium';
+  src: url("Fonts/futuramc-webfont.woff2") format("woff2"), url("Fonts/futuramc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bt_extrablack';
+  src: url("Fonts/futuraxk-webfont.woff2") format("woff2"), url("Fonts/futuraxk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url("Fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+footer {
+  padding: 5px 0;
+  background-color: #ed1c24; }
+  footer ul {
+    list-style-type: none; }
+    @media (max-width: 767px) {
+      footer ul {
+        margin: 0 auto;
+        padding-left: 0; } }
+    footer ul li {
+      padding: 2px 0; }
+      @media (max-width: 767px) {
+        footer ul li {
+          display: inline-block;
+          text-align: center; } }
+      @media (max-width: 480px) {
+        footer ul li {
+          display: block; } }
+      footer ul li a {
+        color: #fff;
+        font-family: "futura_bk_btbook"; }
+  footer h3 {
+    font-family: "futura_bk_btbook"; }
+  footer address {
+    font-family: "futura_bk_btbook"; }
+  @media (max-width: 767px) {
+    footer iframe {
+      width: 100%;
+      height: 100%; } }
+  @media (max-width: 480px) {
+    footer .center-small {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      text-align: center; } }
 
 body {
   padding-top: 50px;

@@ -397,6 +397,7 @@
     <Content Include="Content\scss\Distributors.scss" />
     <Content Include="Content\scss\PartnerShip.scss" />
     <Content Include="Content\scss\Modal.scss" />
+    <Content Include="Content\scss\Footer.scss" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -461,6 +462,7 @@
     <Content Include="Views\Shared\_EmailSuccessModal.cshtml" />
     <Content Include="Views\Home\MessageSend.cshtml" />
     <Content Include="Views\Shared\_EmailContact.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
