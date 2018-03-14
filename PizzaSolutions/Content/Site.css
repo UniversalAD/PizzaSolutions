@@ -40,12 +40,21 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 .navbar-inverse {
   background-color: #000;
-  height: 110px; }
+  height: 114px; }
   @media (max-width: 767px) {
     .navbar-inverse {
-      height: 85px; } }
+      height: 90px; } }
   .navbar-inverse .navbar-toggle:hover {
     background-color: transparent; }
   .navbar-inverse .navbar-toggle:focus {
@@ -53,31 +62,9 @@
   .navbar-inverse .border-bottom {
     background-color: #ed1c24;
     position: absolute;
-    bottom: -30px;
+    bottom: -26px;
+    height: 25px;
     width: 100%; }
-    .navbar-inverse .border-bottom p {
-      transform: translate(-20%, 0);
-      padding: 0;
-      margin: 0;
-      color: #fff;
-      font-size: 24px;
-      letter-spacing: 1px;
-      font-family: "Impact"; }
-      @media (min-width: 590px) and (max-width: 767px) {
-        .navbar-inverse .border-bottom p {
-          transform: translate(-1.5%, 0%);
-          padding: 5px 0;
-          font-size: 2.5vw; } }
-      @media (min-width: 480px) and (max-width: 588px) {
-        .navbar-inverse .border-bottom p {
-          font-size: 2.9vw;
-          transform: translate(-1%, 0);
-          padding: 5px 0; } }
-      @media (min-width: 360px) and (max-width: 479px) {
-        .navbar-inverse .border-bottom p {
-          font-size: 4.5vw;
-          padding: 5px 0;
-          transform: translate(-5.5%, 0); } }
   @media (max-width: 767px) {
     .navbar-inverse .navbar-header {
       height: 0; } }
@@ -235,6 +222,15 @@ nav ul li {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 nav ul {
   padding-top: 0;
   list-style-type: none; }
@@ -369,6 +365,15 @@ nav {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 .center-block {
   margin: 0 auto;
   display: block;
@@ -438,11 +443,20 @@ section {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 .slices {
   background-image: url("Images/Backgrounds/slices_bg_02.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 270px;
+  height: 340px;
   width: 100%; }
   @media (max-width: 767px) {
     .slices {
@@ -452,7 +466,7 @@ section {
     position: relative; }
     .slices .pan-text img {
       padding: 35px 15px 35px 15px;
-      width: 220px;
+      width: 270px;
       min-width: 220px; }
       @media (max-width: 767px) {
         .slices .pan-text img {
@@ -462,27 +476,29 @@ section {
       position: absolute;
       font-family: "futura_bdcn_btbold";
       color: #fff;
-      top: 27%;
-      right: 24%;
-      width: 53%;
+      top: 18%;
+      right: 25%;
+      width: 49%;
       border-bottom: solid 1px #c0bfc0; }
+      .slices .pan-text h3.middle {
+        top: 27%; }
       @media (min-width: 1399px) {
         .slices .pan-text h3 {
-          right: 33%;
+          right: 33.6%;
           width: 100%;
           max-width: 34%; } }
       @media (max-width: 1250px) and (min-width: 1024px) {
         .slices .pan-text h3 {
-          width: 48%;
+          width: 47%;
           right: 25%; } }
       @media (max-width: 900px) and (min-width: 768px) {
         .slices .pan-text h3 {
-          width: 65%;
+          width: 62%;
           right: 19%; } }
       @media (max-width: 767px) and (min-width: 640px) {
         .slices .pan-text h3 {
-          width: 40%;
-          right: 30%;
+          width: 33%;
+          right: 33%;
           top: 23%;
           font-size: 28px; } }
       @media (max-width: 480px) and (min-width: 360px) {
@@ -493,20 +509,22 @@ section {
     .slices .pan-text p {
       font-family: "futura_bk_btbook";
       position: absolute;
-      top: 53%;
-      right: 27%;
-      width: 46%;
+      top: 40%;
+      right: 23%;
+      width: 55%;
       color: #fff;
-      font-size: 10px; }
+      font-size: 16px; }
       @media (min-width: 1399px) {
         .slices .pan-text p {
-          right: 33%;
+          right: 31%;
           width: 100%;
-          max-width: 34%; } }
-      @media (max-width: 900px) and (min-width: 768px) {
+          max-width: 38%; } }
+      @media (max-width: 950px) and (min-width: 768px) {
         .slices .pan-text p {
           width: 60%;
-          right: 20%; } }
+          right: 20%;
+          top: 42%;
+          font-size: 1.7vw; } }
       @media (max-width: 767px) and (min-width: 480px) {
         .slices .pan-text p {
           width: 45%;
@@ -517,7 +535,7 @@ section {
       @media (max-width: 480px) and (min-width: 360px) {
         .slices .pan-text p {
           width: 60%;
-          right: 18%;
+          right: 19%;
           font-size: 17px;
           top: 40%; } }
       .slices .pan-text p.p-offset-top {
@@ -527,7 +545,7 @@ section {
             top: 38%; } }
         @media (max-width: 480px) and (min-width: 360px) {
           .slices .pan-text p.p-offset-top {
-            top: 35%; } }
+            top: 40%; } }
 
 .about-us {
   position: relative;
@@ -624,6 +642,15 @@ section {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 .partners {
   background-image: url("Images/Backgrounds/partner-bg_02.png");
   background-size: cover;
@@ -646,34 +673,54 @@ section {
     margin-top: 54px; }
     @media (min-width: 1400px) {
       .partners .left-curve {
-        height: 450px; } }
-    @media (max-width: 767px) {
+        height: 345px; } }
+    @media (max-width: 1000px) {
       .partners .left-curve {
         height: 100%;
-        width: 100%; } }
+        width: 100%;
+        padding: 10px 0; } }
+    .partners .left-curve h2 {
+      font-family: "webfontregular-impact";
+      font-size: 2vw; }
+      @media (max-width: 768px) {
+        .partners .left-curve h2 {
+          font-size: 4vw;
+          margin-bottom: 0; } }
+      @media (max-width: 480px) {
+        .partners .left-curve h2 {
+          font-size: 7vw; } }
     .partners .left-curve p {
       color: #fff;
       font-family: "futura_bk_btbook";
-      margin: 35px 0;
+      margin: 10px 0;
       font-size: 16px; }
       @media (min-width: 1400px) {
         .partners .left-curve p {
-          font-size: 18px; } }
-      @media (min-width: 768px) and (max-width: 900px) {
+          font-size: 18px;
+          margin: 25px 0; } }
+      @media (min-width: 768px) and (max-width: 1000px) {
         .partners .left-curve p {
-          margin: 0; } }
+          margin: 0;
+          font-size: 20px; } }
       @media (max-width: 767px) {
         .partners .left-curve p {
           margin: 25px 0; } }
       @media (max-width: 767px) {
         .partners .left-curve p:nth-of-type(1) {
-          padding-top: 25px; } }
-    .partners .left-curve iframe {
-      height: 250px;
-      margin: 25px 0; }
+          padding-top: 10px; } }
+    .partners .left-curve video {
+      height: 100%;
+      width: 100%;
+      margin: 25px 0;
+      min-height: 250px; }
       @media (min-width: 1400px) {
-        .partners .left-curve iframe {
-          height: 400px; } }
+        .partners .left-curve video {
+          width: 100%;
+          height: 100%;
+          max-height: 350px; } }
+      @media (max-width: 480px) {
+        .partners .left-curve video {
+          min-height: inherit; } }
 
 .contact-email h3 {
   font-size: 35px;
@@ -686,6 +733,9 @@ section {
 .contact-email .form-horizontal .form-group input[type="checkbox"] {
   vertical-align: top;
   margin-left: 5px; }
+
+video {
+  width: 100%; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -729,13 +779,14 @@ section {
   font-weight: normal;
   font-style: normal; }
 
-@media (max-width: 767px) {
-  .partners iframe {
-    height: 350px; } }
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-@media (max-width: 480px) {
-  .partners iframe {
-    height: 100%; } }
+.impact {
+  font-family: "webfontregular-impact" important; }
 
 .build-brand h2 {
   position: relative;
@@ -762,18 +813,23 @@ section {
   .build-brand h2:after {
     content: '///';
     position: absolute;
-    top: -32px;
+    top: -30px;
     right: 11%;
     height: 50px;
     font-size: 120px;
     letter-spacing: -13px; }
+    @media (min-width: 1400px) {
+      .build-brand h2:after {
+        top: -32px; } }
     @media (max-width: 900px) and (min-width: 768px) {
       .build-brand h2:after {
-        right: 0; } }
+        right: 0;
+        top: -34px; } }
     @media (max-width: 767px) {
       .build-brand h2:after {
         font-size: 15vw;
-        right: 5%; } }
+        right: 5%;
+        top: -34px; } }
     @media (max-width: 560px) and (min-width: 360px) {
       .build-brand h2:after {
         font-size: 19vw; } }
@@ -788,6 +844,9 @@ section {
     @media (max-width: 767px) {
       .build-brand h2 span:before {
         font-size: 4vw; } }
+    @media (max-width: 480px) {
+      .build-brand h2 span:before {
+        width: 70%; } }
 
 .clients {
   padding-top: 45px;
@@ -834,6 +893,15 @@ section {
   src: url("Fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
 
 .advertiser-header {
   position: relative;
@@ -916,8 +984,8 @@ section {
     color: #ed1c24;
     font-size: 4.4vw;
     font-family: "webfontregular";
-    margin-left: 30px;
-    z-index: 5; }
+    z-index: 5;
+    margin: 0 5px; }
     .convinced h2:before {
       content: 'STILL NOT CONVINCED?';
       position: absolute;
@@ -928,11 +996,15 @@ section {
     .convinced h2:after {
       content: '///';
       position: absolute;
-      right: 2%;
-      top: -4px;
-      font-size: 87px;
-      letter-spacing: -6px; }
-      @media (max-width: 768px) {
+      right: 4%;
+      top: -58px;
+      font-size: 15.3vw;
+      letter-spacing: -28px; }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .convinced h2:after {
+          top: -37px;
+          letter-spacing: -21px; } }
+      @media (max-width: 767px) {
         .convinced h2:after {
           display: none; } }
     .convinced h2 span:before {
@@ -1003,12 +1075,24 @@ section {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 .advertiser-header.distributors h2 {
   word-spacing: -1px; }
   .advertiser-header.distributors h2:after {
     right: 1%;
     top: -5px;
     font-size: 7vw; }
+    @media (min-width: 1400px) {
+      .advertiser-header.distributors h2:after {
+        top: -11px; } }
 
 .advertiser-header.distributors .black-box {
   height: 450px; }
@@ -1066,6 +1150,15 @@ section {
   src: url("Fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
 
 .advertiser-header.partnership h2 {
   position: relative;
@@ -1182,6 +1275,15 @@ section {
   src: url("Fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
 
 footer {
   padding: 5px 0;

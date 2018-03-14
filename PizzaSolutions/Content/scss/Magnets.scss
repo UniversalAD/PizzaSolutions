@@ -1,14 +1,5 @@
 ﻿@import 'Typography.scss';
-.partners {
-    iframe {
-        @media (max-width: 767px) {
-            height: 350px;
-        }
-        
-        @media (max-width: 480px) {
-            height: 100%;
-        }
-    }
+.partners {   
 }
 
 .build-brand {
@@ -42,19 +33,25 @@
         &:after {
             content: '///';
             position: absolute;
-            top: -32px;
+            top: -30px;
             right: 11%;
             height: 50px;
             font-size: 120px;
             letter-spacing: -13px;
 
+            @media (min-width: 1400px) {
+                top: -32px;
+            }
+
             @media (max-width: 900px) and (min-width: 768px) {
                 right: 0;
+                top: -34px;
             }
 
             @media (max-width: 767px) {
                 font-size: 15vw;
                 right: 5%;
+                top: -34px;
             }
 
             @media (max-width: 560px) and (min-width: 360px) {
@@ -75,6 +72,10 @@
 
                 @media (max-width: 767px) {
                     font-size: 4vw;
+                }
+
+                @media (max-width: 480px) {
+                    width: 70%;
                 }
             }
         }

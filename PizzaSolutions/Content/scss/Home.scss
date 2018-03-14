@@ -4,7 +4,7 @@
     background-image: url('Images/Backgrounds/slices_bg_02.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 270px;
+    height: 340px;
     width: 100%;
 
     @media (max-width: 767px) {
@@ -17,7 +17,7 @@
 
         img {
             padding: 35px 15px 35px 15px;
-            width: 220px;
+            width: 270px;
             min-width: 220px;
 
             @media (max-width: 767px) {
@@ -30,30 +30,34 @@
             position: absolute;
             font-family: $futura_bdcn_btbold;
             color: #fff;
-            top: 27%;
-            right: 24%;
-            width: 53%;
+            top: 18%;
+            right: 25%;
+            width: 49%;
             border-bottom: solid 1px #c0bfc0;
 
+            &.middle {
+                top: 27%;
+            }
+
             @media (min-width: 1399px) {
-                right: 33%;
+                right: 33.6%;
                 width: 100%;
                 max-width: 34%;
             }
 
             @media (max-width: 1250px) and (min-width: 1024px) {
-                width: 48%;
+                width: 47%;
                 right: 25%;
             }
 
             @media (max-width: 900px) and (min-width: 768px) {
-                width: 65%;
+                width: 62%;
                 right: 19%;
             }
 
             @media (max-width: 767px) and (min-width: 640px) {
-                width: 40%;
-                right: 30%;
+                width: 33%;
+                right: 33%;
                 top: 23%;
                 font-size: 28px;
             }
@@ -68,21 +72,23 @@
         p {
             font-family: $futura-bt-book;
             position: absolute;
-            top: 53%;
-            right: 27%;
-            width: 46%;
+            top: 40%;
+            right: 23%;
+            width: 55%;
             color: #fff;
-            font-size: 10px;
+            font-size: 16px;
 
             @media (min-width: 1399px) {
-                right: 33%;
+                right: 31%;
                 width: 100%;
-                max-width: 34%;
+                max-width: 38%;
             }
 
-            @media (max-width: 900px) and (min-width: 768px) {
+            @media (max-width: 950px) and (min-width: 768px) {
                 width: 60%;
                 right: 20%;
+                top: 42%;
+                font-size: 1.7vw;
             }
 
             @media (max-width: 767px) and (min-width: 480px) {
@@ -95,7 +101,7 @@
 
             @media (max-width: 480px) and (min-width: 360px) {
                 width: 60%;
-                right: 18%;
+                right: 19%;
                 font-size: 17px;
                 top: 40%;
             }
@@ -108,7 +114,7 @@
                 }
 
                 @media (max-width: 480px) and (min-width: 360px) {
-                    top: 35%;
+                    top: 40%;
                 }
             }
         }

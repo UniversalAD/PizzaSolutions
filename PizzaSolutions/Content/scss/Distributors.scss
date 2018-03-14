@@ -10,6 +10,10 @@
                 right: 1%;
                 top: -5px;
                 font-size: 7vw;
+
+                @media (min-width: 1400px) {
+                    top: -11px;
+                }
             }
         }
 

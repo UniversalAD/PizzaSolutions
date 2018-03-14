@@ -2,10 +2,10 @@
 
 .navbar-inverse {
     background-color: #000;
-    height: 110px;
+    height: 114px;
 
     @media (max-width: 767px) {
-        height: 85px;
+        height: 90px;
     }
 
     .navbar-toggle:hover {
@@ -19,36 +19,9 @@
     .border-bottom {
         background-color: #ed1c24;
         position: absolute;
-        bottom: -30px;
-        width: 100%;
-
-        p {
-            transform: translate(-20%, 0);
-            padding: 0;
-            margin: 0;
-            color: #fff;
-            font-size: 24px;
-            letter-spacing: 1px;
-            font-family: $impact;
-
-            @media (min-width: 590px) and (max-width: 767px) {
-                transform: translate(-1.5%, 0%);
-                padding: 5px 0;
-                font-size: 2.5vw;
-            }
-
-            @media (min-width: 480px) and (max-width: 588px) {
-                font-size: 2.9vw;
-                transform: translate(-1%, 0);
-                padding: 5px 0;
-            }
-
-            @media (min-width: 360px) and (max-width: 479px) {
-                font-size: 4.5vw;
-                padding: 5px 0;
-                transform: translate(-5.5%, 0);
-            }
-        }
+        bottom: -26px;
+        height: 25px;
+        width: 100%;       
     }
 
     .navbar-header {

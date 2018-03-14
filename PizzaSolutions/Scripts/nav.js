@@ -8,7 +8,7 @@
         if (isActive) {
             $(this).removeClass('active');
             $('body').removeClass('menu-open');
-            $('.navbar-inverse').css('height', '85px');
+            $('.navbar-inverse').css('height', '90px');
             console.log(isActive);
         } else {
             $(this).addClass('active');
