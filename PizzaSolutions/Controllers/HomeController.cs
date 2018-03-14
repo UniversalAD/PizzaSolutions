@@ -96,6 +96,7 @@ namespace PizzaSolutions.Controllers
                 var message = new SendGridMessage();
                 message.AddTo("partnerrelations@universalad.com");
                 message.AddTo("conner@universalad.com");  // replace with valid value 
+                message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Contact Message";
                 message.Html = string.Format(body, model.Name, model.Phone, model.Email, model.Message, model.PhoneContact, model.EmailContact);

@@ -352,6 +352,7 @@
     <Content Include="Content\Site.min.css">
       <DependentUpon>Site.css</DependentUpon>
     </Content>
+    <Content Include="Content\Video\AdComm_3.2.18.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -398,6 +399,8 @@
     <Content Include="Content\scss\PartnerShip.scss" />
     <Content Include="Content\scss\Modal.scss" />
     <Content Include="Content\scss\Footer.scss" />
+    <Content Include="Content\Fonts\impact-webfont.woff" />
+    <Content Include="Content\Fonts\impact-webfont.woff2" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
