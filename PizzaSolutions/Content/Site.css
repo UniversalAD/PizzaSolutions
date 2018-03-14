@@ -673,7 +673,7 @@ section {
     margin-top: 54px; }
     @media (min-width: 1400px) {
       .partners .left-curve {
-        height: 345px; } }
+        height: 385px; } }
     @media (max-width: 1000px) {
       .partners .left-curve {
         height: 100%;
@@ -827,12 +827,7 @@ video {
         top: -34px; } }
     @media (max-width: 767px) {
       .build-brand h2:after {
-        font-size: 15vw;
-        right: 5%;
-        top: -34px; } }
-    @media (max-width: 560px) and (min-width: 360px) {
-      .build-brand h2:after {
-        font-size: 19vw; } }
+        display: none; } }
   .build-brand h2 span:before {
     content: 'LET US BUILD YOUR BRAND';
     position: absolute;

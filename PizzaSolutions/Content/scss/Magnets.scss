@@ -49,14 +49,9 @@
             }
 
             @media (max-width: 767px) {
-                font-size: 15vw;
-                right: 5%;
-                top: -34px;
+               display: none;
             }
 
-            @media (max-width: 560px) and (min-width: 360px) {
-                font-size: 19vw;
-            } 
         }
 
         span {
