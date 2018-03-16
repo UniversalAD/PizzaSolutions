@@ -35,8 +35,8 @@ namespace PizzaSolutions.Models
         public bool Agreement { get; set; }
         [Display(Name = "E-Signature")]
         public string ElectronicSignature { get; set; }
-        //[Display(Name = "Please upload your Logo(optional)")]
-        //public HttpPostedFileBase Attachment { get; set; }
+        [Display(Name = "Please upload your Logo(optional)")]
+        public HttpPostedFileBase Attachment { get; set; }
 
     }
 }

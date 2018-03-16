@@ -25,7 +25,7 @@
         $("#para4").text('Depending on local business participation and support, under this agreement Pizza Solutions will provide up to, but no obligated to 1000 large, "4 x 6" high quality magnets on an as-needed or quarterly basis that will be distributed to your customers upon delivery of pizza. This is a COST FREE program for your company and will feature your business large and bold as the headliner on our Customer Community Guide.')
         $("#para5").text("In addition to allowing Pizza Solutions to use your name as a distributor point, we also ask that you affirm to local businesses, if asked, that you have endorsed the Custom Guide, and that their participation is very worthwhile in this advertising campaign.")
         $("#para6").text("Thank you for your support.");
-        var signupBtn = "<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#PartnershipModal'>Partnership Agreement</button >";
+        var signupBtn = "<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#PartnershipModal'>Click Here to Sign Up</button >";
         $('#button').append(signupBtn);
     }
 
