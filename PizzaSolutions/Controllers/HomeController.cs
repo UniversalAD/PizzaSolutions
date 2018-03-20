@@ -46,7 +46,6 @@ namespace PizzaSolutions.Controllers
 
         public ActionResult MessageSend()
         {
-            ViewBag.Message = "We Will Be in Contact With You Soon, Thank You For Your Interest";
             return View();
         }
 
@@ -55,7 +54,7 @@ namespace PizzaSolutions.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult _PartnershipAgreementPartial(PartnershipAgreementForm model, HttpPostedFileBase file)
         {
-
+           
             if (ModelState.IsValid)
             {
                 var body = "First Name: {0} <br />  Last Name: {1} <br /> Restaurant: {2} <br /> Position: {3} <br /> Email: {4} <br /> Phone: {5} <br /> Address: {6} <br /> Zip Code: {7} <br /> State: {8} <br /> Avg. Deliveries Per Week: {9} <br /> Avg. Pickups Per Week: {10} <br /> Term Agreement: {11} <br /> E-Signature: {12}";
@@ -65,34 +64,55 @@ namespace PizzaSolutions.Controllers
                 message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Partnership Agreement";
-                message.Html = string.Format(body, model.FirstName, model.LastName, model.Restaurant, model.Position, model.Email, model.Phone, model.StreetAddress, model.ZipCode, model.State, model.AverageDelWeek, model.AveragePickupsWeek, model.Agreement, model.ElectronicSignature);
+                message.Html = string.Format(body, model.FirstName, model.LastName, model.Restaurant, model.Position, model.PartnershipEmail, model.PartnershipPhone, model.StreetAddress, model.ZipCode, model.State, model.AverageDelWeek, model.AveragePickupsWeek, model.Agreement, model.ElectronicSignature);
 
-                if (file.ContentLength > 0)
+                try
                 {
-                    var fileName = Path.GetFileName(file.FileName);
-                    var path = Path.Combine(Server.MapPath("~/App_Data/Images"), fileName);
-                    file.SaveAs(path);
+                    if (file.ContentLength > 0)
+                    {
+                        var fileName = Path.GetFileName(file.FileName);
+                        var path = Path.Combine(Server.MapPath("~/App_Data/Images"), fileName);
+                        file.SaveAs(path);
 
-                    message.AddAttachment(path);
+                        message.AddAttachment(path);
 
-                    //Azure credentials
+                        //Azure credentials
 
+                        var username = ConfigurationManager.AppSettings["sendGridUser"];
+                        var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
+
+                        // variable to store azure credentials
+                        var credentials = new NetworkCredential(username, pswd);
+                        // Create an Web transport for sending email.
+                        var transportWeb = new Web(credentials);
+
+                        // Send the email, which returns an awaitable task.
+                        transportWeb.DeliverAsync(message);
+
+                        ViewBag.Message = "Message Sent";
+
+                        ModelState.Clear(); //clears form when page reload
+
+                        return RedirectToAction("MessageSend", "Home");
+                    }
+                }
+
+                catch
+                {
                     var username = ConfigurationManager.AppSettings["sendGridUser"];
                     var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
 
-                    // variable to store azure credentials
                     var credentials = new NetworkCredential(username, pswd);
-                    // Create an Web transport for sending email.
                     var transportWeb = new Web(credentials);
 
-                    // Send the email, which returns an awaitable task.
                     transportWeb.DeliverAsync(message);
 
                     ViewBag.Message = "Message Sent";
 
                     ModelState.Clear(); //clears form when page reload
+
                     return RedirectToAction("MessageSend", "Home");
-                }
+                }     
             }
             return View(model);
         }

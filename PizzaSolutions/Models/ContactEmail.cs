@@ -9,12 +9,14 @@ namespace PizzaSolutions.Models
     public class ContactEmail
     {
         public string Name { get; set; }
-        public string Email { get; set; }      
+        public string Email { get; set; } 
+        [Display(Name = "Website/Facebook")]
+        public string Website { get; set; }
         public string Phone { get; set; }
         public string Message { get; set; }
         [Display(Name = "Phone")]
         public bool PhoneContact { get; set; }
         [Display(Name = "Email")]
-        public bool EmailContact { get; set; }
+        public bool EmailContact { get; set; }        
     }
 }

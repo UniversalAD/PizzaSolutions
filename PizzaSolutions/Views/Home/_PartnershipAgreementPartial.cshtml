@@ -36,15 +36,15 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-6 col-md-6">
-                                        @Html.LabelFor(m => m.Email, new { @class = "form-label" })
-                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", required = "required", placeholder = "yourname@emailEXT.com" })
-                                        <p id="error"></p>
-                                        <p id="success"></p>
+                                        @Html.LabelFor(m => m.PartnershipEmail, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.PartnershipEmail, new { @class = "form-control", required = "required", placeholder = "yourname@emailEXT.com" })
+                                        <p id="Parterror"></p>
+                                        <p id="Partsuccess"></p>
                                     </div>
                                     <div class="col-xs-6 col-md-6">
-                                        @Html.LabelFor(m => m.Phone, new { @class = "form-label" })
-                                        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", required = "required", placeholder = "XXX-XXX-XXXX" })
-                                        <span id="spnPhoneStatus"></span>
+                                        @Html.LabelFor(m => m.PartnershipPhone, new { @class = "form-label" })
+                                        @Html.TextBoxFor(m => m.PartnershipPhone, new { @class = "form-control", required = "required", placeholder = "XXX-XXX-XXXX" })
+                                        <span id="spnPartPhoneStatus"></span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -60,7 +60,7 @@
                                 <div class="form-group">
                                     <div class="col-xs-6 col-md-6">
                                         @Html.LabelFor(m => m.City, new { @class = "form-label" })
-                                        @Html.TextBoxFor(m => m.City, new { @class = "form-control", required = "required" })
+                                        @Html.TextBoxFor(m => m.City, new { @class = "form-control", id="cityID", required = "required" })
                                     </div>
                                     <div class="col-xs-6 col-md-6">
                                         @Html.LabelFor(m => m.State, new { @class = "form-label" })
@@ -139,7 +139,7 @@
                                         @Html.LabelFor(m => m.Attachment, new { @class = "form-label" })
                                     </div>
                                     <div class="col-md-4">
-                                        @Html.TextBox("file", "", new { type = "file" })
+                                        @Html.TextBox("file", "", new { type = "file"})
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-2">
-                                        <input type="submit" class="btn btn-default submit" value="Send" />
+                                        <input type="submit" class="btn btn-default" id="submit" value="Send" />
                                     </div>
 
                                 </div>
@@ -165,5 +165,5 @@
 
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryval")   
 }

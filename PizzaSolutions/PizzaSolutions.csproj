@@ -326,6 +326,7 @@
     <Content Include="Content\Images\advertisers_03.png" />
     <Content Include="Content\Images\Backgrounds\Distributions_bg_02.png" />
     <Content Include="Content\Images\Backgrounds\partner-bg_02.png" />
+    <Content Include="Content\Images\Backgrounds\pizza-slice-bg_03.png" />
     <Content Include="Content\Images\Backgrounds\slices_bg_02.png" />
     <Content Include="Content\Images\bianco-pizza_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
@@ -347,6 +348,7 @@
     <Content Include="Content\Images\pizza-hut_05.png" />
     <Content Include="Content\Images\pizza-inn_05.png" />
     <Content Include="Content\Images\pizza-ranch_05.png" />
+    <Content Include="Content\Images\reasons_bubbles_03.png" />
     <Content Include="Content\Site.css">
       <DependentUpon>Site.scss</DependentUpon>
     </Content>
@@ -354,6 +356,7 @@
       <DependentUpon>Site.css</DependentUpon>
     </Content>
     <Content Include="Content\Video\AdComm_3.2.18.mp4" />
+    <Content Include="Content\Video\Thank_You.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -410,6 +413,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\PizzaSolutions - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\PartnershipEmailValidation.js" />
     <Content Include="Scripts\EmailValidation.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

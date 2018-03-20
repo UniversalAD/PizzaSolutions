@@ -1013,7 +1013,8 @@ video {
 
 .add-words {
   height: 100%;
-  padding: 25px 0; }
+  padding: 25px 0;
+  background-image: url("Images/Backgrounds/pizza-slice-bg_03.png"); }
   .add-words .black-box {
     background-color: #000;
     border-radius: 15px;
@@ -1223,10 +1224,10 @@ video {
   .modal-dialog .form-horizontal {
     padding: 15px 0; }
 
-#error {
+#error, #Parterror {
   color: red; }
 
-#success {
+#success, #Partsuccess {
   color: green; }
 
 @font-face {

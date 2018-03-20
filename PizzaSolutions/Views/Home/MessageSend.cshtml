@@ -4,18 +4,10 @@
 }
 
 <div class="row" style="margin-top: 100px; margin-bottom: 100px;">
-    <div class="col-lg-10 center-block">
-        <h2 class="text-center font-white">@ViewBag.Message</h2>
+    <div class="col-lg-8 center-block">
+        <video controls autoplay>
+            <source src="~/Content/Video/Thank_You.mp4" type="video/mp4">
+        </video>
     </div>
 </div>
-
-@section Scripts {
-    <script>
-        $(document).ready(function () {
-
-            var delay = 2000;
-            setTimeout(function () { window.location = "Partnership"; }, delay);
-        });
-    </script>
-}
 

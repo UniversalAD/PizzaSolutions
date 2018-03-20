@@ -158,6 +158,7 @@
 .add-words {
     height: 100%;
     padding: 25px 0;
+    background-image: url('Images/Backgrounds/pizza-slice-bg_03.png');
 
     .black-box {
         background-color: #000;
@@ -169,7 +170,7 @@
             li {
                 color: $font-white;
                 font-family: $myriad_pro_regular;
-                
+
                 @media (min-width: 1400px) {
                     font-size: 17px;
                 }

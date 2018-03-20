@@ -10,24 +10,11 @@
 
 @Html.Action("_PartnershipAgreementPartial")
 
-@Html.Partial("_EmailSuccessModal")
-
 @Html.Partial("_EmailContact")
 
 
 
-}@section Scripts {
-    @if (ViewBag.Message != null)
-    {
-        <script>
-            $(document).ready(function () {
-
-                console.log("Success");
-                $('#successModal').modal('show');
-            });
-        </script>
-
-    }
+@section Scripts {          
 }
 
 
