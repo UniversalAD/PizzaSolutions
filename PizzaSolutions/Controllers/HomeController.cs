@@ -124,14 +124,14 @@ namespace PizzaSolutions.Controllers
 
             if (ModelState.IsValid)
             {
-                var body = "Name: {0} <br />  Phone: {1} <br /> Email: {2} <br /> Message: {3} <br /> Phone Contact: {4} <br /> Email Contact: {5}";
+                var body = "Name: {0} <br />  Phone: {1} <br /> Email: {2} <br /> Website/Facebook: {3} <br /> Message: {4} <br /> Phone Contact: {5} <br /> Email Contact: {6}";
                 var message = new SendGridMessage();
-                message.AddTo("partnerrelations@universalad.com");
-                message.AddTo("connerg@universalad.com");  // replace with valid value 
+                //message.AddTo("partnerrelations@universalad.com");
+               /* message.AddTo("connerg@universalad.com");*/  // replace with valid value 
                 message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Contact Message";
-                message.Html = string.Format(body, model.Name, model.Phone, model.Email, model.Message, model.PhoneContact, model.EmailContact);
+                message.Html = string.Format(body, model.Name, model.Phone, model.Email, model.Website, model.Message, model.PhoneContact, model.EmailContact);
 
                 var username = ConfigurationManager.AppSettings["sendGridUser"];
                 var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
@@ -145,20 +145,20 @@ namespace PizzaSolutions.Controllers
                 transportWeb.DeliverAsync(message);
 
                 ModelState.Clear(); //clears form when page reload
-                return RedirectToAction("ConfirmationEmail", "Home", new { model.Name, model.Phone, model.Email, model.Message });
+                return RedirectToAction("ConfirmationEmail", "Home", new { model.Name, model.Phone, model.Email, model.Website, model.Message });
             }
             return View(model);
         }
 
-        public ActionResult ConfirmationEmail(string Name, string Email, string Phone, string Message)
+        public ActionResult ConfirmationEmail(string Name, string Email, string Phone, string Website, string Message)
         {
             var message = new SendGridMessage();
             message.AddTo(Email);
             message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
             message.Subject = "Thank You For Signing Up!";
 
-            var body = "{0}, <br /> Thank you for contacting us. <br /> Our Goal is to provide you with the best service possible. <br /> If you'd like for us to get started creating your ad for free, please just respond to this email letting us know! <br /> Like I said, we do that part completely free and if you'd like a list of distributors in you area, I can also get those for you. <br /> From all of us here at Pizza Solutions, <br /> Thank You! <br /> <br /> Email: {1}, <br /> Phone: {2}, <br /> Message: {3}";
-            message.Html = string.Format(body, Name, Email, Phone, Message);
+            var body = "{0}, <br /> Thank you for contacting us. <br /> Our Goal is to provide you with the best service possible. <br /> If you'd like for us to get started creating your ad for free, please just respond to this email letting us know! <br /> Like I said, we do that part completely free and if you'd like a list of distributors in you area, I can also get those for you. <br /> From all of us here at Pizza Solutions, <br /> Thank You! <br /> <br /> Email: {1}, <br /> Phone: {2}, <br /> Website/Facebook: {3} <br /> Message: {4}";
+            message.Html = string.Format(body, Name, Email, Phone, Website, Message);
 
             var username = ConfigurationManager.AppSettings["sendGridUser"];
             var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
