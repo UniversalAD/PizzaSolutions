@@ -3,9 +3,10 @@
 }
 
 .build-brand {
+
     h2 {
         position: relative;
-        top: -15px;
+        top: -5px;
         font-size: 38px;
         color: #ed1c24;
         border-bottom: solid 9px #ed1c24;
@@ -38,23 +39,24 @@
             height: 50px;
             font-size: 120px;
             letter-spacing: -13px;
-
-            @media (min-width: 1400px) {
-                top: -32px;
+            /*@media (min-width: 1400px) {
+                top: -34px;
             }
 
-            @media (max-width: 900px) and (min-width: 768px) {
+            @media (max-width: 1200px) and (min-width: 1400px) {
+                top: -30px;
+            }
+
+            @media (max-width: 1024px) and (min-width: 768px) {
                 right: 0;
                 top: -34px;
             }
 
             @media (max-width: 767px) {
-               display: none;
-            }
-
+                display: none;
+            }*/
         }
-
-        span {
+        /*span {
 
             &:before {
                 content: 'LET US BUILD YOUR BRAND';
@@ -72,6 +74,65 @@
                 @media (max-width: 480px) {
                     width: 70%;
                 }
+            }
+        }*/
+        &.emergency {
+            font-size: 4.4vw;
+            border-top: solid 9px #ed1c24;
+
+
+            &:before {
+                content: 'EMERGENCY MAGNETS EMERGENCY MAGNETS';
+                font-size: 4.4vw;
+            }
+
+            &:after {
+                position: absolute;
+                position: absolute;
+                top: -29px;
+                right: 1%;
+                font-size: 8vw;
+                letter-spacing: -13px;
+
+                @media (min-width: 1400px) {
+                    top: -30px;
+                    font-size: 7.3vw;
+                }
+
+                @media (max-width: 1024px) and (min-width: 768px) {
+                    right: 1%;
+                    top: -22px;
+                    letter-spacing: -12px;
+                }
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+
+        &.calendar {
+            &:before {
+                content: 'CALENDAR MAGNETS CALENDAR MAGNETS';
+                font-size: 4.4vw;
+            }
+        }
+
+        &.kitchen {
+            &:before {
+                content: 'KITCHEN CONVERSION MEASURMENT MAGNETS';
+                font-size: 4.4vw;
+            }
+
+            &:after {
+                right: .6%;
+            }
+        }
+
+        &.schedule {
+            &:before {
+                content: 'SCHEDULE MAGNETS SCHEDULE MAGNETS';
+                font-size: 4.4vw;
             }
         }
     }

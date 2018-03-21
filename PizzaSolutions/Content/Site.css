@@ -790,12 +790,32 @@ video {
 
 .build-brand h2 {
   position: relative;
-  top: -15px;
+  top: -5px;
   font-size: 38px;
   color: #ed1c24;
   border-bottom: solid 9px #ed1c24;
   font-family: "webfontregular";
-  z-index: 5; }
+  z-index: 5;
+  /*span {
+
+            &:before {
+                content: 'LET US BUILD YOUR BRAND';
+                position: absolute;
+                left: 2%;
+                font-size: 38px;
+                color: #340608;
+                font-family: $myriad_pro_regular_boldit;
+                z-index: -1;
+
+                @media (max-width: 767px) {
+                    font-size: 4vw;
+                }
+
+                @media (max-width: 480px) {
+                    width: 70%;
+                }
+            }
+        }*/ }
   @media (max-width: 767px) {
     .build-brand h2 {
       font-size: 4vw; } }
@@ -817,31 +837,59 @@ video {
     right: 11%;
     height: 50px;
     font-size: 120px;
-    letter-spacing: -13px; }
-    @media (min-width: 1400px) {
-      .build-brand h2:after {
-        top: -32px; } }
-    @media (max-width: 900px) and (min-width: 768px) {
-      .build-brand h2:after {
-        right: 0;
-        top: -34px; } }
-    @media (max-width: 767px) {
-      .build-brand h2:after {
-        display: none; } }
-  .build-brand h2 span:before {
-    content: 'LET US BUILD YOUR BRAND';
-    position: absolute;
-    left: 2%;
-    font-size: 38px;
-    color: #340608;
-    font-family: "webfontregular";
-    z-index: -1; }
-    @media (max-width: 767px) {
-      .build-brand h2 span:before {
-        font-size: 4vw; } }
-    @media (max-width: 480px) {
-      .build-brand h2 span:before {
-        width: 70%; } }
+    letter-spacing: -13px;
+    /*@media (min-width: 1400px) {
+                top: -34px;
+            }
+
+            @media (max-width: 1200px) and (min-width: 1400px) {
+                top: -30px;
+            }
+
+            @media (max-width: 1024px) and (min-width: 768px) {
+                right: 0;
+                top: -34px;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }*/ }
+  .build-brand h2.emergency {
+    font-size: 4.4vw;
+    border-top: solid 9px #ed1c24; }
+    .build-brand h2.emergency:before {
+      content: 'EMERGENCY MAGNETS EMERGENCY MAGNETS';
+      font-size: 4.4vw; }
+    .build-brand h2.emergency:after {
+      position: absolute;
+      position: absolute;
+      top: -29px;
+      right: 1%;
+      font-size: 8vw;
+      letter-spacing: -13px; }
+      @media (min-width: 1400px) {
+        .build-brand h2.emergency:after {
+          top: -30px;
+          font-size: 7.3vw; } }
+      @media (max-width: 1024px) and (min-width: 768px) {
+        .build-brand h2.emergency:after {
+          right: 1%;
+          top: -22px;
+          letter-spacing: -12px; } }
+      @media (max-width: 767px) {
+        .build-brand h2.emergency:after {
+          display: none; } }
+  .build-brand h2.calendar:before {
+    content: 'CALENDAR MAGNETS CALENDAR MAGNETS';
+    font-size: 4.4vw; }
+  .build-brand h2.kitchen:before {
+    content: 'KITCHEN CONVERSION MEASURMENT MAGNETS';
+    font-size: 4.4vw; }
+  .build-brand h2.kitchen:after {
+    right: .6%; }
+  .build-brand h2.schedule:before {
+    content: 'SCHEDULE MAGNETS SCHEDULE MAGNETS';
+    font-size: 4.4vw; }
 
 .clients {
   padding-top: 45px;
