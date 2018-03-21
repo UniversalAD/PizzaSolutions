@@ -21,7 +21,7 @@
         position: absolute;
         bottom: -26px;
         height: 25px;
-        width: 100%;       
+        width: 100%;
     }
 
     .navbar-header {
@@ -38,7 +38,7 @@ nav {
     }
 
     ul {
-        li {            
+        li {
             display: inline-block !important;
             padding: 7px;
 
@@ -54,17 +54,17 @@ nav {
             }
 
             a {
-               color: #fff;
+                color: #fff;
 
-               @media (max-width: 767px) {
-                   font-size: 28px;
-               }
+                @media (max-width: 767px) {
+                    font-size: 28px;
+                }
 
-               &:hover, &:focus {
-                   color: #fff;
-                   opacity: .8;
-                   text-decoration: none;
-               }
+                &:hover, &:focus {
+                    color: #fff;
+                    opacity: .8;
+                    text-decoration: none;
+                }
             }
         }
     }
