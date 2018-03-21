@@ -120,8 +120,9 @@
 
         &.kitchen {
             &:before {
-                content: 'KITCHEN CONVERSION MEASURMENT MAGNETS';
+                content: 'KITCHEN CONVERSION MEASUREMENT MAGNETS';
                 font-size: 4.4vw;
+                margin-left: 20px;
             }
 
             &:after {

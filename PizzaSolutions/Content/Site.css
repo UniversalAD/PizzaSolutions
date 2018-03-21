@@ -883,8 +883,9 @@ video {
     content: 'CALENDAR MAGNETS CALENDAR MAGNETS';
     font-size: 4.4vw; }
   .build-brand h2.kitchen:before {
-    content: 'KITCHEN CONVERSION MEASURMENT MAGNETS';
-    font-size: 4.4vw; }
+    content: 'KITCHEN CONVERSION MEASUREMENT MAGNETS';
+    font-size: 4.4vw;
+    margin-left: 20px; }
   .build-brand h2.kitchen:after {
     right: .6%; }
   .build-brand h2.schedule:before {
