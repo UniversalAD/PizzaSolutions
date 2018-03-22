@@ -9,12 +9,21 @@
             $(this).removeClass('active');
             $('body').removeClass('menu-open');
             $('.navbar-inverse').css('height', '90px');
-            console.log(isActive);
-        } else {
+            $(".border-bottom").show();
+            $(".navbar").css("overflow", "inherit");
+        }
+
+        else {
             $(this).addClass('active');
             $('body').addClass('menu-open');
             $('.navbar-inverse').css('height', '100%');
-            console.log(isActive);
+
+
+            if ($(window).width() < 767) {
+                $('.navbar').css("overflow", "scroll");
+                $('.border-bottom').hide();
+            }
+
 
         }
         isActive = !isActive;
@@ -32,8 +41,8 @@
             $('.navbar-inverse').css('height', '85px');
             isActive = !isActive;
 
-            console.log(isActive); 
-        }     
+            console.log(isActive);
+        }
     });
 });
 
