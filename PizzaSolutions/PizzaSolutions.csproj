@@ -323,32 +323,46 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\167608_PM_GA_Cobb-Co%28Pizza-Hut-kitchen%29.png" />
+    <Content Include="Content\Images\168005_PM_MI_Oakland-Co-%28Hungry-Howies-Pizza-Kitchen%29.png" />
     <Content Include="Content\Images\advertisers_03.png" />
-    <Content Include="Content\Images\Backgrounds\Distributions_bg_02.png" />
+    <Content Include="Content\Images\Angie-Grace---Keller-Williams.png" />
+    <Content Include="Content\Images\Angie-Thomas---Keller-Williams.png" />
     <Content Include="Content\Images\Backgrounds\partner-bg_02.png" />
     <Content Include="Content\Images\Backgrounds\pizza-slice-bg_03.png" />
     <Content Include="Content\Images\Backgrounds\slices_bg_02.png" />
     <Content Include="Content\Images\bianco-pizza_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
     <Content Include="Content\Images\agreement_magnet.png" />
-    <Content Include="Content\Images\dominos-magnet_06.png" />
+    <Content Include="Content\Images\Dominos-Pizza---Cal.png" />
+    <Content Include="Content\Images\Dominos-Pizza---Emergency.png" />
+    <Content Include="Content\Images\Dominos-Pizza---Kitchen.png" />
     <Content Include="Content\Images\Dominos_05.png" />
     <Content Include="Content\Images\fino_05.png" />
-    <Content Include="Content\Images\hungry-howies-magnet_03.png" />
+    <Content Include="Content\Images\hungry-howies-calendar.png" />
     <Content Include="Content\Images\hunt-brothers_05.png" />
     <Content Include="Content\Images\hussons_05.png" />
+    <Content Include="Content\Images\Facebook.png" />
+    <Content Include="Content\Images\Instagrame_05.png" />
     <Content Include="Content\Images\johnnys_05.png" />
     <Content Include="Content\Images\logo_02.png" />
     <Content Include="Content\Images\magnet-delivered_03.png" />
+    <Content Include="Content\Images\Mama%27s-Pizza-_-Cowboys-Sch.png" />
     <Content Include="Content\Images\marcos_05.png" />
+    <Content Include="Content\Images\Over-5000--.png" />
     <Content Include="Content\Images\pan_04.png" />
+    <Content Include="Content\Images\Papa-Johns---Hopper-Properties-Realtor-%281%29.png" />
+    <Content Include="Content\Images\Papa-Johns---Kitchen-Conversion.png" />
     <Content Include="Content\Images\papa-johns_05.png" />
     <Content Include="Content\Images\pizza-guys_05.png" />
-    <Content Include="Content\Images\pizza-hut-magnet_06.png" />
+    <Content Include="Content\Images\Pizza-Hut---Calendar.png" />
+    <Content Include="Content\Images\Pizza-Hut---Coldwell-Banker-%281%29.png" />
     <Content Include="Content\Images\pizza-hut_05.png" />
     <Content Include="Content\Images\pizza-inn_05.png" />
+    <Content Include="Content\Images\Pizza-Magnet---Kitchen-Conversion.png" />
     <Content Include="Content\Images\pizza-ranch_05.png" />
     <Content Include="Content\Images\reasons_bubbles_03.png" />
+    <Content Include="Content\Images\Rosa---Kitchen-Conversion.png" />
     <Content Include="Content\Site.css">
       <DependentUpon>Site.scss</DependentUpon>
     </Content>
@@ -472,6 +486,7 @@
     <Content Include="Views\Shared\_EmailContact.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Home\ConfirmationEmail.cshtml" />
+    <Content Include="Views\Shared\_SocialPartial.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
