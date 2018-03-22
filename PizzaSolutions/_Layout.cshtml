@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="keywords" content="Pizza, Advertising, Magnets, Custom Advertising, Local Advertising, Local Marketing, Marketing, Real Estate Advertising, Custom Printed Magnets, Small Business Advertising, Small Business, Pizza Near Me, Real Estate Marketing Ideas, Real Estate Advertising Ideas" />
+    <title>@ViewBag.Title - Pizza Solutions</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @section Scripts {
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116253059-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-116253059-1');
+        </script>
+
+    }
+
+</head>
+<body>
+    @Html.Partial("_Header")
+    <div class="container-fluid">
+        @Html.Partial("_SocialPartial")
+
+        @RenderBody()
+
+        <footer>
+            @Html.Partial("_Footer")
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/nav.js")
+    @Scripts.Render("~/Scripts/MagnetPartial.js")
+    @Scripts.Render("~/Scripts/EmailValidation.js")
+    @Scripts.Render("~/Scripts/PartnershipEmailValidation.js")
+    @RenderSection("scripts", required: false) 
+</body>
+</html>
