@@ -64,10 +64,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'futura_md_btbold';
+    src: url('Fonts/futurab-webfont.woff2') format('woff2'), 
+         url('Fonts/futurab-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 $futura-bt-book: 'futura_bk_btbook';
 $impact: 'webfontregular-impact';
 $futura_bdcn_btbold: 'futura_bdcn_btbold';
+$furara_md_btbold: 'futura_md_btbold';
 $futura_hv_heavy: 'futura_hv_btheavy';
 $myriad_pro_regular_boldit: 'webfontregular';
 $futura-bt-condensed: 'futura_mdcn_btmedium';

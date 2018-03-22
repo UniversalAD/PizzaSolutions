@@ -46,6 +46,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -180,6 +186,31 @@ nav ul li {
   color: #fff;
   padding-left: 5px; }
 
+.social {
+  position: fixed;
+  width: 4vw;
+  left: -2%;
+  z-index: 100; }
+  @media (max-width: 680px) {
+    .social {
+      left: -6%;
+      padding-top: 6px; } }
+  @media (max-width: 480px) {
+    .social {
+      left: -10%; } }
+  .social ul {
+    list-style-type: none; }
+    .social ul li {
+      margin: 15px 0; }
+      @media (max-width: 680px) {
+        .social ul li {
+          margin: 1px 0; } }
+      .social ul li img {
+        width: 4vw; }
+        @media (max-width: 480px) {
+          .social ul li img {
+            min-width: 25px; } }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -225,6 +256,12 @@ nav ul li {
 @font-face {
   font-family: 'webfontregular-impact';
   src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -371,6 +408,12 @@ nav {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -400,6 +443,9 @@ section {
 
 .font-red {
   color: #ff0000; }
+
+.relative {
+  position: relative; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -446,6 +492,12 @@ section {
 @font-face {
   font-family: 'webfontregular-impact';
   src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -648,6 +700,12 @@ section {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -785,6 +843,12 @@ video {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -869,12 +933,12 @@ video {
       letter-spacing: -13px; }
       @media (min-width: 1400px) {
         .build-brand h2.emergency:after {
-          top: -30px;
+          top: -31px;
           font-size: 7.3vw; } }
       @media (max-width: 1024px) and (min-width: 768px) {
         .build-brand h2.emergency:after {
           right: 1%;
-          top: -22px;
+          top: -21px;
           letter-spacing: -12px; } }
       @media (max-width: 767px) {
         .build-brand h2.emergency:after {
@@ -882,6 +946,9 @@ video {
   .build-brand h2.calendar:before {
     content: 'CALENDAR MAGNETS CALENDAR MAGNETS';
     font-size: 4.4vw; }
+  @media (max-width: 767px) {
+    .build-brand h2.kitchen {
+      text-align: center; } }
   .build-brand h2.kitchen:before {
     content: 'KITCHEN CONVERSION MEASUREMENT MAGNETS';
     font-size: 4.4vw;
@@ -941,6 +1008,12 @@ video {
 @font-face {
   font-family: 'webfontregular-impact';
   src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1077,6 +1150,16 @@ video {
           font-size: 17px; } }
       .add-words .black-box ul li span {
         color: #ff0000; }
+  .add-words .one {
+    position: absolute;
+    top: 2%;
+    left: 21%;
+    width: 23%;
+    padding: 15px;
+    font-size: 18.2px; }
+    .add-words .one h3 {
+      font-size: 45px;
+      font-family: "futura_md_btbold"; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -1123,6 +1206,12 @@ video {
 @font-face {
   font-family: 'webfontregular-impact';
   src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1199,6 +1288,12 @@ video {
 @font-face {
   font-family: 'webfontregular-impact';
   src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1324,6 +1419,12 @@ video {
 @font-face {
   font-family: 'webfontregular-impact';
   src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 

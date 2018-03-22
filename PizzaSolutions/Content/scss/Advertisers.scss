@@ -181,4 +181,18 @@
             }
         }
     }
+
+    .one {
+        position: absolute;
+        top: 2%;
+        left: 21%;
+        width: 23%;
+        padding: 15px;
+        font-size: 18.2px;
+
+        h3 {
+            font-size: 45px;
+            font-family: $furara_md_btbold;
+        }
+    }
 }

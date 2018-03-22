@@ -95,13 +95,13 @@
                 letter-spacing: -13px;
 
                 @media (min-width: 1400px) {
-                    top: -30px;
+                    top: -31px;
                     font-size: 7.3vw;
                 }
 
                 @media (max-width: 1024px) and (min-width: 768px) {
                     right: 1%;
-                    top: -22px;
+                    top: -21px;
                     letter-spacing: -12px;
                 }
 
@@ -119,6 +119,10 @@
         }
 
         &.kitchen {
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+
             &:before {
                 content: 'KITCHEN CONVERSION MEASUREMENT MAGNETS';
                 font-size: 4.4vw;
