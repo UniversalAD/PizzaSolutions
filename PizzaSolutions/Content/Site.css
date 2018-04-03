@@ -621,6 +621,9 @@ section {
     color: #fff;
     font-size: 35px;
     font-family: "futura_hv_btheavy"; }
+    @media (max-width: 1024px) {
+      .about-us h3 {
+        margin-top: 0; } }
   .about-us.choose {
     padding: 25px 15px; }
     .about-us.choose h3 {
@@ -632,6 +635,9 @@ section {
           font-size: 18px; } }
   .about-us .btn-wrapper {
     margin-top: 25px; }
+    @media (max-width: 767px) {
+      .about-us .btn-wrapper {
+        margin-bottom: 25px; } }
     .about-us .btn-wrapper img {
       max-width: 150px;
       cursor: pointer; }

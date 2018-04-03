@@ -146,6 +146,10 @@
         color: #fff;
         font-size: 35px;
         font-family: $futura_hv_heavy;
+
+        @media (max-width: 1024px) {
+            margin-top: 0;
+        }
     }
 
     &.choose {
@@ -166,6 +170,10 @@
 
     .btn-wrapper {
         margin-top: 25px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+        }
         
         img {
             max-width: 150px;
