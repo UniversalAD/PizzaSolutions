@@ -1,48 +1,39 @@
 ﻿
-$('.submit').click(function (e) {
-    var sEmail = $('#Email').val();
-    // Checking Empty Fields
-    if ($.trim(sEmail).length === 0 ) {
-        e.preventDefault();
-    } 
+////Function to validate phone
+$("#emailContact").on('submit', function (e) {
+    var isValid = $("#emailContact").valid();
+    if (isValid, validatePhone('Phone')) {
 
-   if (validateEmail(sEmail)) {
-
-        document.getElementById("error").innerHTML = "";
-        document.getElementById("success").innerHTML = "Email Valid!";
-
+        return true;
     }
-   else {
-       document.getElementById('success').innerHTML = "";
-        document.getElementById("error").innerHTML = "Invalid Email"
+    else {     
         e.preventDefault();
-    }     
+        return false;
+    }
 });
 
-// Function that validates email address through a regular expression.
-function validateEmail(sEmail) {
-    var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
-    if (filter.test(sEmail)) {
+$("#freeAdContact").on('submit', function (e) {
+    var isValid = $("#freeAdContact").valid();
+    if (isValid, validatePhone('AdPhone')) {
+
+        return true;
+    }
+    else {      
+        e.preventDefault();
+        return false;
+    }
+});
+
+$("#partnershipAgreement").on('submit', function (e) {
+    var isValid = $("#partnershipAgreement").valid();
+    if (isValid, validatePhone('PartnershipPhone')) {
+
         return true;
     }
     else {
+        e.preventDefault();
         return false;
-       
     }
-}
-
-////Function to validate phone
-$('.submit').click(function (e) {
-        if (validatePhone('Phone')) {
-            $('#spnPhoneStatus').html('Valid Phone');
-            $('#spnPhoneStatus').css('color', 'green');
-
-        }
-        else {
-            $('#spnPhoneStatus').html('Invalid Phone');
-            $('#spnPhoneStatus').css('color', 'red');
-            e.preventDefault();
-        }       
 });
 
 function validatePhone(txtPhone) {
@@ -56,8 +47,53 @@ function validatePhone(txtPhone) {
     }
 }
 
+//free ad email form
+$(document).ready(function () {
+    $("input[name='AdPhone'").keyup(function () {
+        $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'));
+
+        if (validatePhone('AdPhone')) {
+            $('#adPhoneStatus').html('Valid Phone');
+            $('#adPhoneStatus').css('color', 'green');
+        }
+
+        else {
+            $('#adPhoneStatus').html('Invalid Phone');
+            $('#adPhoneStatus').css('color', 'red');
+        }     
+    });
+});
+
+//email contact form
 $(document).ready(function () {
     $("input[name='Phone']").keyup(function () {
         $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'));
+
+        if (validatePhone('Phone')) {
+            $('#spnPhoneStatus').html('Valid Phone');
+            $('#spnPhoneStatus').css('color', 'green');
+        }
+
+        else {
+            $('#spnPhoneStatus').html('Invalid Phone');
+            $('#spnPhoneStatus').css('color', 'red');
+        }
+    });
+});
+
+//partnership phone form
+$(document).ready(function () {
+    $("input[name='PartnershipPhone']").keyup(function () {
+        $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'));
+
+        if (validatePhone('PartnershipPhone')) {
+            $('#partnershipPhoneStatus').html('Valid Phone');
+            $('#partnershipPhoneStatus').css('color', 'green');
+        }
+
+        else {
+            $('#partnershipPhoneStatus').html('Invalid Phone');
+            $('#partnershipPhoneStatus').css('color', 'red');
+        }
     });
 });

@@ -136,23 +136,9 @@
         }
     }
 
-    h2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+    h2 {        
         font-size: 4.4vw;
-        color: #ed1c24;
-        font-family: $myriad_pro_regular_boldit;
-        margin-top: 0;
-
-        span {
-            color: #3d0709;
-        }
-
-        span + span {
-            color: #ed1c24;
-        }
+        font-family: $futura_bt_extra_black;       
     }
 
     h3 {
@@ -175,6 +161,15 @@
             @media (min-width: 1400px) {
                 font-size: 18px;
             }
+        }
+    }
+
+    .btn-wrapper {
+        margin-top: 25px;
+        
+        img {
+            max-width: 150px;
+            cursor: pointer;
         }
     }
 }

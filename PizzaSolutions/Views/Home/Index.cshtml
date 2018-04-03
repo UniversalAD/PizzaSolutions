@@ -21,7 +21,7 @@
                         </p>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                        <video controls autoplay>
+                        <video controls>
                             <source src="~/Content/Video/AdComm_3.2.18.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -58,15 +58,23 @@
 </section>
 
 <section class="about-us">
-    <h2 class="text-center"><span>YOUR PIZZA SOLUTIONS</span>YOUR PIZZA SOLUTIONS <span>///</span></h2>
     <div class="row">
-        <div class="col-lg-8 center-block">
-            <h3 class="text-center">About Us</h3>
-            <p class="text-center">
+        <h2 class="text-center font-white">YOUR PIZZA SOLUTIONS</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h3>About Us</h3>
+            <p>
                 Our newest acquisition, Pizza Solutions, is a fantastic advertising campaign combining excellent advertising value with
                 guaranteed distribution. Pizza restaurant owners love our “solution” for increased delivery orders, and advertisers love our
                 “solution” for guaranteed distribution, increasing new business and growth. With magnets being delivered to every home on every delivery, business owners are seen more often for longer periods of time and see their new sales increase by 20% per year….All for a great low price!!! Pizza Solutions, your solutions partner for growth.
             </p>
+            <div class="btn-wrapper center-block">
+                <img src="@Url.Content("~/Content/Images/Free-Design-Btn_03.jpg")" class="img-responsive center-block" data-toggle="modal" data-target="#FreeAd" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <img src="@Url.Content("~/Content/Images/Magnets-Veggies.jpg")" class="img-responsive" />
         </div>
     </div>
 </section>
@@ -140,8 +148,11 @@
 
 @Html.Partial("_EmailContact")
 
+@Html.Partial("_FreeAdModal")
+
 
 @section Scripts {
+
     @if (ViewBag.Message != null)
     {
         <script>
@@ -150,7 +161,13 @@
                 console.log("Success");
                 $('#successModal').modal('show');
             });
+
+
         </script>
 
     }
+    <script>
+        $("#freeAdContact").validate();
+        $("#emailContact").validate();  
+    </script>
 };

@@ -447,6 +447,9 @@ section {
 .relative {
   position: relative; }
 
+.error {
+  color: #ff0000 !important; }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -611,18 +614,8 @@ section {
       .about-us p {
         font-size: 18px; } }
   .about-us h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     font-size: 4.4vw;
-    color: #ed1c24;
-    font-family: "webfontregular";
-    margin-top: 0; }
-    .about-us h2 span {
-      color: #3d0709; }
-    .about-us h2 span + span {
-      color: #ed1c24; }
+    font-family: "futura_bt_extrablack"; }
   .about-us h3 {
     margin-top: 80px;
     color: #fff;
@@ -637,6 +630,11 @@ section {
       @media (min-width: 1400px) {
         .about-us.choose p {
           font-size: 18px; } }
+  .about-us .btn-wrapper {
+    margin-top: 25px; }
+    .about-us .btn-wrapper img {
+      max-width: 150px;
+      cursor: pointer; }
 
 .clients {
   background-image: url("Images/Backgrounds/slices_bg_02.png");
