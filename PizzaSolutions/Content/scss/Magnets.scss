@@ -1,149 +1,109 @@
 ﻿@import 'Typography.scss';
-.partners {   
-}
 
-.build-brand {
+.magnets {
+    background-color: $font-white;
+    padding-top: 25px;
 
-    h2 {
-        position: relative;
-        top: -5px;
-        font-size: 38px;
-        color: #ed1c24;
-        border-bottom: solid 9px #ed1c24;
-        font-family: $myriad_pro_regular_boldit;
-        z-index: 5;
+    img {
+        padding: 0 15px;
 
-        @media (max-width: 767px) {
-            font-size: 4vw;
+        @media (max-width: 1200px) {
+            max-width: 361px;
         }
+    }
 
-        &:before {
-            content: "WE KNOW YOU MAKE GREAT PIZZA";
-            position: absolute;
-            left: 0;
-            font-size: 38px;
-            color: #340608;
-            font-family: $myriad_pro_regular_boldit;
-            z-index: -1;
+    p {
+        font-family: $futura-bt-condensed;
+    }
 
-            @media (max-width: 767px) {
-                font-size: 4vw;
-            }
-        }
+    .btn-wrapper {
+        margin: 5px 0;
 
-        &:after {
-            content: '///';
-            position: absolute;
-            top: -30px;
-            right: 11%;
-            height: 50px;
-            font-size: 120px;
-            letter-spacing: -13px;
-            /*@media (min-width: 1400px) {
-                top: -34px;
-            }
+        .btn {
+            &.ripped {
+                background-image: url("/Content/Images/Backgrounds/ripped-button-background_07.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #fff;
+                border-radius: 0;
+                border: none;
+                width: 100%;
+                font-size: 24px;
+                font-family: $futura_hv_heavy;
 
-            @media (max-width: 1200px) and (min-width: 1400px) {
-                top: -30px;
-            }
-
-            @media (max-width: 1024px) and (min-width: 768px) {
-                right: 0;
-                top: -34px;
-            }
-
-            @media (max-width: 767px) {
-                display: none;
-            }*/
-        }
-        /*span {
-
-            &:before {
-                content: 'LET US BUILD YOUR BRAND';
-                position: absolute;
-                left: 2%;
-                font-size: 38px;
-                color: #340608;
-                font-family: $myriad_pro_regular_boldit;
-                z-index: -1;
-
-                @media (max-width: 767px) {
-                    font-size: 4vw;
+                @media (max-width: 1350px) {
+                    background-size: contain;
                 }
-
-                @media (max-width: 480px) {
-                    width: 70%;
-                }
-            }
-        }*/
-        &.emergency {
-            font-size: 4.4vw;
-            border-top: solid 9px #ed1c24;
-
-
-            &:before {
-                content: 'EMERGENCY MAGNETS EMERGENCY MAGNETS';
-                font-size: 4.4vw;
-            }
-
-            &:after {
-                position: absolute;
-                position: absolute;
-                top: -29px;
-                right: 1%;
-                font-size: 8vw;
-                letter-spacing: -13px;
-
-                @media (min-width: 1400px) {
-                    top: -31px;
-                    font-size: 7.3vw;
-                }
-
-                @media (max-width: 1024px) and (min-width: 768px) {
-                    right: 1%;
-                    top: -21px;
-                    letter-spacing: -12px;
-                }
-
-                @media (max-width: 767px) {
-                    display: none;
-                }
-            }
-        }
-
-        &.calendar {
-            &:before {
-                content: 'CALENDAR MAGNETS CALENDAR MAGNETS';
-                font-size: 4.4vw;
-            }
-        }
-
-        &.kitchen {
-            @media (max-width: 767px) {
-                text-align: center;
-            }
-
-            &:before {
-                content: 'KITCHEN CONVERSION MEASUREMENT MAGNETS';
-                font-size: 4.4vw;
-                margin-left: 20px;
-            }
-
-            &:after {
-                right: .6%;
-            }
-        }
-
-        &.schedule {
-            &:before {
-                content: 'SCHEDULE MAGNETS SCHEDULE MAGNETS';
-                font-size: 4.4vw;
             }
         }
     }
 }
 
-.clients {
-    padding-top: 45px;
-    padding-bottom: 45px;
+.black-border {
+    border-bottom: 2px solid #000;
+}
+
+@import 'Typography.scss';
+
+.magnets {
+    background-color: $font-white;
+    padding-top: 25px;
+
+    img {
+        padding: 0 15px;
+
+        @media (max-width: 1200px) {
+            max-width: 361px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+
+    p {
+        font-family: $futura-bt-condensed;
+        height: 75px;
+
+        @media (max-width: 767px) {
+            height: auto;
+        }
+    }
+
+    .btn-wrapper {
+        margin: 5px 0;
+
+        .btn {
+            &.ripped {
+                background-image: url("/Content/Images/Backgrounds/ripped-button-background_07.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #fff;
+                border-radius: 0;
+                border: none;
+                width: 100%;
+                font-size: 24px;
+                font-family: $futura_hv_heavy;
+                cursor: default;
+
+                @media (max-width: 1350px) {
+                    background-size: contain;
+                }
+            }
+
+            &.orange {
+                background-color: #ff7d25;
+                color: $font-white;
+                font-family: $myriad_pro_regular_boldit;
+                max-width: 120px;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.black-border {
+    border-bottom: 2px solid #000;
 }
