@@ -1,0 +1,50 @@
+﻿#carouselModal {
+    .modal-dialog {
+        width: 600px;
+    }
+}
+
+.carousel-inner {
+    .item {
+        img {
+            max-width: 361px;
+
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.carousel-control {
+    color: #d4d4d4;
+    opacity: 1;
+
+    &:hover, &:focus {
+        color: #d4d4d4;
+        opacity: .5;
+    }
+
+    &.left {
+        background-image: none;
+    }
+
+    &.right {
+        background-image: none;
+    }
+
+    .glyphicon-chevron-left, .glyphicon-chevron-right {
+       @media (max-width: 480px) {
+           left: 25%;
+       }
+    }
+}
+
+.carousel-indicators {
+    bottom: -30px;
+
+    li {
+        border-color: #d4d4d4;
+        background-color: #d4d4d4;
+    }
+}

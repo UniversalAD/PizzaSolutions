@@ -331,17 +331,18 @@
     <Content Include="Content\Images\Angie-Thomas---Keller-Williams.png" />
     <Content Include="Content\Images\Backgrounds\partner-bg_02.png" />
     <Content Include="Content\Images\Backgrounds\pizza-slice-bg_03.png" />
+    <Content Include="Content\Images\Backgrounds\ripped-button-background_07.png" />
     <Content Include="Content\Images\Backgrounds\slices_bg_02.png" />
     <Content Include="Content\Images\bianco-pizza_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
     <Content Include="Content\Images\agreement_magnet.png" />
+    <Content Include="Content\Images\Dominoes-Emergency-Magnet_03.png" />
     <Content Include="Content\Images\Dominos-Pizza---Cal.png" />
-    <Content Include="Content\Images\Dominos-Pizza---Emergency.png" />
     <Content Include="Content\Images\Dominos-Pizza---Kitchen.png" />
     <Content Include="Content\Images\Dominos_05.png" />
     <Content Include="Content\Images\fino_05.png" />
     <Content Include="Content\Images\Free-Design-Btn_03.jpg" />
-    <Content Include="Content\Images\hungry-howies-calendar.png" />
+    <Content Include="Content\Images\Hungry-Howies-Calendar-Magnet_03.png" />
     <Content Include="Content\Images\hunt-brothers_05.png" />
     <Content Include="Content\Images\hussons_05.png" />
     <Content Include="Content\Images\Facebook.png" />
@@ -350,7 +351,7 @@
     <Content Include="Content\Images\logo_02.png" />
     <Content Include="Content\Images\magnet-delivered_03.png" />
     <Content Include="Content\Images\Magnets-Veggies.jpg" />
-    <Content Include="Content\Images\Mama%27s-Pizza-_-Cowboys-Sch.png" />
+    <Content Include="Content\Images\Mamas-Pizza-Cowboys-Sch.png" />
     <Content Include="Content\Images\marcos_05.png" />
     <Content Include="Content\Images\Over-5000--.png" />
     <Content Include="Content\Images\pan_04.png" />
@@ -362,8 +363,9 @@
     <Content Include="Content\Images\Pizza-Hut---Coldwell-Banker-%281%29.png" />
     <Content Include="Content\Images\pizza-hut_05.png" />
     <Content Include="Content\Images\pizza-inn_05.png" />
-    <Content Include="Content\Images\Pizza-Magnet---Kitchen-Conversion.png" />
     <Content Include="Content\Images\pizza-ranch_05.png" />
+    <Content Include="Content\Images\PizzaHut-Kitchen-Conversion-Magnet_03.png" />
+    <Content Include="Content\Images\PizzaHut-Schedule-Magnet_03.png" />
     <Content Include="Content\Images\reasons_bubbles_03.png" />
     <Content Include="Content\Images\Rosa---Kitchen-Conversion.png" />
     <Content Include="Content\Site.css">
@@ -422,6 +424,7 @@
     <Content Include="Content\scss\Footer.scss" />
     <Content Include="Content\Fonts\impact-webfont.woff" />
     <Content Include="Content\Fonts\impact-webfont.woff2" />
+    <Content Include="Content\scss\CourouselModal.scss" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -430,6 +433,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\PizzaSolutions - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\CarouselSwitch.js" />
     <Content Include="Scripts\EmailValidation.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -492,6 +496,7 @@
     <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
     <Content Include="Views\Shared\_FreeAdContact.cshtml" />
     <Content Include="Views\Shared\_FreeAdModal.cshtml" />
+    <Content Include="Views\Shared\_CarouselModal.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
