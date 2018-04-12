@@ -39,10 +39,31 @@
             $('.js-menu').removeClass('active');
             $('body').removeClass('menu-open');
             $('.navbar-inverse').css('height', '85px');
+            $(".navbar").css("overflow", "inherit");
+            $(".border-bottom").show();
             isActive = !isActive;
 
             console.log(isActive);
         }
+    });
+
+    var offset = 220;
+    var duration = 500;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > offset) {
+            console.log("fadein")
+            $('.back-to-top').fadeIn(duration);
+        }
+        else {
+            $('.back-to-top').fadeOut(duration);
+        }
+    });
+
+    $('.back-to-top').click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, duration);
     });
 });
 
