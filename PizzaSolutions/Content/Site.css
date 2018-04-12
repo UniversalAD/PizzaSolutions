@@ -360,6 +360,22 @@ nav {
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
   transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s; }
 
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  z-index: 100; }
+  .back-to-top:focus, .back-to-top:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none; }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -870,93 +886,6 @@ video {
     @media (max-width: 1200px) {
       .magnets img {
         max-width: 361px; } }
-  .magnets p {
-    font-family: "futura_mdcn_btmedium"; }
-  .magnets .btn-wrapper {
-    margin: 5px 0; }
-    .magnets .btn-wrapper .btn.ripped {
-      background-image: url("/Content/Images/Backgrounds/ripped-button-background_07.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: #fff;
-      border-radius: 0;
-      border: none;
-      width: 100%;
-      font-size: 24px;
-      font-family: "futura_hv_btheavy"; }
-      @media (max-width: 1350px) {
-        .magnets .btn-wrapper .btn.ripped {
-          background-size: contain; } }
-
-.black-border {
-  border-bottom: 2px solid #000; }
-
-@font-face {
-  font-family: 'futura_bk_btbook';
-  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'futura_bdcn_btbold';
-  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'futura_hv_btheavy';
-  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'webfontregular';
-  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'futura_mdcn_btmedium';
-  src: url("Fonts/futuramc-webfont.woff2") format("woff2"), url("Fonts/futuramc-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'futura_bt_extrablack';
-  src: url("Fonts/futuraxk-webfont.woff2") format("woff2"), url("Fonts/futuraxk-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'myriadpro-regular';
-  src: url("Fonts/MyriadPro-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'webfontregular-impact';
-  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'futura_md_btbold';
-  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-.impact {
-  font-family: "webfontregular-impact" important; }
-
-.magnets {
-  background-color: #fff;
-  padding-top: 25px; }
-  .magnets img {
-    padding: 0 15px; }
-    @media (max-width: 1200px) {
-      .magnets img {
-        max-width: 361px; } }
     @media (max-width: 768px) {
       .magnets img {
         max-width: 100%; } }
@@ -978,8 +907,7 @@ video {
       border: none;
       width: 100%;
       font-size: 24px;
-      font-family: "futura_hv_btheavy";
-      cursor: default; }
+      font-family: "futura_hv_btheavy"; }
       @media (max-width: 1350px) {
         .magnets .btn-wrapper .btn.ripped {
           background-size: contain; } }

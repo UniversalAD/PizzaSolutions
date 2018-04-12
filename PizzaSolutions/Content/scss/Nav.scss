@@ -121,3 +121,23 @@ nav {
     transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
     transition: 0.4s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    z-index: 100;
+
+    &:focus, &:hover {
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+}
+

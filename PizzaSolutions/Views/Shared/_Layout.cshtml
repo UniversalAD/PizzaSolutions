@@ -11,6 +11,8 @@
 
 </head>
 <body>
+    <a href="#" class="back-to-top">Back to Top</a>
+
     @Html.Partial("_Header")
     <div class="container-fluid">
         @Html.Partial("_SocialPartial")
@@ -28,6 +30,6 @@
     @Scripts.Render("~/Scripts/nav.js")
     @Scripts.Render("~/Scripts/MagnetPartial.js")
     @Scripts.Render("~/Scripts/EmailValidation.js")
-    @RenderSection("scripts", required: false)   
+    @RenderSection("scripts", required: false)
 </body>
 </html>
