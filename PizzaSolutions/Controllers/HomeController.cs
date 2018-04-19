@@ -58,14 +58,14 @@ namespace PizzaSolutions.Controllers
 
             if (ModelState.IsValid)
             {
-                var body = "First Name: {0} <br />  Last Name: {1} <br /> Restaurant: {2} <br /> Position: {3} <br /> Email: {4} <br /> Phone: {5} <br /> Address: {6} <br /> Zip Code: {7} <br /> State: {8} <br /> Avg. Deliveries Per Week: {9} <br /> Avg. Pickups Per Week: {10} <br /> Term Agreement: {11} <br /> E-Signature: {12}";
+                var body = "First Name: {0} <br />  Last Name: {1} <br /> Restaurant: {2} <br /> Position: {3} <br /> Email: {4} <br /> Phone: {5} <br /> Address: {6} <br /> Zip Code: {7} <br /> State: {8} Term Agreement: {9} <br /> E-Signature: {10}";
                 var message = new SendGridMessage();
                 message.AddTo("partnerrelations@universalad.com");
                 message.AddTo("connerg@universalad.com");  // replace with valid value 
                 message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Pizza Solutions Partnership Agreement";
-                message.Html = string.Format(body, model.FirstName, model.LastName, model.Restaurant, model.Position, model.PartnershipEmail, model.PartnershipPhone, model.StreetAddress, model.ZipCode, model.State, model.AverageDelWeek, model.AveragePickupsWeek, model.Agreement, model.ElectronicSignature);
+                message.Html = string.Format(body, model.FirstName, model.LastName, model.Restaurant, model.Position, model.PartnershipEmail, model.PartnershipPhone, model.StreetAddress, model.ZipCode, model.State, model.Agreement, model.ElectronicSignature);
 
                 try
                 {

@@ -26,11 +26,7 @@ namespace PizzaSolutions.Models
         [RegularExpression("[A-Z]{2}")]
         public string State { get; set; }
         [Display(Name = "Zip Code")]
-        public string ZipCode { get; set; }
-        [Display(Name = "Avg. Deliveries Per Week")]
-        public string AverageDelWeek { get; set; }
-        [Display(Name = "Avg. Pickups Per Week")]
-        public string AveragePickupsWeek { get; set; }
+        public string ZipCode { get; set; }      
         [Display(Name = "I have read and accept U.A.C. Terms & Conditions")]
         public bool Agreement { get; set; }
         [Display(Name = "E-Signature")]

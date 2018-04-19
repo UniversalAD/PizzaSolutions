@@ -1,7 +1,10 @@
 ﻿@import 'Typography.scss';
+
 .advertiser-header {
 
     &.partnership {
+        color: #fff;
+
         h2 {
             position: relative;
             text-align: right;
@@ -31,35 +34,57 @@
         }
 
         .black-box {
-            height: 735px;
+            height: 100%;
+            padding-bottom: 25px;
 
-            @media (min-width: 1400px) {
-                height: 800px;
+            h3 {
+                @media (max-width: 480px) {
+                    font-size: 10vw;
+                }
             }
 
-            @media (max-width: 767px) {
-                height: 100%;
-            }          
-        }
+            p {
+                border-top: none;
+                font-family: $myriad_pro_regular;
+                font-size: 14px;
+                text-align: left;
+            }
 
-        p {
-            text-align: left;
-        }
+            &.row {
+                margin-right: auto;
+                margin-left: auto;
+                z-index: auto;
+            }
 
-        .btn-wrapper {
-            width: 100%;
-
-            .btn {
-                margin: 0 auto;
-                display: block;
-                float: none;
-                width: 250px;
-                padding: 10px;
-                margin-top: 25px;
-                font-size: 18px;
-                background-color: $font-red;
-                font-family: $futura-bt-book;
+            img {
+                max-width: 448px;
+                width: 100%;
             }
         }
     }
+}
+
+.disclaimer {
+    background-color: #d4d4d4;
+    height: 250px;
+    overflow: scroll;
+    padding: 5px;
+    color: #000;
+
+    ul {
+        list-style-type: decimal;
+
+        .special {
+            font-weight: 900;
+        }
+    }
+
+    h5 {
+        font-size: 24px;
+        font-weight: 900;
+    }
+}
+
+.form-horizontal {
+    padding: 15px 0;
 }
