@@ -1258,74 +1258,75 @@ video {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.advertiser-header.partnership h2 {
-  position: relative;
-  text-align: right;
-  padding-right: 105px;
-  z-index: 5; }
-  @media (max-width: 768px) {
-    .advertiser-header.partnership h2 {
-      padding-right: 0; } }
-  .advertiser-header.partnership h2:before {
-    content: 'PARTNERSHIP AGREEMENT';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #3d0709;
-    z-index: -1; }
-  .advertiser-header.partnership h2:after {
-    top: -23px; }
-    @media (min-width: 1400px) {
-      .advertiser-header.partnership h2:after {
-        right: 1%; } }
+.advertiser-header.partnership {
+  color: #fff; }
+  .advertiser-header.partnership h2 {
+    position: relative;
+    text-align: right;
+    padding-right: 105px;
+    z-index: 5; }
+    @media (max-width: 768px) {
+      .advertiser-header.partnership h2 {
+        padding-right: 0; } }
+    .advertiser-header.partnership h2:before {
+      content: 'PARTNERSHIP AGREEMENT';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #3d0709;
+      z-index: -1; }
+    .advertiser-header.partnership h2:after {
+      top: -23px; }
+      @media (min-width: 1400px) {
+        .advertiser-header.partnership h2:after {
+          right: 1%; } }
+  .advertiser-header.partnership .black-box {
+    height: 100%;
+    padding-bottom: 25px; }
+    @media (max-width: 480px) {
+      .advertiser-header.partnership .black-box h3 {
+        font-size: 10vw; } }
+    .advertiser-header.partnership .black-box p {
+      border-top: none;
+      font-family: "myriadpro-regular";
+      font-size: 14px;
+      text-align: left; }
+    .advertiser-header.partnership .black-box.row {
+      margin-right: auto;
+      margin-left: auto;
+      z-index: auto; }
+    .advertiser-header.partnership .black-box img {
+      max-width: 448px;
+      width: 100%; }
 
-.advertiser-header.partnership .black-box {
-  height: 735px; }
-  @media (min-width: 1400px) {
-    .advertiser-header.partnership .black-box {
-      height: 800px; } }
-  @media (max-width: 767px) {
-    .advertiser-header.partnership .black-box {
-      height: 100%; } }
-
-.advertiser-header.partnership p {
-  text-align: left; }
-
-.advertiser-header.partnership .btn-wrapper {
-  width: 100%; }
-  .advertiser-header.partnership .btn-wrapper .btn {
-    margin: 0 auto;
-    display: block;
-    float: none;
-    width: 250px;
-    padding: 10px;
-    margin-top: 25px;
-    font-size: 18px;
-    background-color: #ff0000;
-    font-family: "futura_bk_btbook"; }
-
-.modal-dialog {
-  width: 900px; }
-  @media (max-width: 900px) {
-    .modal-dialog {
-      width: 100% !important; } }
-  .modal-dialog .modal-header {
-    border: 0; }
-  .modal-dialog .disclaimer {
-    background-color: #d4d4d4;
-    height: 250px;
-    overflow: scroll;
-    padding: 5px; }
-    .modal-dialog .disclaimer ul {
-      list-style-type: decimal; }
-      .modal-dialog .disclaimer ul .special {
-        font-weight: 900; }
-    .modal-dialog .disclaimer h5 {
-      font-size: 24px;
+.disclaimer {
+  background-color: #d4d4d4;
+  height: 250px;
+  overflow: scroll;
+  padding: 5px;
+  color: #000; }
+  .disclaimer ul {
+    list-style-type: decimal; }
+    .disclaimer ul .special {
       font-weight: 900; }
-  .modal-dialog .form-horizontal {
-    padding: 15px 0; }
+  .disclaimer h5 {
+    font-size: 24px;
+    font-weight: 900; }
 
+.form-horizontal {
+  padding: 15px 0; }
+
+/*.modal-dialog {
+    width: 900px;
+
+    @media (max-width: 900px) {
+        width: 100% !important;
+    }
+
+    .modal-header {
+        border: 0;*/
+/*}*/
+/*}*/
 #error, #Parterror {
   color: red; }
 

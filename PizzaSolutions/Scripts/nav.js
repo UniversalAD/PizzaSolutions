@@ -51,7 +51,6 @@
     var duration = 500;
     $(window).scroll(function() {
         if ($(this).scrollTop() > offset) {
-            console.log("fadein")
             $('.back-to-top').fadeIn(duration);
         }
         else {

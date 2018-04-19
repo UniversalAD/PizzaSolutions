@@ -1,4 +1,4 @@
-﻿.modal-dialog {
+﻿/*.modal-dialog {
     width: 900px;
 
     @media (max-width: 900px) {
@@ -6,33 +6,10 @@
     }
 
     .modal-header {
-        border: 0;
-    }
-        
-        .disclaimer {
-        background-color: #d4d4d4;
-        height: 250px;
-        overflow: scroll;
-        padding: 5px;
+        border: 0;*/
+/*}*/
 
-        ul {
-            list-style-type: decimal;
-
-            .special {
-                font-weight: 900;
-            }
-        }
-
-        h5 {
-            font-size: 24px;
-            font-weight: 900;
-        }
-    }
-
-    .form-horizontal {
-        padding: 15px 0;
-    }
-}
+/*}*/
 
 #error, #Parterror {
     color: red;
