@@ -1570,6 +1570,32 @@ video {
     transition: 2s !important;
     transform: translate(0, 0) !important; }
 
+.productModal .product-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -150%);
+  margin-bottom: 75px;
+  max-width: 90px; }
+
+.productModal ul {
+  list-style-type: none; }
+  .productModal ul li {
+    display: inline-block;
+    border: 3px inset #d4d4d4;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; }
+    .productModal ul li.red {
+      background-color: red; }
+    .productModal ul li.green {
+      background-color: green; }
+    .productModal ul li.black {
+      background-color: black; }
+    .productModal ul li.white {
+      background-color: white; }
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;

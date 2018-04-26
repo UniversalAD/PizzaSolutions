@@ -347,6 +347,8 @@
     <Content Include="Content\Images\Facebook.png" />
     <Content Include="Content\Images\Instagrame_05.png" />
     <Content Include="Content\Images\johnnys_05.png" />
+    <Content Include="Content\Images\Logos\dominos-logo.png" />
+    <Content Include="Content\Images\Logos\pizz-hut.png" />
     <Content Include="Content\Images\logo_02.png" />
     <Content Include="Content\Images\magnet-delivered_03.png" />
     <Content Include="Content\Images\Magnets-Veggies.jpg" />
@@ -372,6 +374,11 @@
     <Content Include="Content\Images\Products\Firehouse-Pizza---Back_Peoria-Ia.png" />
     <Content Include="Content\Images\Products\Firehouse-Pizza---Front_Peoria-Ia.png" />
     <Content Include="Content\Images\Products\girl-eating-pizza_03.png" />
+    <Content Include="Content\Images\Products\half-cups_03.png" />
+    <Content Include="Content\Images\Products\half-Dominos-shirt_03.png" />
+    <Content Include="Content\Images\Products\half-koosie_07.png" />
+    <Content Include="Content\Images\Products\half-sport_07.png" />
+    <Content Include="Content\Images\Products\half-totes_06.png" />
     <Content Include="Content\Images\Products\Jet%27s-Pizza-Green.png" />
     <Content Include="Content\Images\Products\Jet%27s-Pizza-Sports-Bottle.png" />
     <Content Include="Content\Images\Products\Jet%27s-Pizza.png" />
@@ -455,6 +462,7 @@
     <Content Include="Content\Fonts\impact-webfont.woff2" />
     <Content Include="Content\scss\CourouselModal.scss" />
     <Content Include="Content\scss\MoreForYourPizzeria.scss" />
+    <Content Include="Content\scss\ProductModal.scss" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -537,6 +545,7 @@
     <Content Include="Views\Shared\_FreeAdModal.cshtml" />
     <Content Include="Views\Shared\_CarouselModal.cshtml" />
     <Content Include="Views\Home\MoreForYourPizzeria.cshtml" />
+    <Content Include="Views\Shared\_ProductModal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Images\" />

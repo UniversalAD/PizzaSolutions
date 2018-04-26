@@ -59,14 +59,14 @@
 <section class="slide-group products relative">
     <div class="row">
         <div id="shirts" class="col-lg-10 center-block slide-items shirts slide-open">
-            <div class="col-lg-3 box maroon-back" data-target="ProdcuctModal" data-toggle="modal"><img src="@Url.Content("/Content/Images/Products/Dominos-Pizza---Back_Oakland-Ca.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box yellow-back"><img src="@Url.Content("/Content/Images/Products/Dominos-Pizza---Front_Oakland-Ca.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box red-back"><img src="@Url.Content("/Content/Images/Products/Pizza-Hut---Front_Sioux-Ctr.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box teal-back"><img src="@Url.Content("/Content/Images/Products/Pizza-Hut---Back_Sioux-Ctr.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box green-back"><img src="@Url.Content("~/Content/Images/Products/Firehouse-Pizza---Front_Peoria-Ia.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box orange-back"><img src="@Url.Content("~/Content/Images/Products/Firehouse-Pizza---Back_Peoria-Ia.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box teal-back"><img src="@Url.Content("~/Content/Images/Products/Pizza-Palace---Front_Scott-La.png")" class="img-responsive" /></div>
-            <div class="col-lg-3 box green-back"><img src="@Url.Content("/Content/Images/Products/Pizza-Palace---Back_Scott-La.png")" class="img-responsive" /></div>
+            <div class="col-lg-3 box maroon-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("/Content/Images/Products/Dominos-Pizza---Back_Oakland-Ca.png")" id="dominos" class="img-responsive dominos" /></div>
+            <div class="col-lg-3 box yellow-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("/Content/Images/Products/Dominos-Pizza---Front_Oakland-Ca.png")" id="dominos" class="img-responsive" /></div>
+            <div class="col-lg-3 box red-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("/Content/Images/Products/Pizza-Hut---Front_Sioux-Ctr.png")" id="pizza-hut" class="img-responsive" /></div>
+            <div class="col-lg-3 box teal-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("/Content/Images/Products/Pizza-Hut---Back_Sioux-Ctr.png")" id="pizza-hut" class="img-responsive" /></div>
+            <div class="col-lg-3 box green-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("~/Content/Images/Products/Firehouse-Pizza---Front_Peoria-Ia.png")" id="firehouse" class="img-responsive" /></div>
+            <div class="col-lg-3 box orange-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("~/Content/Images/Products/Firehouse-Pizza---Back_Peoria-Ia.png")" id="firehouse" class="img-responsive" /></div>
+            <div class="col-lg-3 box teal-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("~/Content/Images/Products/Pizza-Palace---Front_Scott-La.png")" id="palace" class="img-responsive" /></div>
+            <div class="col-lg-3 box green-back" data-target="#ProductModal" data-toggle="modal"><img src="@Url.Content("/Content/Images/Products/Pizza-Palace---Back_Scott-La.png")" id="palace" class="img-responsive" /></div>
         </div>
     </div>
     <div class="row">
@@ -103,6 +103,8 @@
         </div>
     </div>
 </section>
+
+@Html.Partial("_ProductModal")
 
 @section Scripts {
     @Scripts.Render("~/Scripts/ProductSlickSlider.js");
