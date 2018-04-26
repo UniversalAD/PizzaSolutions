@@ -50,6 +50,11 @@ namespace PizzaSolutions.Controllers
             return View();
         }
 
+        public ActionResult MoreForYourPizzeria()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
