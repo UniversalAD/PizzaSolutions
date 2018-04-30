@@ -14,7 +14,7 @@
         cursor: pointer;
 
         &.main-products {
-            min-height: 255px;
+            min-height: 295px;
         }
 
         &.green-back {
@@ -63,13 +63,14 @@
         }
     }
 
-    img, .shirts, .cups, .sports, .koosie, .totes {
+    img, .shirts, .cup, .sports, .koosie, .totes {
         max-height: 296px;
         object-fit: contain;
         margin: 0 auto;
+        display: block;
     }
 
-    .totes, .cups, .sports, .shirts, .koosie {
+    .totes, .cups, .sports, .shirts, .koosies {
         display: none;
     }
 
