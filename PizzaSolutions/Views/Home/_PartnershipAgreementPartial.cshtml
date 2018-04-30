@@ -107,19 +107,19 @@
                         We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.
                     </p>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="margin-top: 5px;">
                     <div class="col-xs-8 col-md-6">
                         @Html.LabelFor(m => m.Agreement, new { @class = "form-label" })
                     </div>
-                    <div class="col-xs-2 col-md-2">
+                    <div class="col-xs-2 col-sm-2 col-sm-pull-1 col-md-2 col-md-pull-1">
                         @Html.CheckBoxFor(m => m.Agreement, new { required = "required" })
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         @Html.LabelFor(m => m.Attachment, new { @class = "form-label" })
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         @Html.TextBox("file", "", new { type = "file" })
                     </div>
                 </div>

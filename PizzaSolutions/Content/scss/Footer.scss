@@ -1,8 +1,9 @@
 ﻿@import 'Typography.scss';
 
-footer {
+.footer {
     padding: 5px 0;
     background-color: #ed1c24;
+    max-height: 182px;
 
     ul {
         list-style-type: none;

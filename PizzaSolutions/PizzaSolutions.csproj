@@ -347,6 +347,18 @@
     <Content Include="Content\Images\Facebook.png" />
     <Content Include="Content\Images\Instagrame_05.png" />
     <Content Include="Content\Images\johnnys_05.png" />
+    <Content Include="Content\Images\Logos\Depot-The-1Pizzeria.png" />
+    <Content Include="Content\Images\Logos\Depot-The-Pizzeria.png" />
+    <Content Include="Content\Images\Logos\Dominos-Back.png" />
+    <Content Include="Content\Images\Logos\Dominos.png" />
+    <Content Include="Content\Images\Logos\Dominos_rev.png" />
+    <Content Include="Content\Images\Logos\Pizza-Hut---Cup_for-black-cup.png" />
+    <Content Include="Content\Images\Logos\Pizza-Hut---Cup_for-white-cup.png" />
+    <Content Include="Content\Images\Logos\Pizza-Hut---Logo.png" />
+    <Content Include="Content\Images\Logos\Pizza-Palace-of-Scott-Tote-Bag-Black.png" />
+    <Content Include="Content\Images\Logos\Pizza-Palace-of-Scott-Tote-Back.png" />
+    <Content Include="Content\Images\Logos\Tote-Bag-Ad.Blk.png" />
+    <Content Include="Content\Images\Logos\Tote-Bag-Ad.png" />
     <Content Include="Content\Images\logo_02.png" />
     <Content Include="Content\Images\magnet-delivered_03.png" />
     <Content Include="Content\Images\Magnets-Veggies.jpg" />
@@ -365,6 +377,57 @@
     <Content Include="Content\Images\pizza-ranch_05.png" />
     <Content Include="Content\Images\PizzaHut-Kitchen-Conversion-Magnet_03.png" />
     <Content Include="Content\Images\PizzaHut-Schedule-Magnet_03.png" />
+    <Content Include="Content\Images\Products\Dominos-Pizza---Back_Oakland-Ca.png" />
+    <Content Include="Content\Images\Products\Dominos-Pizza---Front_Oakland-Ca.png" />
+    <Content Include="Content\Images\Products\Dominos-Pizza-Sports-Bottles.png" />
+    <Content Include="Content\Images\Products\Dominos-Pizza-Tote.png" />
+    <Content Include="Content\Images\Products\Firehouse-Pizza---Back_Peoria-Ia.png" />
+    <Content Include="Content\Images\Products\Firehouse-Pizza---Front_Peoria-Ia.png" />
+    <Content Include="Content\Images\Products\girl-eating-pizza_03.png" />
+    <Content Include="Content\Images\Products\half-cups_03.png" />
+    <Content Include="Content\Images\Products\half-Dominos-shirt_03.png" />
+    <Content Include="Content\Images\Products\half-koosie_07.png" />
+    <Content Include="Content\Images\Products\half-sport_07.png" />
+    <Content Include="Content\Images\Products\half-totes_06.png" />
+    <Content Include="Content\Images\Products\Jet%27s-Pizza-Green.png" />
+    <Content Include="Content\Images\Products\Jet%27s-Pizza-Sports-Bottle.png" />
+    <Content Include="Content\Images\Products\Jet%27s-Pizza.png" />
+    <Content Include="Content\Images\Products\Koosie-1.png" />
+    <Content Include="Content\Images\Products\Koosie-2.png" />
+    <Content Include="Content\Images\Products\Koosie-3.png" />
+    <Content Include="Content\Images\Products\Koosie-4.png" />
+    <Content Include="Content\Images\Products\Little-Ceasars-Tote.png" />
+    <Content Include="Content\Images\Products\Little-Caesars-Cup.png" />
+    <Content Include="Content\Images\Products\Little-Caesars-Sports-Bottle.png" />
+    <Content Include="Content\Images\Products\No_Logo\Black-Back.png" />
+    <Content Include="Content\Images\Products\No_Logo\Black-Front.png" />
+    <Content Include="Content\Images\Products\No_Logo\cup-green.png" />
+    <Content Include="Content\Images\Products\No_Logo\cup-red.png" />
+    <Content Include="Content\Images\Products\No_Logo\cupblack.png" />
+    <Content Include="Content\Images\Products\No_Logo\cupwhite.png" />
+    <Content Include="Content\Images\Products\No_Logo\Grey-Back.png" />
+    <Content Include="Content\Images\Products\No_Logo\Grey-Front.png" />
+    <Content Include="Content\Images\Products\No_Logo\Koosie-Black.png" />
+    <Content Include="Content\Images\Products\No_Logo\Koosie-Red.png" />
+    <Content Include="Content\Images\Products\No_Logo\Koosie-White.png" />
+    <Content Include="Content\Images\Products\No_Logo\Red-Back.png" />
+    <Content Include="Content\Images\Products\No_Logo\Red-Front.png" />
+    <Content Include="Content\Images\Products\No_Logo\Tote-Bags_Black.png" />
+    <Content Include="Content\Images\Products\No_Logo\Tote-Bags_Blue.png" />
+    <Content Include="Content\Images\Products\No_Logo\Tote-Bags_Canvas.png" />
+    <Content Include="Content\Images\Products\No_Logo\Tote-Bags_Green.png" />
+    <Content Include="Content\Images\Products\No_Logo\Tote-Bags_Red.png" />
+    <Content Include="Content\Images\Products\No_Logo\White-Back.png" />
+    <Content Include="Content\Images\Products\No_Logo\White-Front.png" />
+    <Content Include="Content\Images\Products\Pizza-Hut---Back_Sioux-Ctr.png" />
+    <Content Include="Content\Images\Products\Pizza-Hut---Front_Sioux-Ctr.png" />
+    <Content Include="Content\Images\Products\Pizza-Hut-Sports-Bottle.png" />
+    <Content Include="Content\Images\Products\Pizza-Hut-Tote.png" />
+    <Content Include="Content\Images\Products\Pizza-Hut.png" />
+    <Content Include="Content\Images\Products\Pizza-Palace---Back_Scott-La.png" />
+    <Content Include="Content\Images\Products\Pizza-Palace---Front_Scott-La.png" />
+    <Content Include="Content\Images\Products\Pizza-Palace-of-Scott.png" />
+    <Content Include="Content\Images\Products\Pizza-Palace-Tote.png" />
     <Content Include="Content\Images\reasons_bubbles_03.png" />
     <Content Include="Content\Images\Rosa---Kitchen-Conversion.png" />
     <Content Include="Content\Site.css">
@@ -373,6 +436,10 @@
     <Content Include="Content\Site.min.css">
       <DependentUpon>Site.css</DependentUpon>
     </Content>
+    <Content Include="Content\Slick\ajax-loader.gif" />
+    <Content Include="Content\Slick\fonts\slick.svg" />
+    <Content Include="Content\Slick\slick-theme.css" />
+    <Content Include="Content\Slick\slick.css" />
     <Content Include="Content\Video\AdComm_3.2.18.mp4" />
     <Content Include="Content\Video\Thank_You.mp4" />
     <Content Include="favicon.ico" />
@@ -424,12 +491,19 @@
     <Content Include="Content\Fonts\impact-webfont.woff" />
     <Content Include="Content\Fonts\impact-webfont.woff2" />
     <Content Include="Content\scss\CourouselModal.scss" />
+    <Content Include="Content\scss\MoreForYourPizzeria.scss" />
+    <Content Include="Content\scss\ProductModal.scss" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Slick\slick.scss" />
+    <Content Include="Content\Slick\slick-theme.scss" />
+    <Content Include="Content\Slick\fonts\slick.woff" />
+    <Content Include="Content\Slick\fonts\slick.ttf" />
+    <Content Include="Content\Slick\fonts\slick.eot" />
     <None Include="Properties\PublishProfiles\PizzaSolutions - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CarouselSwitch.js" />
@@ -444,8 +518,12 @@
     <Content Include="Scripts\MagnetPartial.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\nav.js" />
+    <Content Include="Scripts\products.js" />
+    <Content Include="Scripts\ProductSlickSlider.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Slick\slick.js" />
+    <Content Include="Scripts\Slick\slick.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -496,6 +574,8 @@
     <Content Include="Views\Shared\_FreeAdContact.cshtml" />
     <Content Include="Views\Shared\_FreeAdModal.cshtml" />
     <Content Include="Views\Shared\_CarouselModal.cshtml" />
+    <Content Include="Views\Home\MoreForYourPizzeria.cshtml" />
+    <Content Include="Views\Shared\_ProductModal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Images\" />

@@ -74,6 +74,8 @@
   @media (max-width: 767px) {
     .navbar-inverse .navbar-header {
       height: 0; } }
+  .navbar-inverse .logo {
+    max-width: 200px; }
 
 @media (max-width: 767px) {
   nav {
@@ -82,9 +84,9 @@
 nav ul li {
   display: inline-block !important;
   padding: 7px; }
-  @media (max-width: 1100px) and (min-width: 768px) {
+  @media (max-width: 1100px) and (min-width: 767px) {
     nav ul li {
-      padding: 7px 4px; } }
+      padding: 7px 3px; } }
   @media (max-width: 767px) {
     nav ul li {
       display: block !important;
@@ -185,6 +187,9 @@ nav ul li {
   /* Microsoft Edge */
   color: #fff;
   padding-left: 5px; }
+
+.navbar-nav .navbar {
+  min-width: 660px; }
 
 .social {
   position: fixed;
@@ -1390,37 +1395,38 @@ video {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-footer {
+.footer {
   padding: 5px 0;
-  background-color: #ed1c24; }
-  footer ul {
+  background-color: #ed1c24;
+  max-height: 182px; }
+  .footer ul {
     list-style-type: none; }
     @media (max-width: 767px) {
-      footer ul {
+      .footer ul {
         margin: 0 auto;
         padding-left: 0; } }
-    footer ul li {
+    .footer ul li {
       padding: 2px 0; }
       @media (max-width: 767px) {
-        footer ul li {
+        .footer ul li {
           display: inline-block;
           text-align: center; } }
       @media (max-width: 480px) {
-        footer ul li {
+        .footer ul li {
           display: block; } }
-      footer ul li a {
+      .footer ul li a {
         color: #fff;
         font-family: "futura_bk_btbook"; }
-  footer h3 {
+  .footer h3 {
     font-family: "futura_bk_btbook"; }
-  footer address {
+  .footer address {
     font-family: "futura_bk_btbook"; }
   @media (max-width: 767px) {
-    footer iframe {
+    .footer iframe {
       width: 100%;
       height: 100%; } }
   @media (max-width: 480px) {
-    footer .center-small {
+    .footer .center-small {
       width: 100%;
       margin: 0 auto;
       display: block;
@@ -1454,6 +1460,166 @@ footer {
   .carousel-indicators li {
     border-color: #d4d4d4;
     background-color: #d4d4d4; }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_mdcn_btmedium';
+  src: url("Fonts/futuramc-webfont.woff2") format("woff2"), url("Fonts/futuramc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bt_extrablack';
+  src: url("Fonts/futuraxk-webfont.woff2") format("woff2"), url("Fonts/futuraxk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url("Fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
+.more-heading {
+  margin-top: 89px; }
+
+.products {
+  padding-bottom: 50px; }
+  .products .box {
+    max-height: 325px;
+    min-height: 325px;
+    padding: 10px;
+    cursor: pointer; }
+    .products .box.main-products {
+      min-height: 295px; }
+    .products .box.green-back {
+      background-color: #3d602e; }
+    .products .box.teal-back {
+      background-color: #27ada7; }
+    .products .box.yellow-back {
+      background-color: #fff100; }
+    .products .box.red-back {
+      background-color: #ff0000; }
+    .products .box.orange-back {
+      background-color: #bd6928; }
+    .products .box.maroon-back {
+      background-color: #7f1416; }
+    .products .box.girl-eating-pizza {
+      background-image: url("/Content/Images/Products/girl-eating-pizza_03.png");
+      background-size: cover; }
+    .products .box h4 {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      font-size: 4.4em;
+      color: #000;
+      font-family: "futura_bt_extrablack";
+      transform: translate(-50%, 0);
+      z-index: 100; }
+    .products .box .display-item {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .products img, .products .shirts, .products .cup, .products .sports, .products .koosie, .products .totes {
+    max-height: 296px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block; }
+  .products .totes, .products .cups, .products .sports, .products .shirts, .products .koosies {
+    display: none; }
+  .products .slide-open {
+    display: block;
+    margin-top: 50px;
+    transition: 2s !important;
+    transform: translate(0, 0) !important; }
+
+.productModal .product-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -150%);
+  margin-bottom: 75px;
+  max-width: 90px; }
+  .productModal .product-logo.back {
+    max-width: 140px;
+    transform: translate(-45%, -180%); }
+  .productModal .product-logo.cup {
+    max-width: 120px;
+    transform: translate(-45%, -60%); }
+  .productModal .product-logo.tote {
+    transform: translate(-55%, -40%); }
+  .productModal .product-logo.tote-second-logo {
+    max-width: 140px; }
+  .productModal .product-logo.koosie {
+    max-width: 180px;
+    transform: translate(-63%, -50%); }
+
+.productModal ul {
+  list-style-type: none;
+  padding-left: 25px; }
+  .productModal ul li {
+    display: inline-block;
+    border: 3px inset #d4d4d4;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; }
+    .productModal ul li.red {
+      background-color: #a70415; }
+    .productModal ul li.gray {
+      background-color: #b0afb5; }
+    .productModal ul li.black {
+      background-color: #13161b; }
+    .productModal ul li.white {
+      background-color: white; }
+    .productModal ul li.green {
+      background-color: green; }
+    .productModal ul li.canvas {
+      background-color: #c9b67b; }
+    .productModal ul li.blue {
+      background-color: blue;
+      display: none; }
+
+.productModal .ModalProductsImage {
+  margin-bottom: 15px; }
 
 body {
   padding-top: 50px;

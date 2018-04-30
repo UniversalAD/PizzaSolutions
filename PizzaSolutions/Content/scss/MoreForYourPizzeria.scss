@@ -1,0 +1,83 @@
+﻿@import 'Typography.scss';
+
+.more-heading {
+    margin-top: 89px;
+}
+
+.products {
+    padding-bottom: 50px;
+
+    .box {
+        max-height: 325px;
+        min-height: 325px;
+        padding: 10px;
+        cursor: pointer;
+
+        &.main-products {
+            min-height: 295px;
+        }
+
+        &.green-back {
+            background-color: #3d602e;
+        }
+
+        &.teal-back {
+            background-color: #27ada7;
+        }
+
+        &.yellow-back {
+            background-color: #fff100;
+        }
+
+        &.red-back {
+            background-color: $font-red;
+        }
+
+        &.orange-back {
+            background-color: #bd6928;
+        }
+
+        &.maroon-back {
+            background-color: #7f1416;
+        }
+
+        &.girl-eating-pizza {
+            background-image: url("/Content/Images/Products/girl-eating-pizza_03.png");
+            background-size: cover;
+        }
+
+        h4 {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            font-size: 4.4em;
+            color: #000;
+            font-family: "futura_bt_extrablack";
+            transform: translate(-50%, 0);
+            z-index: 100;
+        }
+        .display-item {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    img, .shirts, .cup, .sports, .koosie, .totes {
+        max-height: 296px;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .totes, .cups, .sports, .shirts, .koosies {
+        display: none;
+    }
+
+    .slide-open {
+        display: block;
+        margin-top: 50px;
+        transition: 2s !important;
+        transform: translate(0, 0) !important;
+    }
+}

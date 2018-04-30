@@ -1,0 +1,80 @@
+﻿.productModal {
+    .product-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%, -150%);
+        margin-bottom: 75px;
+        max-width: 90px;
+
+        &.back {
+            max-width: 140px;
+            transform: translate(-45%, -180%);
+        }
+
+        &.cup {
+            max-width: 120px;
+            transform: translate(-45%, -60%);
+        }
+
+        &.tote {
+            transform: translate(-55%, -40%);
+        }
+
+        &.tote-second-logo {
+            max-width: 140px;
+        }
+
+        &.koosie {
+            max-width: 180px;
+            transform: translate(-63%, -50%);
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 25px;
+
+        li {
+            display: inline-block;
+            border: 3px inset #d4d4d4;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            &.red {
+                background-color: #a70415;
+            }
+
+            &.gray {
+                background-color: #b0afb5;
+            }
+
+            &.black {
+                background-color: #13161b;
+            }
+
+            &.white {
+                background-color: white;
+            }
+
+            &.green {
+                background-color: green;
+            }
+
+            &.canvas {
+                background-color: #c9b67b;
+            }
+
+            &.blue {
+                background-color: blue;
+                display: none;
+            }
+        }
+    }
+
+    .ModalProductsImage {
+        margin-bottom: 15px;
+    }
+}
