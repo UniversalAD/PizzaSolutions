@@ -26,6 +26,7 @@
             $("#green, #canvas, #blue, #orange").hide();
             $("#red, #black, #white, #gray").show();
             $(".product-logo").attr("src", logoPath + "/Dominos.png");
+            $("#Color").val(productColor);
 
             if (productColor == "gray") {
                 $(".ModalProductsImage").attr("src", path + "/Grey-Front.png");
@@ -46,6 +47,7 @@
             $(".product-logo").addClass("cup");
             $("#blue, #canvas, #orange, #white").hide();
             $("#gray, #black, #red, #green").show();
+            $("#Color").val(productColor);
 
             if (productColor == "black") {
                 $(".ModalProductsImage").attr("src", path + "/cupblack.png");
@@ -69,6 +71,8 @@
             $(".product-logo").attr("src", "");
             $("#black, #gray, #white, #canvas").hide();
             $("#blue, #orange, #red, #green").show();
+            $("#Color").val(productColor);
+
             if (productColor == "blue") {
                 $(".ModalProductsImage").attr("src", product + "/Dominos-Pizza-Sports-Bottles.png");
             }
@@ -88,6 +92,7 @@
             $(".product-logo").addClass("tote");
             $("#gray, #white, #orange").hide();
             $("#canvas, #black, #red, #blue, #green").show();
+            $("#Color").val(productColor);
 
             if (productColor == "blue") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Blue.png");
@@ -116,6 +121,7 @@
             $(".product-logo").attr("src", logoPath + "/Depot-The-1Pizzeria.png");
             $("#blue, #gray, #canvas, #orange, #green").hide();
             $("#red, #black, #white").show();
+            $("#Color").val(productColor);
 
             if (productColor == "black") {
                 $(".ModalProductsImage").attr("src", path + "/Koosie-Black.png");
@@ -133,6 +139,7 @@
 
     $(".color-pick").click(function () {
         var id = $(this).attr("id");
+        $("#Color").val(id);
 
         if (productTypeSelection == "shirt") {
             if (id == "gray") {
