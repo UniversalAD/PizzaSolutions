@@ -1520,14 +1520,24 @@ video {
 
 .more-heading {
   margin-top: 89px; }
+  .more-heading h2 {
+    font-size: 3.5em;
+    color: #fff;
+    font-family: "futura_bt_extrablack"; }
 
 .products {
   padding-bottom: 50px; }
+  @media (max-width: 767px) {
+    .products {
+      padding-bottom: 0; } }
   .products .box {
     max-height: 325px;
     min-height: 325px;
     padding: 10px;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .products .box {
+        margin-bottom: 15px; } }
     .products .box.main-products {
       min-height: 295px; }
     .products .box.green-back {
@@ -1558,6 +1568,10 @@ video {
       position: absolute;
       bottom: 0;
       left: 0; }
+      @media (max-width: 767px) {
+        .products .box .display-item {
+          left: 50%;
+          transform: translate(-50%, 0); } }
   .products img, .products .shirts, .products .cup, .products .sports, .products .koosie, .products .totes {
     max-height: 296px;
     object-fit: contain;
@@ -1585,9 +1599,10 @@ video {
     max-width: 120px;
     transform: translate(-45%, -60%); }
   .productModal .product-logo.tote {
-    transform: translate(-55%, -40%); }
-  .productModal .product-logo.tote-second-logo {
+    transform: translate(-55%, -40%);
     max-width: 140px; }
+  .productModal .product-logo.tote-back {
+    max-width: 90px; }
   .productModal .product-logo.koosie {
     max-width: 180px;
     transform: translate(-63%, -50%); }
@@ -1615,11 +1630,13 @@ video {
     .productModal ul li.canvas {
       background-color: #c9b67b; }
     .productModal ul li.blue {
-      background-color: blue;
-      display: none; }
+      background-color: blue; }
+    .productModal ul li.orange {
+      background-color: orange; }
 
 .productModal .ModalProductsImage {
-  margin-bottom: 15px; }
+  max-height: 388px;
+  margin: 0 auto 15px auto; }
 
 body {
   padding-top: 50px;

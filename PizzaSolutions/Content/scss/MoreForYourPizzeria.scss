@@ -2,16 +2,30 @@
 
 .more-heading {
     margin-top: 89px;
+
+    h2 {
+        font-size: 3.5em;
+        color : $font-white;
+        font-family: $futura_bt_extra_black;
+    }
 }
 
 .products {
     padding-bottom: 50px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
 
     .box {
         max-height: 325px;
         min-height: 325px;
         padding: 10px;
         cursor: pointer;
+
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
 
         &.main-products {
             min-height: 295px;
@@ -60,6 +74,11 @@
             position: absolute;
             bottom: 0;
             left: 0;
+
+            @media (max-width: 767px) {
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
         }
     }
 

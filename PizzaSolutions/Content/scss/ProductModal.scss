@@ -19,10 +19,11 @@
 
         &.tote {
             transform: translate(-55%, -40%);
+            max-width: 140px;
         }
 
-        &.tote-second-logo {
-            max-width: 140px;
+        &.tote-back {
+            max-width: 90px;
         }
 
         &.koosie {
@@ -69,12 +70,15 @@
 
             &.blue {
                 background-color: blue;
-                display: none;
+            }
+            &.orange {
+                background-color: orange;
             }
         }
     }
 
     .ModalProductsImage {
-        margin-bottom: 15px;
+        max-height: 388px;
+        margin: 0 auto 15px auto;
     }
 }

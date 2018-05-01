@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     var path = "/Content/Images/Products/No_Logo";
     var logoPath = "/Content/Images/Logos";
+    var product = "/Content/Images/Products";
     var productColorSelection;
     var productTypeSelection;
 
@@ -21,10 +22,9 @@
         var productSelection = $(this).find("img").attr("class");
 
         if (productSelection == "shirt") {
-            $(".product-logo").removeClass("cup tote tote-second-logo koosie");
-            $("#white").removeClass("canvas");
-            $("#gray").removeClass("green");
-            $(".blue").css("display", "none");
+            $(".product-logo").removeClass("cup tote koosie");
+            $("#green, #canvas, #blue, #orange").hide();
+            $("#red, #black, #white, #gray").show();
             $(".product-logo").attr("src", logoPath + "/Dominos.png");
 
             if (productColor == "gray") {
@@ -44,10 +44,8 @@
         if (productSelection == "cup") {
             $(".product-logo").removeClass("tote tote-second-logo koosie");
             $(".product-logo").addClass("cup");
-            $("#white").removeClass("canvas");
-            $("#gray").addClass("green");
-            $(".blue").css("display", "none");
-
+            $("#blue, #canvas, #orange, #white").hide();
+            $("#gray, #black, #red, #green").show();
 
             if (productColor == "black") {
                 $(".ModalProductsImage").attr("src", path + "/cupblack.png");
@@ -68,45 +66,57 @@
         }
 
         if (productSelection == "sport") {
-            $(".product-logo").attr("src", logoPath + "/dominos-logo.png");
-            $(".ModalProductsImage").attr("src", path + "/");
+            $(".product-logo").attr("src", "");
+            $("#black, #gray, #white, #canvas").hide();
+            $("#blue, #orange, #red, #green").show();
+            if (productColor == "blue") {
+                $(".ModalProductsImage").attr("src", product + "/Dominos-Pizza-Sports-Bottles.png");
+            }
+            if (productColor == "orange") {
+                $(".ModalProductsImage").attr("src", product + "/Little-Caesars-Sports-Bottle.png");
+            }
+            if (productColor == "red") {
+                $(".ModalProductsImage").attr("src", product + "/Pizza-Hut-Sports-Bottle.png");
+            }
+            if (productColor == "green") {
+                $(".ModalProductsImage").attr("src", product + "/Jet's-Pizza-Sports-Bottle.png");
+            }
         }
 
         if (productSelection == "tote") {
             $(".product-logo").removeClass("cup koosie");
             $(".product-logo").addClass("tote");
-            $(".product-logo").removeClass("tote-second-logo");
-            $("#gray").addClass("green");
-            $("#white").addClass("canvas");
-            $(".blue").css("display", "inline-block");
+            $("#gray, #white, #orange").hide();
+            $("#canvas, #black, #red, #blue, #green").show();
 
             if (productColor == "blue") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Blue.png");
-                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Bag-Black.png");
-                $(".product-logo").addClass("tote-second-logo");
+                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
             }
             if (productColor == "black") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Black.png");
-                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
             }
             if (productColor == "red") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Red.png");
-                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
             }
             if (productColor == "green") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Green.png");
-                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
             }
             if (productColor == "canvas") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Canvas.png");
-                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Bag-Black.png");
-                $(".product-logo").addClass("tote-second-logo");
+                $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
             }
         }
 
         if (productSelection == "koosie") {
             $(".product-logo").addClass("koosie");
             $(".product-logo").attr("src", logoPath + "/Depot-The-1Pizzeria.png");
+            $("#blue, #gray, #canvas, #orange, #green").hide();
+            $("#red, #black, #white").show();
+
             if (productColor == "black") {
                 $(".ModalProductsImage").attr("src", path + "/Koosie-Black.png");
             }
@@ -141,13 +151,13 @@
             if (id == "red") {
                 $(".ModalProductsImage").attr("src", path + "/cup-red.png");
             }
-            if (id == "gray") {
+            if (id == "green") {
                 $(".ModalProductsImage").attr("src", path + "/cup-green.png");
             }
             if (id == "black") {
                 $(".ModalProductsImage").attr("src", path + "/cupblack.png");
             }
-            if (id == "white") {
+            if (id == "gray") {
                 $(".ModalProductsImage").attr("src", path + "/cupwhite.png");
                 $(".product-logo").attr("src", logoPath + "/Pizza-Hut---Cup_for-white-cup.png");
             }
@@ -157,10 +167,10 @@
             if (id == "black") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Black.png");
             }
-            if (id == "gray") {
+            if (id == "green") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Green.png");
             }
-            if (id == "white") {
+            if (id == "canvas") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Canvas.png");
             }
             if (id == "red") {
@@ -168,6 +178,34 @@
             }
             if (id == "blue") {
                 $(".ModalProductsImage").attr("src", path + "/Tote-Bags_Blue.png");
+            }
+        }
+
+        if (productTypeSelection == "koosie") {
+            if (id == "red") {
+                $(".ModalProductsImage").attr("src", path + "/Koosie-Red.png");
+            }
+            if (id == "black") {
+                $(".ModalProductsImage").attr("src", path + "/Koosie-Black.png");
+            }
+            if (id == "white") {
+                $(".ModalProductsImage").attr("src", path + "/Koosie-White.png");
+            }
+
+        }
+
+        if (productTypeSelection == "sport") {
+            if (id == "blue") {
+                $(".ModalProductsImage").attr("src", product + "/Dominos-Pizza-Sports-Bottles.png");
+            }
+            if (id == "orange") {
+                $(".ModalProductsImage").attr("src", product + "/Little-Caesars-Sports-Bottle.png");
+            }
+            if (id == "red") {
+                $(".ModalProductsImage").attr("src", product + "/Pizza-Hut-Sports-Bottle.png");
+            }
+            if (id == "green") {
+                $(".ModalProductsImage").attr("src", product + "/Jet's-Pizza-Sports-Bottle.png");
             }
         }
         productColorSelection = id;
@@ -194,31 +232,30 @@
                     }
                 }
 
-                //if (productTypeSelection == "tote") {
-                //    console.log(productTypeSelection);
-                //    console.log(productColorSelection);
-                //    if (productColorSelection == "white") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //    if (productColorSelection == "canvas") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //    if (productColorSelection == "black") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //    if (productColorSelection == "green") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //    if (productColorSelection == "red") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //    if (productColorSelection == "blue") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //    if (productColorSelection == "gray") {
-                //        $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                //    }
-                //}
+                if (productTypeSelection == "tote") {
+                    $(".product-logo").addClass("tote-back");
+                    if (productColorSelection == "white") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                    if (productColorSelection == "canvas") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                    if (productColorSelection == "black") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                    if (productColorSelection == "green") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                    if (productColorSelection == "red") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                    if (productColorSelection == "blue") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                    if (productColorSelection == "gray") {
+                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+                    }
+                }
             })
             .mouseout(function () {
                 if (productTypeSelection == "shirt") {
@@ -237,10 +274,10 @@
                         $(this).attr("src", path + "/Red-Front.png");
                     }
                 }
-
-                //if (productTypeSelection == "tote") {
-                //    $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Bag-Black.png");
-                //}
-            })
+                if (productTypeSelection == "tote") {
+                    $(".product-logo").removeClass("tote-back");
+                    $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
+                }
+            });
     });
 });
