@@ -123,6 +123,9 @@
             if (productColor == "gray") {
                 $(".ModalProductsImage").attr("src", path + "/Koosie-White.png");
             }
+            if (productColor == "red") {
+                $(".ModalProductsImage").attr("src", path + "/Koosie-Red.png");
+            }
         }
         productTypeSelection = productSelection;
         productColorSelection = productColor;
