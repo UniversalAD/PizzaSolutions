@@ -31,7 +31,7 @@
                 <div id="totes-slide" class="col-sm-4 col-md-4 col-lg-4 box main-products orange-back relative">
                     <h4 class="text-center">TOTES</h4>
                     <a data-target="#totes">
-                        <img src="@Url.Content("/Content/Images/Products/half-totes_06.png")" class="img-responsive display-item" />
+                        <img src="@Url.Content("/Content/Images/Products/half-totes_03.png")" class="img-responsive display-item" />
                     </a>
                 </div>
             </div>
@@ -106,8 +106,14 @@
     </div>
 </section>
 
+@Html.Partial("_EmailContact")
+
 @Html.Partial("_ProductModal")
 
 @section Scripts {
     @Scripts.Render("~/Scripts/ProductSlickSlider.js");
+
+    <script>
+        $("#productForm").validate();
+    </script>
 }

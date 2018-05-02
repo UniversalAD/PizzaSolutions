@@ -15,11 +15,18 @@
         else {
             $(item).addClass("slide-open");
         }
+        $('html, body').animate({
+            scrollTop: $(item).offset().top - 150
+        }, 2000);
     });
 
     $(".box").click(function () {
         var productColor = $(this).find("img").attr("name");
         var productSelection = $(this).find("img").attr("class");
+        $("#Color").show();
+        $("#ColorLabel").show();
+        $("#LogoColorLabel").hide();
+        $("#LogoColor").hide();
 
         if (productSelection == "shirt") {
             $(".product-logo").removeClass("cup tote koosie");
@@ -71,7 +78,10 @@
             $(".product-logo").attr("src", "");
             $("#black, #gray, #white, #canvas").hide();
             $("#blue, #orange, #red, #green").show();
-            $("#Color").val(productColor);
+            $("#Color, #ColorLabel").hide();
+            $("#Color").val("");
+            $("#LogoColor, #LogoColorLabel").show();
+            $("#LogoColor").val(productColor);
 
             if (productColor == "blue") {
                 $(".ModalProductsImage").attr("src", product + "/Dominos-Pizza-Sports-Bottles.png");
@@ -201,10 +211,12 @@
             if (id == "white") {
                 $(".ModalProductsImage").attr("src", path + "/Koosie-White.png");
             }
-
         }
 
         if (productTypeSelection == "sport") {
+            $("#LogoColorLabel, #LogoColor").show();
+            $("#LogoColor").val(id);
+
             if (id == "blue") {
                 $(".ModalProductsImage").attr("src", product + "/Dominos-Pizza-Sports-Bottles.png");
             }

@@ -36,6 +36,17 @@ $("#partnershipAgreement").on('submit', function (e) {
     }
 });
 
+$("#productForm").on('submit', function (e) {
+    var isValid = $("#productForm").valid();
+    if (isValid, validatePhone('ProductPhone')) {
+        return true;
+    }
+    else {
+        e.preventDefault();
+        return false;
+    }
+})
+
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
     var filter = /(\d{3})\-?(\d{3})\-?(\d{4})/;
@@ -94,6 +105,23 @@ $(document).ready(function () {
         else {
             $('#partnershipPhoneStatus').html('Invalid Phone');
             $('#partnershipPhoneStatus').css('color', 'red');
+        }
+    });
+});
+
+//product phone form
+$(document).ready(function () {
+    $("input[name='ProductPhone']").keyup(function () {
+        $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/, '$1-$2-$3'));
+
+        if (validatePhone('ProductPhone')) {
+            $('#productPhoneStatus').html('Valid Phone');
+            $('#productPhoneStatus').css('color', 'green');
+        }
+
+        else {
+            $('#productPhoneStatus').html('Invalid Phone');
+            $('#productPhoneStatus').css('color', 'red');
         }
     });
 });

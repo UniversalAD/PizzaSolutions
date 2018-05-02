@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $('.shirts').slick({
+    $('.shirts').not('.slick-initialized').slick({
         dots: false,
         infinite: true,
         lazyLoad: 'ondemand',
@@ -33,7 +33,7 @@
     });
 
     $("#totes-slide").click(function () {
-        $('.totes').slick({
+        $('.totes').not('.slick-initialized').slick({
             dot: false,
             infinite: true,
             lazyload: 'ondemand',
@@ -67,7 +67,7 @@
         });
     });
     $("#cups-slide").click(function () {
-        $('.cups').slick({
+        $('.cups').not('.slick-initialized').slick({
             dot: false,
             infinite: true,
             lazyload: 'ondemand',
@@ -101,7 +101,7 @@
         });
     });
     $("#sports-slide").click(function () {
-        $('.sports').slick({
+        $('.sports').not('.slick-initialized').slick({
             dot: false,
             infinite: true,
             lazyload: 'ondemand',
@@ -135,7 +135,7 @@
         });
     });
     $("#koosie-slide").click(function () {
-        $('.koosies').slick({
+        $('.koosies').not('.slick-initialized').slick({
             dot: false,
             infinite: true,
             lazyload: 'ondemand',

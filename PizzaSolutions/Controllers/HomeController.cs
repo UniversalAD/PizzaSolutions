@@ -232,5 +232,89 @@ namespace PizzaSolutions.Controllers
             return RedirectToAction("MessageSend", "Home");
 
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult _ProductForm(ProductForm model, HttpPostedFileBase file)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var body = "Name :{0} <br /> Email: {1} <br /> Phone: {2} <br /> Company Name:{3} <br /> Website/Facebook: {4} <br /> Product Color: {5} <br /> Logo Color: {6}";
+                var message = new SendGridMessage();
+                //message.AddTo("partnerrelations@universalad.com");
+                //message.AddTo("connerg@universalad.com");  // replace with valid value 
+                message.AddTo("chrisg@universalad.com");
+                message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
+                message.Subject = "Product Selection Form";
+                message.Html = string.Format(body, model.Name, model.Email, model.ProductPhone, model.CompanyName, model.WebsiteFacebook, model.Color, model.LogoColor);
+
+                try
+                {
+                    if (file.ContentLength > 0)
+                    {
+                        var fileName = Path.GetFileName(file.FileName);
+                        var path = Path.Combine(Server.MapPath("~/App_Data/Images"), fileName);
+                        file.SaveAs(path);
+
+                        message.AddAttachment(path);
+
+                        //Azure credentials
+
+                        var username = ConfigurationManager.AppSettings["sendGridUser"];
+                        var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
+
+                        // variable to store azure credentials
+                        var credentials = new NetworkCredential(username, pswd);
+                        // Create an Web transport for sending email.
+                        var transportWeb = new Web(credentials);
+
+                        // Send the email, which returns an awaitable task.
+                        transportWeb.DeliverAsync(message);
+
+                        ModelState.Clear(); //clears form when page reload
+
+                        return RedirectToAction("ProductFormConfirmation", "Home", new { model.Name, model.Email});
+                    }
+                }
+
+                catch
+                {
+                    var username = ConfigurationManager.AppSettings["sendGridUser"];
+                    var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
+
+                    var credentials = new NetworkCredential(username, pswd);
+                    var transportWeb = new Web(credentials);
+
+                    transportWeb.DeliverAsync(message);
+
+                    ModelState.Clear(); //clears form when page reload
+
+                    return RedirectToAction("ProductFormConfirmation", "Home", new { model.Name, model.Email });
+                }
+            }
+            return View(model);
+        }
+
+        public ActionResult ProductFormConfirmation(string Email, string Name)
+        {
+            var message = new SendGridMessage();
+            message.AddTo(Email);
+            message.From = new MailAddress("partnerrelations@universalad.com");
+            message.Subject = "Your So Close!";
+            var body = "<p>{0}, Thanks for letting us do this for you!</p><p>What happens now is.. we get the art process started.</ p><p>Our team of designers and typesetters are crazy good and super experienced so it shouldn't take too long. However, we do always give ourselves at least 24 hours, depending on the day. We'll send you a proof within that time frame and if we have any questions we'll be sure to give you a call or send you an email.</p><p>Happy Branding!<br />~ Pizza Solutions</p>";
+            message.Html = String.Format(body, Name);
+
+            var username = ConfigurationManager.AppSettings["sendGridUser"];
+            var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
+
+            var credentials = new NetworkCredential(username, pswd);
+            var transportWeb = new Web(credentials);
+
+            transportWeb.DeliverAsync(message);
+
+            ModelState.Clear(); //clears form when page reload
+
+            return RedirectToAction("MessageSend", "Home");
+        }
     }
 }

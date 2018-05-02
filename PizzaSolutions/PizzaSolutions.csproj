@@ -378,6 +378,8 @@
     <Content Include="Content\Images\pizza-ranch_05.png" />
     <Content Include="Content\Images\PizzaHut-Kitchen-Conversion-Magnet_03.png" />
     <Content Include="Content\Images\PizzaHut-Schedule-Magnet_03.png" />
+    <Content Include="Content\Images\Products\cup-red-product.png" />
+    <Content Include="Content\Images\Products\Depot-The---1Pizzeria.png" />
     <Content Include="Content\Images\Products\Dominos-Pizza---Back_Oakland-Ca.png" />
     <Content Include="Content\Images\Products\Dominos-Pizza---Front_Oakland-Ca.png" />
     <Content Include="Content\Images\Products\Dominos-Pizza-Sports-Bottles.png" />
@@ -389,7 +391,8 @@
     <Content Include="Content\Images\Products\half-Dominos-shirt_03.png" />
     <Content Include="Content\Images\Products\half-koosie_07.png" />
     <Content Include="Content\Images\Products\half-sport_07.png" />
-    <Content Include="Content\Images\Products\half-totes_06.png" />
+    <Content Include="Content\Images\Products\half-totes_03.png" />
+    <Content Include="Content\Images\Products\Hungry-Howies.png" />
     <Content Include="Content\Images\Products\Jet%27s-Pizza-Green.png" />
     <Content Include="Content\Images\Products\Jet%27s-Pizza-Sports-Bottle.png" />
     <Content Include="Content\Images\Products\Jet%27s-Pizza.png" />

@@ -3,32 +3,33 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-45%, -150%);
+        transform: translate(-45%, -200%);
         margin-bottom: 75px;
         max-width: 90px;
 
         &.back {
             max-width: 140px;
-            transform: translate(-45%, -180%);
+            transform: translate(-45%, -260%);
         }
 
         &.cup {
             max-width: 120px;
-            transform: translate(-45%, -60%);
+            transform: translate(-45%, -100%);
         }
 
         &.tote {
-            transform: translate(-55%, -40%);
+            transform: translate(-55%, -120%);
             max-width: 140px;
         }
 
         &.tote-back {
+            transform: translate(-55%, -75%);
             max-width: 90px;
         }
 
         &.koosie {
             max-width: 180px;
-            transform: translate(-63%, -50%);
+            transform: translate(-63%, -70%);
         }
     }
 
@@ -71,6 +72,7 @@
             &.blue {
                 background-color: blue;
             }
+
             &.orange {
                 background-color: orange;
             }
@@ -80,5 +82,9 @@
     .ModalProductsImage {
         max-height: 388px;
         margin: 0 auto 15px auto;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
