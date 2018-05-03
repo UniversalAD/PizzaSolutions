@@ -18,7 +18,7 @@
         }
 
         .black-box {
-            height: 450px;
+            height: 500px;
 
             @media (min-width: 1600px) {
                 height: 650px !important;
@@ -30,6 +30,18 @@
             
             @media (max-width: 767px) {
                 height: 100%;
+            }
+
+            .btn {
+                display: block;
+                max-width: 200px;
+                font-family: $futura-bt-book;
+
+                &.red {
+                    background-color: $font-red;
+                    color: $font-white;
+                    margin:  0 auto;
+                }
             }
         }
         

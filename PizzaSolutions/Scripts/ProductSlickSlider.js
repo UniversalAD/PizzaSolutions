@@ -1,5 +1,4 @@
-﻿$(document).ready(function () {
-    $('.shirts').not('.slick-initialized').slick({
+﻿    $('.shirts').not('.slick-initialized').slick({
         dots: false,
         infinite: true,
         lazyLoad: 'ondemand',
@@ -168,4 +167,3 @@
             ]
         });
     });
-});

@@ -19,19 +19,19 @@
         $("#header-2").replaceWith("<h2>PARTNERSHIP AGREEMENT</h2>");
         $("#header-3").text("Sign Up");
         $("#img").attr("src", "/Content/Images/agreement_magnet.png");
-    //    $('#para1').text("");
-    //    $('#para2').text("");
-    //    $('#para3').text("");
-    //    $('#para4').text("");
-    //    $('#para5').text("");
-    //    $('#para6').text("");
-    //    $('.partnershipform').show();
-    //    //$("#para1").text("");
-    $("#para2").text("This agreement confirms that Pizza Solutions will provide FREE CUSTOM COMMUNITY GUIDE MAGNETS in accordance with the terms of this agreement.");
-    $("#para3").text("This agreement will go into effect upon examination of e-signatures and will remain in effect until one or both parties elect to terminate agreement in writing. The undersigned represents that he/she has been duly authorized to enter into this agreement and grants Pizza Solutions limited authorization to use the organization's name solely for the purpose of acquiring sponsorship from local businesses or organizations that may be interested in supporting the Custom Community Guide.");
-    $("#para4").text('Depending on local business participation and support, under this agreement Pizza Solutions will provide up to, but no obligated to 1000 large, "4 x 6" high quality magnets on an as-needed or quarterly basis that will be distributed to your customers upon delivery of pizza. This is a COST FREE program for your company and will feature your business large and bold as the headliner on our Customer Community Guide.')
-    $("#para5").text("In addition to allowing Pizza Solutions to use your name as a distributor point, we also ask that you affirm to local businesses, if asked, that you have endorsed the Custom Guide, and that their participation is very worthwhile in this advertising campaign.")
-    $("#para6").text("Thank you for your support.");
+        //    $('#para1').text("");
+        //    $('#para2').text("");
+        //    $('#para3').text("");
+        //    $('#para4').text("");
+        //    $('#para5').text("");
+        //    $('#para6').text("");
+        //    $('.partnershipform').show();
+        //    //$("#para1").text("");
+        $("#para2").text("This agreement confirms that Pizza Solutions will provide FREE CUSTOM COMMUNITY GUIDE MAGNETS in accordance with the terms of this agreement.");
+        $("#para3").text("This agreement will go into effect upon examination of e-signatures and will remain in effect until one or both parties elect to terminate agreement in writing. The undersigned represents that he/she has been duly authorized to enter into this agreement and grants Pizza Solutions limited authorization to use the organization's name solely for the purpose of acquiring sponsorship from local businesses or organizations that may be interested in supporting the Custom Community Guide.");
+        $("#para4").text('Depending on local business participation and support, under this agreement Pizza Solutions will provide up to, but no obligated to 1000 large, "4 x 6" high quality magnets on an as-needed or quarterly basis that will be distributed to your customers upon delivery of pizza. This is a COST FREE program for your company and will feature your business large and bold as the headliner on our Customer Community Guide.')
+        $("#para5").text("In addition to allowing Pizza Solutions to use your name as a distributor point, we also ask that you affirm to local businesses, if asked, that you have endorsed the Custom Guide, and that their participation is very worthwhile in this advertising campaign.")
+        $("#para6").text("Thank you for your support.");
     };
     //    //var signupBtn = "<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#PartnershipModal'>Click Here to Sign Up</button >";
     //    //$('#button').append(signupBtn);
@@ -48,6 +48,8 @@
         $("#para4").text('Tip: Offer the magnet at the door. This will reduce the risk of unwanted, wasted magnets and leave more for the customers who use magnets.')
         $("#para5").text("")
         $("#para6").text("");
+        var moreProductsBtn = "<a href='Products' class='btn btn-default red'>More Products</a>";
+        $('#button').append(moreProductsBtn);
     }
     else {
         return false;

@@ -40,7 +40,7 @@
     .black-box {
         background-color: #000;
         border-radius: 15px;
-        padding: 5px;
+        padding: 5px 5px 10px 5px;
         height: 465px;
 
         @media (min-width: 1400px) {
@@ -49,6 +49,7 @@
 
         @media (max-width: 767px) {
             height: 100%;
+            border-radius: 0;
         }
 
         img {

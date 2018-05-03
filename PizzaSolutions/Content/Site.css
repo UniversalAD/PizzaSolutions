@@ -1017,14 +1017,15 @@ video {
   .advertiser-header .black-box {
     background-color: #000;
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px 5px 10px 5px;
     height: 465px; }
     @media (min-width: 1400px) {
       .advertiser-header .black-box {
         height: 550px; } }
     @media (max-width: 767px) {
       .advertiser-header .black-box {
-        height: 100%; } }
+        height: 100%;
+        border-radius: 0; } }
     @media (min-width: 1400px) {
       .advertiser-header .black-box img {
         margin: 0 auto;
@@ -1195,7 +1196,7 @@ video {
         top: -11px; } }
 
 .advertiser-header.distributors .black-box {
-  height: 450px; }
+  height: 500px; }
   @media (min-width: 1600px) {
     .advertiser-header.distributors .black-box {
       height: 650px !important; } }
@@ -1205,6 +1206,14 @@ video {
   @media (max-width: 767px) {
     .advertiser-header.distributors .black-box {
       height: 100%; } }
+  .advertiser-header.distributors .black-box .btn {
+    display: block;
+    max-width: 200px;
+    font-family: "futura_bk_btbook"; }
+    .advertiser-header.distributors .black-box .btn.red {
+      background-color: #ff0000;
+      color: #fff;
+      margin: 0 auto; }
 
 .advertiser-header.distributors p {
   text-align: left; }
@@ -1722,7 +1731,6 @@ video {
 
 body {
   padding-top: 50px;
-  padding-bottom: 20px;
   background-color: #000; }
 
 /* Set padding to keep content from hitting the edges */
