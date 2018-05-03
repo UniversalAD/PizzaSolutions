@@ -495,7 +495,7 @@
     <Content Include="Content\Fonts\impact-webfont.woff" />
     <Content Include="Content\Fonts\impact-webfont.woff2" />
     <Content Include="Content\scss\CourouselModal.scss" />
-    <Content Include="Content\scss\MoreForYourPizzeria.scss" />
+    <Content Include="Content\scss\Products.scss" />
     <Content Include="Content\scss\ProductModal.scss" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
@@ -578,7 +578,7 @@
     <Content Include="Views\Shared\_FreeAdContact.cshtml" />
     <Content Include="Views\Shared\_FreeAdModal.cshtml" />
     <Content Include="Views\Shared\_CarouselModal.cshtml" />
-    <Content Include="Views\Home\MoreForYourPizzeria.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Shared\_ProductModal.cshtml" />
   </ItemGroup>
   <ItemGroup>

@@ -113,7 +113,7 @@ nav ul li {
 
 @media (min-width: 768px) and (max-width: 899px) {
   .navbar-nav {
-    transform: translate(-14%, 85%); } }
+    transform: translate(-4%, 85%); } }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .navbar-nav {
@@ -190,6 +190,9 @@ nav ul li {
 
 .navbar-nav .navbar {
   min-width: 660px; }
+  @media (max-width: 767px) {
+    .navbar-nav .navbar {
+      min-width: 100%; } }
 
 .social {
   position: fixed;
@@ -1399,6 +1402,9 @@ video {
   padding: 5px 0;
   background-color: #ed1c24;
   max-height: 182px; }
+  @media (max-width: 767px) {
+    .footer {
+      max-height: 100%; } }
   .footer ul {
     list-style-type: none; }
     @media (max-width: 767px) {
@@ -1568,7 +1574,7 @@ video {
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%, 0); }
+      transform: translate(-50%, 0.3%); }
   .products img, .products .shirts, .products .cup, .products .sports, .products .koosie, .products .totes {
     max-height: 296px;
     object-fit: contain;
@@ -1581,6 +1587,80 @@ video {
     margin-top: 50px;
     transition: 2s !important;
     transform: translate(0, 0) !important; }
+
+@media (max-width: 767px) {
+  .slick-next {
+    right: 25px;
+    z-index: 10; } }
+
+@media (max-width: 767px) {
+  .slick-prev {
+    left: 25px;
+    z-index: 10; } }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_mdcn_btmedium';
+  src: url("Fonts/futuramc-webfont.woff2") format("woff2"), url("Fonts/futuramc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bt_extrablack';
+  src: url("Fonts/futuraxk-webfont.woff2") format("woff2"), url("Fonts/futuraxk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url("Fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
+.productModal .modal-header .close {
+  margin-top: -72px; }
+
+.productModal .modal-title {
+  font-size: 3em;
+  font-family: "futura_bt_extrablack"; }
 
 .productModal .product-logo {
   position: absolute;
@@ -1634,7 +1714,8 @@ video {
 
 .productModal .ModalProductsImage {
   max-height: 388px;
-  margin: 0 auto 15px auto; }
+  margin: 0 auto 15px auto;
+  cursor: pointer; }
 
 .productModal .btn {
   width: 100%; }

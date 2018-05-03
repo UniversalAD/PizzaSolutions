@@ -85,7 +85,7 @@ nav {
     }
 
     @media (min-width: 768px) and (max-width: 899px) {
-        transform: translate(-14%, 85%);
+        transform: translate(-4%, 85%);
     }
 
 
@@ -175,6 +175,10 @@ nav {
 
     .navbar {
         min-width: 660px;
+
+        @media (max-width: 767px) {
+            min-width: 100%;
+        }
     }
 }
 

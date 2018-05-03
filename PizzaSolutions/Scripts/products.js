@@ -129,8 +129,8 @@
         if (productSelection == "koosie") {
             $(".product-logo").addClass("koosie");
             $(".product-logo").attr("src", logoPath + "/Depot-The-1Pizzeria.png");
-            $("#blue, #gray, #canvas, #orange, #green").hide();
-            $("#red, #black, #white").show();
+            $("#blue, #white, #canvas, #orange, #green").hide();
+            $("#red, #black, #gray").show();
             $("#Color").val(productColor);
 
             if (productColor == "black") {
@@ -145,6 +145,8 @@
         }
         productTypeSelection = productSelection;
         productColorSelection = productColor;
+
+        $("#Product").val(productTypeSelection);
     });
 
     $(".color-pick").click(function () {
@@ -208,7 +210,7 @@
             if (id == "black") {
                 $(".ModalProductsImage").attr("src", path + "/Koosie-Black.png");
             }
-            if (id == "white") {
+            if (id == "gray") {
                 $(".ModalProductsImage").attr("src", path + "/Koosie-White.png");
             }
         }
@@ -232,74 +234,75 @@
         }
         productColorSelection = id;
     });
+    function mouseDown() {
+        if (productTypeSelection == "shirt") {
+            $(".product-logo").addClass("back");
+            $(".product-logo").attr("src", logoPath + "/Dominos-Back.png");
 
-    $(function () {
-        $(".ModalProductsImage")
-            .mouseover(function () {
-                if (productTypeSelection == "shirt") {
-                    $(".product-logo").attr("src", logoPath + "/Dominos-Back.png");
-                    $(".product-logo").addClass("back");
+            if (productColorSelection == "gray") {
+                $(this).attr("src", path + "/Grey-Back.png");
+            }
+            if (productColorSelection == "black") {
+                $(this).attr("src", path + "/Black-Back.png");
+            }
+            if (productColorSelection == "white") {
+                $(this).attr("src", path + "/White-Back.png");
+            }
+            if (productColorSelection == "red") {
+                $(this).attr("src", path + "/Red-Back.png");
+            }
+        }
 
-                    if (productColorSelection == "gray") {
-                        $(this).attr("src", path + "/Grey-Back.png");
-                    }
-                    if (productColorSelection == "black") {
-                        $(this).attr("src", path + "/Black-Back.png");
-                    }
-                    if (productColorSelection == "white") {
-                        $(this).attr("src", path + "/White-Back.png");
-                    }
-                    if (productColorSelection == "red") {
-                        $(this).attr("src", path + "/Red-Back.png");
-                    }
-                }
+        if (productTypeSelection == "tote") {
+            $(".product-logo").addClass("tote-back");
+            if (productColorSelection == "white") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+            if (productColorSelection == "canvas") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+            if (productColorSelection == "black") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+            if (productColorSelection == "green") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+            if (productColorSelection == "red") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+            if (productColorSelection == "blue") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+            if (productColorSelection == "gray") {
+                $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
+            }
+        }
+    };
+    function mouseUp() {
+        if (productTypeSelection == "shirt") {
+            $(".product-logo").removeClass("back");
+            $(".product-logo").attr("src", logoPath + "/Dominos.png");
 
-                if (productTypeSelection == "tote") {
-                    $(".product-logo").addClass("tote-back");
-                    if (productColorSelection == "white") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                    if (productColorSelection == "canvas") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                    if (productColorSelection == "black") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                    if (productColorSelection == "green") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                    if (productColorSelection == "red") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                    if (productColorSelection == "blue") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                    if (productColorSelection == "gray") {
-                        $(".product-logo").attr("src", logoPath + "/Tote-Bag-Ad.png");
-                    }
-                }
-            })
-            .mouseout(function () {
-                if (productTypeSelection == "shirt") {
-                    $(".product-logo").removeClass("back");
-                    $(".product-logo").attr("src", logoPath + "/Dominos.png");
-                    if (productColorSelection == "gray") {
-                        $(this).attr("src", path + "/Grey-Front.png");
-                    }
-                    if (productColorSelection == "black") {
-                        $(this).attr("src", path + "/Black-Front.png");
-                    }
-                    if (productColorSelection == "white") {
-                        $(this).attr("src", path + "/White-Front.png");
-                    }
-                    if (productColorSelection == "red") {
-                        $(this).attr("src", path + "/Red-Front.png");
-                    }
-                }
-                if (productTypeSelection == "tote") {
-                    $(".product-logo").removeClass("tote-back");
-                    $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
-                }
-            });
-    });
+            if (productColorSelection == "gray") {
+                $(this).attr("src", path + "/Grey-Front.png");
+            }
+            if (productColorSelection == "black") {
+                $(this).attr("src", path + "/Black-Front.png");
+            }
+            if (productColorSelection == "white") {
+                $(this).attr("src", path + "/White-Front.png");
+            }
+            if (productColorSelection == "red") {
+                $(this).attr("src", path + "/Red-Front.png");
+            }
+        }
+        if (productTypeSelection == "tote") {
+            $(".product-logo").removeClass("tote-back");
+            $(".product-logo").attr("src", logoPath + "/Pizza-Palace-of-Scott-Tote-Back.png");
+        }
+    };
+    $(".ModalProductsImage").mousedown(mouseDown);
+    $(".ModalProductsImage").mouseup(mouseUp);
+
 });
+

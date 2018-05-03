@@ -75,7 +75,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, .3%);
         }
     }
 
@@ -95,5 +95,19 @@
         margin-top: 50px;
         transition: 2s !important;
         transform: translate(0, 0) !important;
+    }
+}
+
+.slick-next {
+    @media (max-width: 767px) {
+        right: 25px;
+        z-index: 10;
+    }
+}
+
+.slick-prev {
+    @media (max-width: 767px) {
+        left: 25px;
+        z-index: 10;
     }
 }

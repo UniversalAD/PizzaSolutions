@@ -50,7 +50,7 @@ namespace PizzaSolutions.Controllers
             return View();
         }
 
-        public ActionResult MoreForYourPizzeria()
+        public ActionResult Products()
         {
             return View();
         }
@@ -239,14 +239,14 @@ namespace PizzaSolutions.Controllers
 
             if (ModelState.IsValid)
             {
-                var body = "Name :{0} <br /> Email: {1} <br /> Phone: {2} <br /> Company Name:{3} <br /> Website/Facebook: {4} <br /> Product Color: {5} <br /> Logo Color: {6}";
+                var body = "Name: {0} <br /> Email: {1} <br /> Phone: {2} <br /> Company Name: {3} <br /> Website/Facebook: {4} <br /> Product: {5} <br /> Product Color: {6} <br /> Logo Color: {7}";
                 var message = new SendGridMessage();
                 //message.AddTo("partnerrelations@universalad.com");
                 //message.AddTo("connerg@universalad.com");  // replace with valid value 
                 message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Product Selection Form";
-                message.Html = string.Format(body, model.Name, model.Email, model.ProductPhone, model.CompanyName, model.WebsiteFacebook, model.Color, model.LogoColor);
+                message.Html = string.Format(body, model.Name, model.Email, model.ProductPhone, model.CompanyName, model.WebsiteFacebook, model.Product, model.Color, model.LogoColor);
 
                 try
                 {
@@ -273,7 +273,7 @@ namespace PizzaSolutions.Controllers
 
                         ModelState.Clear(); //clears form when page reload
 
-                        return RedirectToAction("ProductFormConfirmation", "Home", new { model.Name, model.Email});
+                        return RedirectToAction("ProductFormConfirmation", "Home", new { model.Name, model.Email });
                     }
                 }
 
@@ -301,7 +301,12 @@ namespace PizzaSolutions.Controllers
             message.AddTo(Email);
             message.From = new MailAddress("partnerrelations@universalad.com");
             message.Subject = "Your So Close!";
-            var body = "<p>{0}, Thanks for letting us do this for you!</p><p>What happens now is.. we get the art process started.</ p><p>Our team of designers and typesetters are crazy good and super experienced so it shouldn't take too long. However, we do always give ourselves at least 24 hours, depending on the day. We'll send you a proof within that time frame and if we have any questions we'll be sure to give you a call or send you an email.</p><p>Happy Branding!<br />~ Pizza Solutions</p>";
+            var body = "<table style='width: 90%;' table-align='center'><table style='width: 80%; border: solid 2px #d4d4d4; padding: 10px; font-family:  Arial, Helvetica, sans-serif;' table-align='center'>" +
+                "<th style='font-size: 18px; padding: 5px;'>Your So Close</th>" +
+                "<tr><td style='padding: 5px;'>{0},</td></tr>" +
+                " <tr><td style='padding: 5px;'>Thanks for letting us do this for you!</td></tr>" +
+                "<tr><td style='padding: 5px;'>What happens now is.. we get the art process started.Our team of designers and typesetters are crazy good and super experienced so it shouldn't take too long. However, we do always give ourselves at least 24 hours, depending on the day. We'll send you a proof within that time frame and if we have any questions we'll be sure to give you a call or send you an email.</td></tr>" +
+                "<tr><td style='padding: 5px;'>Happy Branding!<br /><br />~ Pizza Solutions</td></tr></table></table>";
             message.Html = String.Format(body, Name);
 
             var username = ConfigurationManager.AppSettings["sendGridUser"];

@@ -12,6 +12,7 @@ namespace PizzaSolutions.Models
         public string Email { get; set; }
         [Display(Name = "Phone")]
         public string ProductPhone { get; set; }
+        public string Product { get; set; }
         [Display (Name = "Company Name")]
         public string CompanyName { get; set; }
         [Display(Name = "Logo Color")]

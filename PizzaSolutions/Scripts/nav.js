@@ -32,7 +32,7 @@
     $("#contact").click(function () {
         console.log("clicked log");
         $('html, body').animate({
-            scrollTop: $("#contactUs").offset().top
+            scrollTop: $("#contactUs").offset().top - 100
         }, 2000);
 
         if ($(window).width() < 767) {
