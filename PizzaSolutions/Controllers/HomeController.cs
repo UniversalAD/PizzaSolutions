@@ -241,8 +241,8 @@ namespace PizzaSolutions.Controllers
             {
                 var body = "Name: {0} <br /> Email: {1} <br /> Phone: {2} <br /> Company Name: {3} <br /> Website/Facebook: {4} <br /> Product: {5} <br /> Product Color: {6} <br /> Logo Color: {7}";
                 var message = new SendGridMessage();
-                //message.AddTo("partnerrelations@universalad.com");
-                //message.AddTo("connerg@universalad.com");  // replace with valid value 
+                message.AddTo("partnerrelations@universalad.com");
+                message.AddTo("connerg@universalad.com");  // replace with valid value 
                 message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");  // replace with valid value
                 message.Subject = "Product Selection Form";
