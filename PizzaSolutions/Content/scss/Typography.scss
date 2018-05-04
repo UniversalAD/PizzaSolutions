@@ -1,8 +1,7 @@
 ﻿
 @font-face {
     font-family: 'futura_bk_btbook';
-    src: url('Fonts/futuran-webfont.woff2') format('woff2'), 
-         url('Fonts/futuran-webfont.woff') format('woff');
+    src: url('Fonts/futuran-webfont.woff2') format('woff2'), url('Fonts/futuran-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,40 +9,35 @@
 
 @font-face {
     font-family: 'futura_bdcn_btbold';
-    src: url('Fonts/futurabc-webfont.woff2') format('woff2'), 
-         url('Fonts/futurabc-webfont.woff') format('woff');
+    src: url('Fonts/futurabc-webfont.woff2') format('woff2'), url('Fonts/futurabc-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'futura_hv_btheavy';
-    src: url('Fonts/futurah-webfont.woff2') format('woff2'), 
-         url('Fonts/futurah-webfont.woff') format('woff');
+    src: url('Fonts/futurah-webfont.woff2') format('woff2'), url('Fonts/futurah-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'webfontregular';
-    src: url('Fonts/myriadpro-boldit-webfont.woff2') format('woff2'), 
-         url('Fonts/myriadpro-boldit-webfont.woff') format('woff');
+    src: url('Fonts/myriadpro-boldit-webfont.woff2') format('woff2'), url('Fonts/myriadpro-boldit-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'futura_mdcn_btmedium';
-    src: url('Fonts/futuramc-webfont.woff2') format('woff2'),
-         url('Fonts/futuramc-webfont.woff') format('woff');
+    src: url('Fonts/futuramc-webfont.woff2') format('woff2'), url('Fonts/futuramc-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'futura_bt_extrablack';
-    src: url('Fonts/futuraxk-webfont.woff2') format('woff2'), 
-         url('Fonts/futuraxk-webfont.woff') format('woff');
+    src: url('Fonts/futuraxk-webfont.woff2') format('woff2'), url('Fonts/futuraxk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -58,21 +52,24 @@
 
 @font-face {
     font-family: 'webfontregular-impact';
-    src: url('Fonts/impact-webfont.woff2') format('woff2'), 
-         url('Fonts/impact-webfont.woff') format('woff');
+    src: url('Fonts/impact-webfont.woff2') format('woff2'), url('Fonts/impact-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'futura_md_btbold';
-    src: url('Fonts/futurab-webfont.woff2') format('woff2'), 
-         url('Fonts/futurab-webfont.woff') format('woff');
+    src: url('Fonts/futurab-webfont.woff2') format('woff2'), url('Fonts/futurab-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-
+@font-face {
+    font-family: 'bebasregular';
+    src: url('Fonts/bebas___-webfont.woff2') format('woff2'), url('Fonts/bebas___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 $futura-bt-book: 'futura_bk_btbook';
 $impact: 'webfontregular-impact';
@@ -83,8 +80,11 @@ $myriad_pro_regular_boldit: 'webfontregular';
 $futura-bt-condensed: 'futura_mdcn_btmedium';
 $myriad_pro_regular: 'myriadpro-regular';
 $futura_bt_extra_black: 'futura_bt_extrablack';
+$bebasregular: 'bebasregular';
 
 $font-white: #fff;
 $font-red: #ff0000;
 
-.impact {font-family: $impact important; }
+.impact {
+    font-family: $impact important;
+}

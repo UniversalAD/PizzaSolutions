@@ -501,6 +501,8 @@
     <Content Include="Content\scss\Products.scss" />
     <Content Include="Content\scss\ProductModal.scss" />
     <Content Include="Content\scss\Splash.scss" />
+    <Content Include="Content\Fonts\bebas___-webfont.woff" />
+    <Content Include="Content\Fonts\bebas___-webfont.woff2" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

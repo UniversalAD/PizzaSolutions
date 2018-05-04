@@ -6,16 +6,16 @@
 <section class="splash">
     <div class="row">
         <div class="col-lg-10 center-block bricks">
-            <div class="col-lg-8 center-block">
+            <div class="col-md-8 center-block">
                 <img src="@Url.Content("/Content/Images/Splash/Pizza_02.png")" class="img-responsive" />
-                <div class="col-lg-5 center-block">
+                <div class="col-xs-9 col-sm-5 col-md-5 col-lg-5 center-block p-bottom-25">
                     <img src="@Url.Content("/Content/Images/logo_02.png")" class="img-responsive" />
                 </div>
-                <div class="col-lg-4 col-lg-push-1">
-                    @Html.ActionLink("ADVERTISERS", "Home", "Index", new { @class = "btn double-border" })
+                <div class="col-sm-6 col-md-6 col-lg-6 p-bottom-25 m-top-25">
+                    @Html.ActionLink("ADVERTISERS", "Index", "Home", null, new { @class = "btn double-border" })
                 </div>
-                <div class="col-lg-4 col-lg-pull-1">
-                    @Html.ActionLink("ADVERTISERS", "Home", "Index", new { @class = "btn double-border" })
+                <div class="col-sm-6 col-md-6 col-lg-6 p-bottom-25 m-top-25">
+                    @Html.ActionLink("PIZZERIAS", "Index", "Home", null, new { @class = "btn double-border" })
                 </div>
             </div>
         </div>

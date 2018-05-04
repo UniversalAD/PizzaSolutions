@@ -52,6 +52,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -273,6 +279,12 @@ nav ul li {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -443,6 +455,12 @@ nav {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -481,6 +499,9 @@ section {
 
 .p-bottom-25 {
   padding-bottom: 25px; }
+
+.m-top-25 {
+  margin-top: 25px; }
 
 .p-bottom-15 {
   padding-bottom: 15px; }
@@ -536,6 +557,12 @@ section {
 @font-face {
   font-family: 'futura_md_btbold';
   src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -745,6 +772,12 @@ section {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -888,6 +921,12 @@ video {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -985,6 +1024,12 @@ video {
 @font-face {
   font-family: 'futura_md_btbold';
   src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1187,6 +1232,12 @@ video {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -1274,6 +1325,12 @@ video {
 @font-face {
   font-family: 'futura_md_btbold';
   src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1395,6 +1452,12 @@ video {
 @font-face {
   font-family: 'futura_md_btbold';
   src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1523,6 +1586,12 @@ video {
 @font-face {
   font-family: 'futura_md_btbold';
   src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1667,6 +1736,12 @@ video {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .impact {
   font-family: "webfontregular-impact" important; }
 
@@ -1740,8 +1815,74 @@ video {
 .productModal .btn {
   width: 100%; }
 
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_mdcn_btmedium';
+  src: url("Fonts/futuramc-webfont.woff2") format("woff2"), url("Fonts/futuramc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bt_extrablack';
+  src: url("Fonts/futuraxk-webfont.woff2") format("woff2"), url("Fonts/futuraxk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url("Fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
 .splash {
   margin-top: 89px; }
+  @media (max-width: 767px) {
+    .splash {
+      margin-top: 59px; } }
   .splash .bricks {
     background-image: url("/Content/Images/Splash/Brick_Background_02.png");
     background-repeat: no-repeat;
@@ -1749,6 +1890,33 @@ video {
     background-position: center; }
     .splash .bricks img {
       margin: 0 auto; }
+  .splash .btn.double-border {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-width: 250px;
+    min-width: 250px;
+    border: solid 1px #ffde00;
+    border-radius: 0;
+    color: #ffde00;
+    font-size: 2.3em;
+    font-family: "bebasregular"; }
+    .splash .btn.double-border:hover {
+      color: #ff0000;
+      border-color: #ff0000; }
+      .splash .btn.double-border:hover:before {
+        border-color: #ff0000; }
+    .splash .btn.double-border:before {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      width: 100%;
+      height: 71px;
+      max-width: 262px;
+      min-width: 262px;
+      border: solid 3px #ffde00; }
 
 body {
   padding-top: 50px;
