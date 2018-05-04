@@ -303,6 +303,5 @@
     };
     $(".ModalProductsImage").mousedown(mouseDown);
     $(".ModalProductsImage").mouseup(mouseUp);
-
 });
 

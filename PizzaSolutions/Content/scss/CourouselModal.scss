@@ -1,6 +1,7 @@
 ﻿#carouselModal {
     .modal-dialog {
-        width: 600px;
+        max-width: 600px;
+        width: 100%;
     }
 }
 
@@ -8,6 +9,7 @@
     .item {
         img {
             max-width: 361px;
+            width: 100%;
 
             @media (max-width: 767px) {
                 max-width: 100%;

@@ -378,7 +378,12 @@ nav {
   font-size: 12px;
   padding: 1em;
   display: none;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-color: #d4d4d4; }
   .back-to-top:focus, .back-to-top:hover {
     background-color: #fff;
     color: #000;
@@ -1333,17 +1338,6 @@ video {
 .form-horizontal {
   padding: 15px 0; }
 
-/*.modal-dialog {
-    width: 900px;
-
-    @media (max-width: 900px) {
-        width: 100% !important;
-    }
-
-    .modal-header {
-        border: 0;*/
-/*}*/
-/*}*/
 #error, #Parterror {
   color: red; }
 
@@ -1448,10 +1442,12 @@ video {
       text-align: center; } }
 
 #carouselModal .modal-dialog {
-  width: 600px; }
+  max-width: 600px;
+  width: 100%; }
 
 .carousel-inner .item img {
-  max-width: 361px; }
+  max-width: 361px;
+  width: 100%; }
   @media (max-width: 767px) {
     .carousel-inner .item img {
       max-width: 100%; } }

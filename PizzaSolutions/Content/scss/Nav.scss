@@ -3,21 +3,9 @@
 nav {
     ul {
         padding-top: 0;       
-        list-style-type: none;        
-
-        li {
-            
-
-            a {
-                
-
-                &:hover {
-                  
-                }
-            }
+        list-style-type: none;               
         }
     }
-}
 
 .menu-open {
     height: 9999px;
@@ -133,6 +121,11 @@ nav {
     padding: 1em;
     display: none;
     z-index: 100;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.3);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-color: #d4d4d4;
 
     &:focus, &:hover {
         background-color: #fff;
