@@ -1,0 +1,14 @@
+﻿.splash {
+    margin-top: 89px;
+
+    .bricks {
+        background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1531,77 +1531,87 @@ video {
 
 .more-heading {
   margin-top: 89px; }
+  @media (max-width: 767px) {
+    .more-heading {
+      margin-top: 59px; } }
   .more-heading h2 {
     font-size: 3.5em;
     color: #fff;
     font-family: "futura_bt_extrablack"; }
 
-.products {
-  padding-bottom: 50px; }
+@media (min-width: 1300px) {
+  .products {
+    max-width: 1400px;
+    margin: 0 auto; } }
+
+.products .box {
+  max-height: 325px;
+  min-height: 325px;
+  padding: 10px;
+  cursor: pointer; }
   @media (max-width: 767px) {
-    .products {
-      padding-bottom: 0; } }
-  .products .box {
-    max-height: 325px;
-    min-height: 325px;
-    padding: 10px;
-    cursor: pointer; }
-    @media (max-width: 767px) {
-      .products .box {
-        margin-bottom: 15px; } }
-    .products .box.main-products {
-      min-height: 295px; }
-    .products .box.green-back {
-      background-color: #3d602e; }
-    .products .box.teal-back {
-      background-color: #27ada7; }
-    .products .box.yellow-back {
-      background-color: #fff100; }
-    .products .box.red-back {
-      background-color: #ff0000; }
-    .products .box.orange-back {
-      background-color: #bd6928; }
-    .products .box.maroon-back {
-      background-color: #7f1416; }
-    .products .box.girl-eating-pizza {
-      background-image: url("/Content/Images/Products/girl-eating-pizza_03.png");
-      background-size: cover; }
-    .products .box h4 {
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      font-size: 4.4em;
-      color: #000;
-      font-family: "futura_bt_extrablack";
-      transform: translate(-50%, 0);
-      z-index: 50; }
-    .products .box .display-item {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 0.3%); }
-  .products img, .products .shirts, .products .cup, .products .sports, .products .koosie, .products .totes {
-    max-height: 296px;
-    object-fit: contain;
-    margin: 0 auto;
-    display: block; }
-  .products .totes, .products .cups, .products .sports, .products .shirts, .products .koosies {
-    display: none; }
-  .products .slide-open {
-    display: block;
-    margin-top: 50px;
-    transition: 2s !important;
-    transform: translate(0, 0) !important; }
+    .products .box {
+      margin-bottom: 15px; } }
+  .products .box.main-products {
+    min-height: 295px; }
+  .products .box.green-back {
+    background-color: #3d602e; }
+  .products .box.teal-back {
+    background-color: #27ada7; }
+  .products .box.yellow-back {
+    background-color: #fff100; }
+  .products .box.red-back {
+    background-color: #ff0000; }
+  .products .box.orange-back {
+    background-color: #bd6928; }
+  .products .box.maroon-back {
+    background-color: #7f1416; }
+  .products .box.girl-eating-pizza {
+    background-image: url("/Content/Images/Products/girl-eating-pizza_03.png");
+    background-size: cover; }
+  .products .box h4 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    font-size: 4.4em;
+    color: #000;
+    font-family: "futura_bt_extrablack";
+    transform: translate(-50%, 0);
+    z-index: 50; }
+  .products .box .display-item {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0.3%); }
 
-@media (max-width: 767px) {
-  .slick-next {
-    right: 25px;
-    z-index: 10; } }
+.products img, .products .shirts, .products .cup, .products .sports, .products .koosie, .products .totes {
+  max-height: 296px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block; }
 
-@media (max-width: 767px) {
-  .slick-prev {
-    left: 25px;
-    z-index: 10; } }
+.products .totes, .products .cups, .products .sports, .products .shirts, .products .koosies {
+  position: absolute;
+  top: 2%;
+  transform: translate(-200%, 0);
+  transition: 2s;
+  width: 100%; }
+
+.products .slide-open {
+  left: 50%;
+  transform: translate(-50%, 0) !important;
+  transition: 2s; }
+
+.products.slide-group {
+  height: 365px; }
+
+.slick-next {
+  right: 25px;
+  z-index: 10; }
+
+.slick-prev {
+  left: 25px;
+  z-index: 10; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -1724,6 +1734,16 @@ video {
 
 .productModal .btn {
   width: 100%; }
+
+.splash {
+  margin-top: 89px; }
+  .splash .bricks {
+    background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .splash .bricks img {
+      margin: 0 auto; }
 
 body {
   padding-top: 50px;

@@ -15,6 +15,11 @@ namespace PizzaSolutions.Controllers
     {
         public bool EmailConfirmation;
 
+        public ActionResult Splash()
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
         public ActionResult Index()
         {
             return View();
