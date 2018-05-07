@@ -1,0 +1,48 @@
+﻿@import '../Typography.scss';
+
+.funnel-heading {
+    margin-top: 89px;
+
+    @media (max-width: 767px) {
+        margin-top: 59px;
+    }
+
+    h1 {
+        font-size: 54px;
+
+        span {
+            color: $font-red;
+        }
+    }
+}
+
+.funnel-form {
+    video {
+        border: solid 5px rgb(23, 92, 141);
+    }
+
+    h2 {
+        font-size: 37px;
+        color: rgb(47,47,47);
+    }
+
+    p {
+        font-size: 20px;
+        color: rgb(47,47,47);
+
+        small {
+            font-size: 12px;
+            color: rgba(47, 47, 47, 0.38);
+        }
+    }
+
+    .btn {
+        &.orange {
+            width: 100%;
+            max-width: 100%;
+            background-color: rgb(255, 227, 0);
+            font-size: 28px;
+            color: rgb(41, 51, 63);
+        }
+    }
+}

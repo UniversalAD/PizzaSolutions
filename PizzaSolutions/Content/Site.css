@@ -500,6 +500,9 @@ section {
 .p-bottom-25 {
   padding-bottom: 25px; }
 
+.p-top-50 {
+  padding-top: 50px; }
+
 .m-top-25 {
   margin-top: 25px; }
 
@@ -1917,6 +1920,100 @@ video {
       max-width: 262px;
       min-width: 262px;
       border: solid 3px #ffde00; }
+
+@font-face {
+  font-family: 'futura_bk_btbook';
+  src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bdcn_btbold';
+  src: url("Fonts/futurabc-webfont.woff2") format("woff2"), url("Fonts/futurabc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_hv_btheavy';
+  src: url("Fonts/futurah-webfont.woff2") format("woff2"), url("Fonts/futurah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular';
+  src: url("Fonts/myriadpro-boldit-webfont.woff2") format("woff2"), url("Fonts/myriadpro-boldit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_mdcn_btmedium';
+  src: url("Fonts/futuramc-webfont.woff2") format("woff2"), url("Fonts/futuramc-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bt_extrablack';
+  src: url("Fonts/futuraxk-webfont.woff2") format("woff2"), url("Fonts/futuraxk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url("Fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'webfontregular-impact';
+  src: url("Fonts/impact-webfont.woff2") format("woff2"), url("Fonts/impact-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_md_btbold';
+  src: url("Fonts/futurab-webfont.woff2") format("woff2"), url("Fonts/futurab-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url("Fonts/bebas___-webfont.woff2") format("woff2"), url("Fonts/bebas___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.impact {
+  font-family: "webfontregular-impact" important; }
+
+.funnel-heading {
+  margin-top: 89px; }
+  @media (max-width: 767px) {
+    .funnel-heading {
+      margin-top: 59px; } }
+  .funnel-heading h1 {
+    font-size: 54px; }
+    .funnel-heading h1 span {
+      color: #ff0000; }
+
+.funnel-form video {
+  border: solid 5px #175c8d; }
+
+.funnel-form h2 {
+  font-size: 37px;
+  color: #2f2f2f; }
+
+.funnel-form p {
+  font-size: 20px;
+  color: #2f2f2f; }
+  .funnel-form p small {
+    font-size: 12px;
+    color: rgba(47, 47, 47, 0.38); }
+
+.funnel-form .btn.orange {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffe300;
+  font-size: 28px;
+  color: #29333f; }
 
 body {
   padding-top: 50px;

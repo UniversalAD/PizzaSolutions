@@ -201,6 +201,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClickFunnelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -210,6 +211,7 @@
     <Compile Include="Models\ContactEmail.cs" />
     <Compile Include="Models\Extensions.cs" />
     <Compile Include="Models\FreeAdContact.cs" />
+    <Compile Include="Models\FreeMagnets.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PartnershipAgreementForm.cs" />
@@ -503,6 +505,7 @@
     <Content Include="Content\scss\Splash.scss" />
     <Content Include="Content\Fonts\bebas___-webfont.woff" />
     <Content Include="Content\Fonts\bebas___-webfont.woff2" />
+    <Content Include="Content\scss\ClickFunnels\Index.scss" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -587,6 +590,7 @@
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Shared\_ProductModal.cshtml" />
     <Content Include="Views\Home\Splash.cshtml" />
+    <Content Include="Views\ClickFunnels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Images\" />
