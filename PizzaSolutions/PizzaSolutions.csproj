@@ -338,6 +338,8 @@
     <Content Include="Content\Images\bianco-pizza_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
     <Content Include="Content\Images\agreement_magnet.png" />
+    <Content Include="Content\Images\ClickFunnels\pizza-guy-with-mag.png" />
+    <Content Include="Content\Images\ClickFunnels\Pizza-Guy-with-Magnet---Linesa.jpg" />
     <Content Include="Content\Images\Dominoes-Emergency-Magnet_03.png" />
     <Content Include="Content\Images\Dominos-Pizza---Cal.png" />
     <Content Include="Content\Images\Dominos-Pizza---Kitchen.png" />
@@ -506,6 +508,8 @@
     <Content Include="Content\Fonts\bebas___-webfont.woff" />
     <Content Include="Content\Fonts\bebas___-webfont.woff2" />
     <Content Include="Content\scss\ClickFunnels\Index.scss" />
+    <Content Include="Content\Fonts\arimamadurai-regular-webfont.woff" />
+    <Content Include="Content\Fonts\arimamadurai-regular-webfont.woff2" />
     <None Include="Content\Site.scss" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -591,6 +595,8 @@
     <Content Include="Views\Shared\_ProductModal.cshtml" />
     <Content Include="Views\Home\Splash.cshtml" />
     <Content Include="Views\ClickFunnels\Index.cshtml" />
+    <Content Include="Views\Shared\_ClickFunnelSignUp.cshtml" />
+    <Content Include="Views\Shared\_CDNFonts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Images\" />

@@ -71,6 +71,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'arima_madurairegular';
+    src: url('Fonts/arimamadurai-regular-webfont.woff2') format('woff2'), url('Fonts/arimamadurai-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $futura-bt-book: 'futura_bk_btbook';
 $impact: 'webfontregular-impact';
 $futura_bdcn_btbold: 'futura_bdcn_btbold';
@@ -81,6 +88,7 @@ $futura-bt-condensed: 'futura_mdcn_btmedium';
 $myriad_pro_regular: 'myriadpro-regular';
 $futura_bt_extra_black: 'futura_bt_extrablack';
 $bebasregular: 'bebasregular';
+$arima_maderairegular: 'arima_madurairegular';
 
 $font-white: #fff;
 $font-red: #ff0000;

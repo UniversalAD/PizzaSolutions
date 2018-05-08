@@ -4,9 +4,15 @@
     ViewBag.Title = "Index";
 }
 
+<section>
+    <div class="gray-bar">
+        <p class="text-center">Growing Your Pizzeria Has Never Been Easier!</p>
+    </div>
+</section>
+
 <section class="funnel-heading">
     <div class="row">
-        <div class="col-md-10 center-block">
+        <div class="col-md-8 center-block">
             <h1 class="text-center">
                 Advertise Your Pizzeria <span>All Over Town... All Year 'Round</span> Without Ever Spending a Dime!
             </h1>
@@ -14,38 +20,35 @@
     </div>
 </section>
 
-<section class="funnel-form">
+<section class="funnel-form p-top-50">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <video width="450" height="350" controls>
-                <source src="" />
-            </video>
-            <h2 class="text-center">"Keep your dough... We don't knead it."</h2>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1">
+            <iframe width="100%" height="305" src="https://www.youtube.com/embed/0eHqkjZSUGE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    <h2 class="text-center">"Keep your dough... We don't knead it."</h2>
             <p class="text-center">These Are FREE MAGNETS For Your Restaurant To Pass Out and Distribute With Every Order.. To Every Customer.</p>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1 form-container">
             <h3>Sign up below.</h3>
-            @using (@Html.BeginForm("FreeMagnets", "ClickFunnels"))
+            @using (@Html.BeginForm("FreeMagnets", "ClickFunnels", FormMethod.Post, new { @id = "freeMagnets" }))
             {
                 @Html.AntiForgeryToken()
                 <div class="form-horizontal">
                     <div class="form-group">
-                        @Html.TextBoxFor(m => m.FirstLastName, new { @class = "form-control", required = "required", placeholder = "First & Last Nane" })
+                        @Html.TextBoxFor(m => m.FirstLastName, new { @class = "form-control", required = "required", placeholder = "First & Last Name" })
                     </div>
                     <div class="form-group">
                         @Html.TextBoxFor(m => m.Email, new { @class = "form-control", required = "required", type = "email", placeholder = "Your Email" })
                     </div>
                     <div class="form-group">
-                        @Html.TextBoxFor(m => m.RestaurantName, new { @class="form-control", placeholder="Restaurant Name"})
+                        @Html.TextBoxFor(m => m.RestaurantName, new { @class = "form-control", placeholder = "Restaurant Name" })
                     </div>
                     <div class="form-group">
-                        @Html.TextBoxFor(m => m.JobTitle, new { @class="form-control", placeholder="Your Position"})
+                        @Html.TextBoxFor(m => m.JobTitle, new { @class = "form-control", placeholder = "Your Position" })
                     </div>
                     <div class="form-group">
-                        @Html.TextBoxFor(m => m.CompanyWebsite, new { @class="form-control", required="required", type="url", placeholder="Website or Facebook URL"})
+                        @Html.TextBoxFor(m => m.CompanyWebsite, new { @class = "form-control", required = "required", type = "url", placeholder = "Website or Facebook URL" })
                     </div>
                     <div class="form-group">
-                        @Html.TextBoxFor(m => m.AvgNumDel, new { @class = "form-control", placeholder="Avg. # of Deliveries Per Week" })
+                        @Html.TextBoxFor(m => m.AvgNumDel, new { @class = "form-control", placeholder = "Avg. # of Deliveries Per Week" })
                     </div>
                     <div class="form-group">
                         <button type="submit" value="send" class="btn orange">Send Me My Free Magnets!</button>
@@ -56,3 +59,41 @@
         </div>
     </div>
 </section>
+
+<section class="pizza-image p-top-25">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1"><img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Guy-with-Magnet---Linesa.jpg")" class="img-responsive" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1"><img src="@Url.Content("/Content/Images/ClickFunnels/pizza-guy-with-mag.png")" class="img-responsive" /></div>
+    </div>
+</section>
+
+<section class="get-started p-top-25">
+    <div class="row">
+        <div class="col-lg-10 center-block">
+            <a data-target="#SignUp" data-toggle="modal" class="btn btn-big blue">GET STARTED NOW!</a>
+            <p class="text-center">
+                <span>All you have to do is</span> agree to distribute one magnet with every order going out your doors... and these magnets are yours!
+                <span>Yeah... It's that easy.</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="but-wait">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1"></div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1"></div>
+    </div>
+</section>
+
+@Html.Partial("_ClickFunnelSignUp")
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("body").css("background-color", "#fff");
+        });
+
+        $("#freeMagnets").validate();
+    </script>
+}
