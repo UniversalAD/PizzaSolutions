@@ -338,8 +338,15 @@
     <Content Include="Content\Images\bianco-pizza_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
     <Content Include="Content\Images\agreement_magnet.png" />
+    <Content Include="Content\Images\ClickFunnels\Lego-Pizza-Guy.jpg" />
+    <Content Include="Content\Images\ClickFunnels\Location-Map.png" />
+    <Content Include="Content\Images\ClickFunnels\Papa-John-Magnet_03.png" />
+    <Content Include="Content\Images\ClickFunnels\Pizza-Guy-Magnet.png" />
     <Content Include="Content\Images\ClickFunnels\pizza-guy-with-mag.png" />
     <Content Include="Content\Images\ClickFunnels\Pizza-Guy-with-Magnet---Linesa.jpg" />
+    <Content Include="Content\Images\ClickFunnels\Pizza-Hut-Magnet_03.png" />
+    <Content Include="Content\Images\ClickFunnels\Pizza-Planet-Magnet_03.png" />
+    <Content Include="Content\Images\ClickFunnels\unhappy-pizza-guy-sq-600px.jpg" />
     <Content Include="Content\Images\Dominoes-Emergency-Magnet_03.png" />
     <Content Include="Content\Images\Dominos-Pizza---Cal.png" />
     <Content Include="Content\Images\Dominos-Pizza---Kitchen.png" />

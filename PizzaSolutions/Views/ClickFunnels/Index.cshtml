@@ -1,7 +1,7 @@
 ﻿@model PizzaSolutions.Models.FreeMagnets
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Growing Your Pizzeria";
 }
 
 <section>
@@ -81,8 +81,86 @@
 
 <section class="but-wait">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1"></div>
-        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1"></div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1">
+            <h4 class="text-center">
+                "But, Wait... <br />
+                How Are<br /> These <br /> Magnets <br />Free?"
+            </h4>
+            <p class="free-text">Well, we feature one local business on your magnets. Their advertising dollars are what pays for the printing, production, shipping, etc...</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1">
+            <img src="@Url.Content("/Content/Images/ClickFunnels/unhappy-pizza-guy-sq-600px.jpg")" class="img-responsive" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-pull-6 col-lg-5 col-lg-push-6">
+            <h5 class="text-center">YOU'RE THE HEADLINER</h5>
+            <p class="text-center">
+                You're at the top of the list, because without your pizzeria and your awesome delivery service,
+                none of this would be possible
+            </p>
+            <p class="text-center"><b>The center area</b> of the magnets is where we feature the ever so helpful information boxes... whether it be a list of life saving emergency numbers, a 13 month calendar, our kitchen conversion chart, or your favorite high school /middle school sports schedule, <b>the advertiser gets to decide what goes here.</b></p>
+            <p class="text-center">At the bottom we feature the local business who made it possible for you to receive your free magnets. They're trusting you with their brand and your ability to connect them to nearby customers.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-5 col-md-pull-4 col-lg-5 col-lg-pull-4">
+            <img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Guy-Magnet.png")" class="img-responsive" />
+        </div>
+    </div>
+</section>
+
+<section class="double m-top-25">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7 center-block">
+            <h6 class="text-center">
+                DOUBLE YOUR DELIVERIES <br />
+                With 1/2 The Effort
+            </h6>
+            <img src="@Url.Content("/Content/Images/ClickFunnels/Lego-Pizza-Guy.jpg")" class="img-responsive center-block" />
+            <p class="text-center m-top-25">
+                Make the most of every front door you interact with.
+            </p>
+            <a id="form-slide" class="btn btn-default green-border m-top-25">>> GRAB THIS INSANE DEAL NOW <<</a>
+            <p class="text-center heading-7 m-top-25">
+                REALLY DOUGH...<br />
+                THIS PROGRAM IS ABSOLUTELY FREE.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="magnets-section">
+    <div class="row">
+        <div class="col-lg-10 center-block">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Planet-Magnet_03.png")" class="img-responsive center-block" />
+                <p class="text-center m-top-25"><span>EMERGENCY GUIDE</span><br />This important and potentially life-saving information is a crucial necessity every home in America must have easy access to, which is why these magnets are the most popular with our clients.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="@Url.Content("/Content/Images/ClickFunnels/Papa-John-Magnet_03.png")" class="img-responsive center-block" />
+                <p class="text-center m-top-25"><span>13 MONTH CALENDAR</span><br />Help your customers keep track of their important dates and upcoming events. We call these our 13 month calendars because we start the year with whatever month the order was placed.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Hut-Magnet_03.png")" class="img-responsive center-block" />
+                <p class="text-center m-top-25"><span>KITCHEN CONVERSION</span><br />*This magnet is so freaking useful. Also, we only select businesses from complimentary industries and never feature any competing ones. In other words, we won't put another Italian Restaurant on there.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="distribution-partners m-top-25">
+    <div class="row">
+        <div class="col-lg-10 center-block">
+            <img src="@Url.Content("/Content/Images/ClickFunnels/Location-Map.png")" class="img-responsive center-block" />
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 center-block p-top-25">
+                <a id="signUp" class="btn btn-big blue">Sign Me Up Already!</a>
+            </div>
+            <p class="text-center p-top-25">
+                <b>WE ONLY WORK WITH HIGHLY-REPUTABLE
+                & FAMILY-FRIENDLY BUSINESSES! Also, we never feature any advertisers or businesses from your competing industries! -</b> like we won't put another Italian restaurant on there.
+            </p>
+        </div>
     </div>
 </section>
 
@@ -92,6 +170,14 @@
     <script>
         $(document).ready(function () {
             $("body").css("background-color", "#fff");
+        });
+
+        $("#form-slide, #signUp").click(function () {
+            var target = $("#freeMagnets");
+
+            $('html, body').animate({
+                scrollTop: $(target).offset().top -170
+            }, 2000);
         });
 
         $("#freeMagnets").validate();

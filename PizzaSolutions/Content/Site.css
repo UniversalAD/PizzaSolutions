@@ -2117,7 +2117,8 @@ video {
 .funnel-form p {
   font-size: 19px;
   color: #2f2f2f;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 1.5em; }
   .funnel-form p small {
     font-size: 12px;
     color: rgba(47, 47, 47, 0.38); }
@@ -2159,7 +2160,8 @@ video {
 
 .get-started p {
   font-size: 40px;
-  font-family: "arima_madurairegular"; }
+  font-family: "arima_madurairegular";
+  line-height: 1.5em; }
   .get-started p span {
     font-weight: 700; }
 
@@ -2171,7 +2173,8 @@ video {
     border-bottom: 0; }
   .signup .modal-content p {
     font-size: 32px;
-    font-weight: 700; }
+    font-weight: 700;
+    line-height: 1.5em; }
   .signup .modal-content .btn-default {
     margin: 0 auto;
     padding: 10px;
@@ -2180,6 +2183,100 @@ video {
     background-color: #0174c7;
     font-size: 20px;
     font-family: 'Raleway', sans-serif; }
+
+.but-wait h4 {
+  font-size: 66px;
+  color: rgba(5, 0, 0, 0.95);
+  font-family: "Baloo Bhaina", Helvetica, sans-serif; }
+
+.but-wait h5 {
+  font-size: 24px;
+  font-weight: 700; }
+
+.but-wait p {
+  font-size: 24px;
+  font-family: "Noto Sans", Helvetica, sans-serif !important;
+  margin-bottom: 25px;
+  line-height: 1.5em; }
+  .but-wait p.free-text {
+    font-size: 26px;
+    color: #1a1a1a;
+    font-family: "Fira Sans", Helvetica, sans-serif;
+    margin-bottom: 0; }
+
+@media (max-width: 767px) {
+  .but-wait img {
+    max-width: 366px;
+    margin: 0 auto; } }
+
+@media (max-width: 480px) {
+  .but-wait img {
+    width: 100%; } }
+
+.double h6 {
+  font-size: 48px;
+  color: #191f26;
+  font-family: Oxygen, Helvetica, sans-serif !important; }
+
+.double p {
+  font-size: 24px;
+  color: #2d2d2d;
+  font-weight: 700;
+  line-height: 1.5em; }
+
+.double .btn {
+  white-space: normal; }
+  .double .btn.green-border {
+    display: block;
+    width: 70%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #06ae06;
+    color: #06ae06; }
+    @media (max-width: 650px) {
+      .double .btn.green-border {
+        width: 90%;
+        padding: 0; } }
+    .double .btn.green-border:hover {
+      color: #fff;
+      background-color: #06ae06; }
+
+.double p.heading-7 {
+  font-size: 40px;
+  color: rgba(5, 0, 0, 0.95);
+  font-family: Pompiere, Helvetica, sans-serif !important; }
+
+hr {
+  border-width: 5px; }
+
+.magnets-section p {
+  font-size: 20px;
+  font-family: "Open Sans", Helvetica, sans-serif !important;
+  color: rgba(47, 47, 47, 0.701961);
+  line-height: 1.5em; }
+  .magnets-section p span {
+    font-size: 22px;
+    color: #2f2f2f; }
+
+.distribution-partners .btn {
+  color: #fff; }
+  .distribution-partners .btn.btn-big {
+    width: 100%;
+    font-size: 40px; }
+    @media (max-width: 767px) {
+      .distribution-partners .btn.btn-big {
+        font-size: 5vw; } }
+  .distribution-partners .btn.blue {
+    background-color: #0075b2; }
+    .distribution-partners .btn.blue:hover {
+      background-color: rgba(0, 117, 178, 0.7); }
+
+.distribution-partners p {
+  font-size: 32px;
+  color: #2f2f2f; }
 
 body {
   padding-top: 50px;

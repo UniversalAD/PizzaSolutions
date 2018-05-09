@@ -59,10 +59,47 @@ namespace PizzaSolutions.Controllers
 
                 ModelState.Clear(); //clears form when page reload
 
-                return RedirectToAction("MessageSend", "Home");
+                return RedirectToAction("EmailConfirmation", "ClickFunnels", new { model.FirstLastName, model.Email });
 
             }
             return View();
+        }
+        public ActionResult EmailConfirmation(string FirstLastName, string Email)
+        {
+            var message = new SendGridMessage();
+            message.AddTo(Email);
+            message.From = new MailAddress("partnerrelations@universalad.com");
+            message.Subject = "You Made a Great Decision!";
+
+            var body = "<table><table style='width: 80%; margin: 0 auto; border: solid 2px #d4d4d4;'>" +
+                "<th style='padding: 15px;'>You Made a Great Decision</th>" +
+                "<tr><td style='padding: 15px';>FirstLastName, Welcome to Pizza Solutions! We're so excited you've joined the team.</td></tr>" +
+                "<tr><td style='padding: 15px;'>Thank You for taking the time to fill out the form. We'll be getting your delivery magnets to you very soon!</td></tr>" +
+                "<tr><td style='padding: 15px';>If you have any questions, please call us @ 309-581-3073.</td></tr>" +
+                "<tr><td style='padding: 15px;'>Our Team is setting up you publication now and creating you ad copy/artwork.</td></tr>" +
+                "<tr><td style='padding: 15px;'>In event that you receive any phone calls from local businesses in you area inquiring about our program, do not worry... that's totally normal and means that they're interested in partnering with you and your pizzeria. Simply confirm your participation and we'll take it from there/<td></tr>" +
+                "<tr><td style='padding: 15px;>Thank you again, <br /> ~ Pizza Solutions</td></tr>" +
+                "<tr><td><img src='' style='max-width: 150px'></td></tr></table>";
+            message.Html = String.Format(body);
+
+            //Azure credentials
+
+            var username = ConfigurationManager.AppSettings["sendGridUser"];
+            var pswd = ConfigurationManager.AppSettings["sendGridPassword"];
+
+            // variable to store azure credentials
+            var credentials = new NetworkCredential(username, pswd);
+            // Create an Web transport for sending email.
+            var transportWeb = new Web(credentials);
+
+            // Send the email, which returns an awaitable task.
+            transportWeb.DeliverAsync(message);
+
+            ViewBag.Message = "Message Sent";
+
+            ModelState.Clear(); //clears form when page reload
+
+            return RedirectToAction("MessageSend", "Home");
         }
     }
 }

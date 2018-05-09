@@ -31,7 +31,7 @@
     }
 }
 
-.funnel-heading { 
+.funnel-heading {
 
     h1 {
         font-size: 54px;
@@ -64,6 +64,7 @@
         font-size: 19px;
         color: rgb(47,47,47);
         font-weight: 700;
+        line-height: 1.5em;
 
         small {
             font-size: 12px;
@@ -128,6 +129,7 @@
     p {
         font-size: 40px;
         font-family: $arima_maderairegular;
+        line-height: 1.5em;
 
         span {
             font-weight: 700;
@@ -148,6 +150,7 @@
         p {
             font-size: 32px;
             font-weight: 700;
+            line-height: 1.5em;
         }
 
         .btn-default {
@@ -159,5 +162,141 @@
             font-size: 20px;
             font-family: 'Raleway', sans-serif;
         }
+    }
+}
+
+.but-wait {
+    h4 {
+        font-size: 66px;
+        color: rgba(5, 0, 0, 0.95);
+        font-family: "Baloo Bhaina", Helvetica, sans-serif;
+    }
+
+    h5 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 24px;
+        font-family: "Noto Sans", Helvetica, sans-serif !important;
+        margin-bottom: 25px;
+        line-height: 1.5em;
+
+
+        &.free-text {
+            font-size: 26px;
+            color: rgb(26,26,26);
+            font-family: "Fira Sans", Helvetica, sans-serif;
+            margin-bottom: 0;
+        }
+    }
+
+    img {
+        @media (max-width: 767px) {
+            max-width: 366px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
+
+.double {
+    h6 {
+        font-size: 48px;
+        color: rgb(25, 31, 38);
+        font-family: Oxygen, Helvetica, sans-serif !important;
+    }
+
+    p {
+        font-size: 24px;
+        color: rgb(45, 45, 45);
+        font-weight: 700;
+        line-height: 1.5em;
+    }
+
+    .btn {
+        white-space: normal;
+
+        &.green-border {
+            display: block;
+            width: 70%;
+            max-width: none;
+            margin: 0 auto;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid rgb(6, 174, 6);
+            color: rgb(6, 174, 6);
+
+            @media (max-width: 650px) {
+                width: 90%;
+                padding: 0;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: rgb(6, 174, 6);
+            }
+        }
+    }
+
+    p {
+
+        &.heading-7 {
+            font-size: 40px;
+            color: rgba(5, 0, 0, 0.95);
+            font-family: Pompiere, Helvetica, sans-serif !important;
+        }
+    }
+}
+
+hr {
+    border-width: 5px;
+}
+
+.magnets-section {
+    p {
+        font-size: 20px;
+        font-family: "Open Sans", Helvetica, sans-serif !important;
+        color: rgba(47, 47, 47, 0.701961);
+        line-height: 1.5em;
+
+        span {
+            font-size: 22px;
+            color: rgb(47,47,47);
+        }
+    }
+}
+
+.distribution-partners {
+
+    .btn {
+        color: #fff;
+
+        &.btn-big {
+            width: 100%;
+            font-size: 40px;
+
+            @media (max-width: 767px) {
+                font-size: 5vw;
+            }
+        }
+
+        &.blue {
+            background-color: rgb(0, 117, 178);
+
+            &:hover {
+                background-color: rgba(0,117,178,.7);
+            }
+        }
+    }
+
+    p {
+        font-size: 32px;
+        color: rgb(47, 47, 47);
     }
 }
