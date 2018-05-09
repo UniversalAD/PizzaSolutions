@@ -604,6 +604,7 @@
     <Content Include="Views\ClickFunnels\Index.cshtml" />
     <Content Include="Views\Shared\_ClickFunnelSignUp.cshtml" />
     <Content Include="Views\Shared\_CDNFonts.cshtml" />
+    <Content Include="Views\Shared\_Pizza.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Images\" />
