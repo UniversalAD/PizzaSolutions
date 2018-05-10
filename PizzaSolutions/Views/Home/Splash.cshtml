@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Pizza Solutions";
+}
+
+<section class="splash">
+    <div class="row">
+        <div class="col-lg-10 center-block bricks">
+            @Html.Partial("_Pizza")
+            <div class="row">
+                <div class="col-xs-9 col-sm-5 col-md-4 col-lg-4 center-block p-top-50">
+                    <img src="@Url.Content("/Content/Images/logo_02.png")" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 col-lg-push-1 p-top-50 p-bottom-25">
+                    @Html.ActionLink("ADVERTISERS", "Index", "Home", null, new { @class = "btn double-border" })
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 col-lg-push-1 p-top-50 p-bottom-25">
+                    @Html.ActionLink("PIZZERIAS", "Index", "ClickFunnels", null, new { @class = "btn double-border" })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-top-50">
+    <div class="row">
+        <div class="col-xs-11 col-sm-9 col-md-9 col-lg-10 center-block">
+            <img src="@Url.Content("/Content/Images/Splash/Magnets_Collection_06.png")" class="img-responsive center-block" />
+        </div>
+    </div>
+</section>
+

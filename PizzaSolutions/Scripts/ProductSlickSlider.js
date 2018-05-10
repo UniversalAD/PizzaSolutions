@@ -1,7 +1,8 @@
-﻿    $('.shirts').not('.slick-initialized').slick({
+﻿$(document).ready(function () {
+
+    $('#shirts').slick({
         dots: false,
         infinite: true,
-        lazyLoad: 'ondemand',
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -15,7 +16,7 @@
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 680,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
@@ -30,140 +31,128 @@
             }
         ]
     });
-
-    $("#totes-slide").click(function () {
-        $('.totes').not('.slick-initialized').slick({
-            dot: false,
-            infinite: true,
-            lazyload: 'ondemand',
-            speed: 300,
-            slidesToScroll: 1,
-            slidesToShow: 4,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+    $('#totes').slick({
+        dot: false,
+        infinite: true,
+        speed: 300,
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
                 }
-            ]
-        });
-    });
-    $("#cups-slide").click(function () {
-        $('.cups').not('.slick-initialized').slick({
-            dot: false,
-            infinite: true,
-            lazyload: 'ondemand',
-            slidesToScroll: 1,
-            slidesToShow: 4,
-            speed: 300,           
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
                 }
-            ]
-        });
-    });
-    $("#sports-slide").click(function () {
-        $('.sports').not('.slick-initialized').slick({
-            dot: false,
-            infinite: true,
-            lazyload: 'ondemand',
-            slidesToScroll: 1,
-            slidesToShow: 4,
-            speed: 300,           
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
-            ]
-        });
+            }
+        ]
     });
-    $("#koosie-slide").click(function () {
-        $('.koosies').not('.slick-initialized').slick({
-            dot: false,
-            infinite: true,
-            lazyload: 'ondemand',
-            slidesToScroll: 1,
-            slidesToShow: 4,
-            speed: 300,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+    $('#cups').slick({
+        dot: false,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        speed: 300,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
                 }
-            ]
-        });
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
+    $('#sports').slick({
+        dot: false,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        speed: 300,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('#koosie').slick({
+        dot: false,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        speed: 300,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});

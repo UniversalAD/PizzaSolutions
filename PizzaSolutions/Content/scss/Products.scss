@@ -3,6 +3,10 @@
 .more-heading {
     margin-top: 89px;
 
+    @media (max-width: 767px) {
+        margin-top: 59px;
+    }
+
     h2 {
         font-size: 3.5em;
         color: $font-white;
@@ -11,17 +15,16 @@
 }
 
 .products {
-    padding-bottom: 50px;
-
-    @media (max-width: 767px) {
-        padding-bottom: 0;
-    }
+   @media (min-width: 1300px) {
+       max-width: 1400px;
+       margin: 0 auto;
+   }
 
     .box {
         max-height: 325px;
         min-height: 325px;
         padding: 10px;
-        cursor: pointer;
+        cursor: pointer;        
 
         @media (max-width: 767px) {
             margin-bottom: 15px;
@@ -87,27 +90,30 @@
     }
 
     .totes, .cups, .sports, .shirts, .koosies {
-        display: none;
+        position: absolute;
+        top: 2%;
+        transform: translate(-200%, 0);
+        transition: 2s;
+        width: 100%;
     }
 
     .slide-open {
-        display: block;
-        margin-top: 50px;
-        transition: 2s !important;
-        transform: translate(0, 0) !important;
+        left: 50%;
+        transform: translate(-50%, 0) !important;
+        transition: 2s;
+    }
+
+    &.slide-group {
+        height: 365px;
     }
 }
 
 .slick-next {
-    @media (max-width: 767px) {
-        right: 25px;
-        z-index: 10;
-    }
+    right: 25px;
+    z-index: 10;
 }
 
 .slick-prev {
-    @media (max-width: 767px) {
-        left: 25px;
-        z-index: 10;
-    }
+    left: 25px;
+    z-index: 10;
 }
