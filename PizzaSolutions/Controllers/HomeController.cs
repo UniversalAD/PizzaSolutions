@@ -17,7 +17,7 @@ namespace PizzaSolutions.Controllers
 
         public ActionResult Splash()
         {
-            return RedirectToAction("Index", "Home");
+            return View();
         }
 
         public ActionResult Index()

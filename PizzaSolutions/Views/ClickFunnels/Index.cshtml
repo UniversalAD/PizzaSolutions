@@ -1,0 +1,185 @@
+﻿@model PizzaSolutions.Models.FreeMagnets
+
+@{
+    ViewBag.Title = "Growing Your Pizzeria";
+}
+
+<section>
+    <div class="gray-bar">
+        <p class="text-center">Growing Your Pizzeria Has Never Been Easier!</p>
+    </div>
+</section>
+
+<section class="funnel-heading">
+    <div class="row">
+        <div class="col-md-8 center-block">
+            <h1 class="text-center">
+                Advertise Your Pizzeria <span>All Over Town... All Year 'Round</span> Without Ever Spending a Dime!
+            </h1>
+        </div>
+    </div>
+</section>
+
+<section class="funnel-form p-top-50">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1">
+            <iframe width="100%" height="305" src="https://www.youtube.com/embed/0eHqkjZSUGE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    <h2 class="text-center">"Keep your dough... We don't knead it."</h2>
+            <p class="text-center">These Are FREE MAGNETS For Your Restaurant To Pass Out and Distribute With Every Order.. To Every Customer.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1 form-container">
+            <h3>Sign up below.</h3>
+            @using (@Html.BeginForm("FreeMagnets", "ClickFunnels", FormMethod.Post, new { @id = "freeMagnets" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.FirstLastName, new { @class = "form-control", required = "required", placeholder = "First & Last Name" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", required = "required", type = "email", placeholder = "Your Email" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.RestaurantName, new { @class = "form-control", placeholder = "Restaurant Name" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.JobTitle, new { @class = "form-control", placeholder = "Your Position" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.CompanyWebsite, new { @class = "form-control", required = "required", type = "url", placeholder = "Website or Facebook URL" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.AvgNumDel, new { @class = "form-control", placeholder = "Avg. # of Deliveries Per Week" })
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" value="send" class="btn orange">Send Me My Free Magnets!</button>
+                        <p class="text-center"><small>Enter your information above to get started!</small></p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="pizza-image p-top-25">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1"><img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Guy-with-Magnet---Linesa.jpg")" class="img-responsive" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-push-1"><img src="@Url.Content("/Content/Images/ClickFunnels/pizza-guy-with-mag.png")" class="img-responsive" /></div>
+    </div>
+</section>
+
+<section class="get-started p-top-25">
+    <div class="row">
+        <div class="col-lg-10 center-block">
+            <a data-target="#SignUp" data-toggle="modal" class="btn btn-big blue">GET STARTED NOW!</a>
+            <p class="text-center">
+                <span>All you have to do is</span> agree to distribute one magnet with every order going out your doors... and these magnets are yours!
+                <span>Yeah... It's that easy.</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="but-wait">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1">
+            <h4 class="text-center">
+                "But, Wait... <br />
+                How Are<br /> These <br /> Magnets <br />Free?"
+            </h4>
+            <p class="free-text">Well, we feature one local business on your magnets. Their advertising dollars are what pays for the printing, production, shipping, etc...</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1 col-lg-5 col-lg-push-1">
+            <img src="@Url.Content("/Content/Images/ClickFunnels/unhappy-pizza-guy-sq-600px.jpg")" class="img-responsive" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-pull-6 col-lg-5 col-lg-push-6">
+            <h5 class="text-center">YOU'RE THE HEADLINER</h5>
+            <p class="text-center">
+                You're at the top of the list, because without your pizzeria and your awesome delivery service,
+                none of this would be possible
+            </p>
+            <p class="text-center"><b>The center area</b> of the magnets is where we feature the ever so helpful information boxes... whether it be a list of life saving emergency numbers, a 13 month calendar, our kitchen conversion chart, or your favorite high school /middle school sports schedule, <b>the advertiser gets to decide what goes here.</b></p>
+            <p class="text-center">At the bottom we feature the local business who made it possible for you to receive your free magnets. They're trusting you with their brand and your ability to connect them to nearby customers.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-5 col-md-pull-4 col-lg-5 col-lg-pull-4">
+            <img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Guy-Magnet.png")" class="img-responsive" />
+        </div>
+    </div>
+</section>
+
+<section class="double m-top-25">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7 center-block">
+            <h6 class="text-center">
+                DOUBLE YOUR DELIVERIES <br />
+                With 1/2 The Effort
+            </h6>
+            <img src="@Url.Content("/Content/Images/ClickFunnels/Lego-Pizza-Guy.jpg")" class="img-responsive center-block" />
+            <p class="text-center m-top-25">
+                Make the most of every front door you interact with.
+            </p>
+            <a id="form-slide" class="btn btn-default green-border m-top-25">>> GRAB THIS INSANE DEAL NOW <<</a>
+            <p class="text-center heading-7 m-top-25">
+                REALLY DOUGH...<br />
+                THIS PROGRAM IS ABSOLUTELY FREE.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="magnets-section">
+    <div class="row">
+        <div class="col-lg-10 center-block">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Planet-Magnet_03.png")" class="img-responsive center-block" />
+                <p class="text-center m-top-25"><span>EMERGENCY GUIDE</span><br />This important and potentially life-saving information is a crucial necessity every home in America must have easy access to, which is why these magnets are the most popular with our clients.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="@Url.Content("/Content/Images/ClickFunnels/Papa-John-Magnet_03.png")" class="img-responsive center-block" />
+                <p class="text-center m-top-25"><span>13 MONTH CALENDAR</span><br />Help your customers keep track of their important dates and upcoming events. We call these our 13 month calendars because we start the year with whatever month the order was placed.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="@Url.Content("/Content/Images/ClickFunnels/Pizza-Hut-Magnet_03.png")" class="img-responsive center-block" />
+                <p class="text-center m-top-25"><span>KITCHEN CONVERSION</span><br />*This magnet is so freaking useful. Also, we only select businesses from complimentary industries and never feature any competing ones. In other words, we won't put another Italian Restaurant on there.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="distribution-partners m-top-25">
+    <div class="row">
+        <div class="col-lg-10 center-block">
+            <img src="@Url.Content("/Content/Images/ClickFunnels/Location-Map.png")" class="img-responsive center-block" />
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 center-block p-top-25">
+                <a id="signUp" class="btn btn-big blue">Sign Me Up Already!</a>
+            </div>
+            <p class="text-center p-top-25">
+                <b>WE ONLY WORK WITH HIGHLY-REPUTABLE
+                & FAMILY-FRIENDLY BUSINESSES! Also, we never feature any advertisers or businesses from your competing industries! -</b> like we won't put another Italian restaurant on there.
+            </p>
+        </div>
+    </div>
+</section>
+
+@Html.Partial("_ClickFunnelSignUp")
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("body").css("background-color", "#fff");
+        });
+
+        $("#form-slide, #signUp").click(function () {
+            var target = $("#freeMagnets");
+
+            $('html, body').animate({
+                scrollTop: $(target).offset().top -170
+            }, 2000);
+        });
+
+        $("#freeMagnets").validate();
+    </script>
+}
