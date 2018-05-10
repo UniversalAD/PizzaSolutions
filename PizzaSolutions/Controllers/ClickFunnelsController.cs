@@ -26,8 +26,8 @@ namespace PizzaSolutions.Controllers
             if (ModelState.IsValid)
             {
                 var message = new SendGridMessage();
-                //message.AddTo("partnerrelations@universalad.com");
-                /*message.AddTo("connerg@universalad.com");*/  // replace with valid value 
+                message.AddTo("partnerrelations@universalad.com");
+                message.AddTo("connerg@universalad.com");  // replace with valid value 
                 message.AddTo("chrisg@universalad.com");
                 message.From = new MailAddress("partnerrelations@universalad.com");
                 message.Subject = "Click Funnel Free Magnets Sign Up";

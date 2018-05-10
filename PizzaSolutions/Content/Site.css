@@ -2084,7 +2084,7 @@ video {
   @media (max-width: 767px) {
     .gray-bar {
       margin-top: 59px; } }
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     .gray-bar {
       height: 53px; } }
   .gray-bar p {
@@ -2138,6 +2138,10 @@ video {
 
 .funnel-form .form-horizontal .form-group {
   width: 100%; }
+  @media (max-width: 767px) {
+    .funnel-form .form-horizontal .form-group {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .funnel-form .form-horizontal .form-control {
   height: auto;
@@ -2146,6 +2150,9 @@ video {
 
 .funnel-form .form-container {
   padding-left: 30px; }
+  @media (max-width: 767px) {
+    .funnel-form .form-container {
+      padding-left: 15px; } }
 
 .get-started .btn {
   color: #fff; }

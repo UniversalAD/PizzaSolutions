@@ -16,7 +16,7 @@
         margin-top: 59px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
         height: 53px;
     }
 
@@ -93,6 +93,11 @@
 
         .form-group {
             width: 100%;
+
+            @media (max-width: 767px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
 
         .form-control {
@@ -104,6 +109,10 @@
 
     .form-container {
         padding-left: 30px;
+
+        @media (max-width: 767px) {
+            padding-left: 15px;
+        }
     }
 }
 
