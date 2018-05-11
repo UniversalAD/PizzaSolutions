@@ -335,6 +335,7 @@
     <Content Include="Content\Images\Backgrounds\pizza-slice-bg_03.png" />
     <Content Include="Content\Images\Backgrounds\ripped-button-background_07.png" />
     <Content Include="Content\Images\Backgrounds\slices_bg_02.png" />
+    <Content Include="Content\Images\Backgrounds\wood-bg_03.png" />
     <Content Include="Content\Images\bianco-pizza_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
     <Content Include="Content\Images\agreement_magnet.png" />
@@ -352,8 +353,9 @@
     <Content Include="Content\Images\Dominos-Pizza---Kitchen.png" />
     <Content Include="Content\Images\Dominos_05.png" />
     <Content Include="Content\Images\fino_05.png" />
-    <Content Include="Content\Images\Free-Design-Btn_03.jpg" />
+    <Content Include="Content\Images\Free-Design-Btn.png" />
     <Content Include="Content\Images\Hungry-Howies-Calendar-Magnet_03.png" />
+    <Content Include="Content\Images\Hungry-Howies-Calendar_Tilt.png" />
     <Content Include="Content\Images\hunt-brothers_05.png" />
     <Content Include="Content\Images\hussons_05.png" />
     <Content Include="Content\Images\Facebook.png" />
@@ -379,12 +381,14 @@
     <Content Include="Content\Images\Over-5000--.png" />
     <Content Include="Content\Images\pan_04.png" />
     <Content Include="Content\Images\Papa-Johns---Hopper-Properties-Realtor-%281%29.png" />
+    <Content Include="Content\Images\Papa-Johns---Kitchen-Conversion-Tilt.png" />
     <Content Include="Content\Images\Papa-Johns---Kitchen-Conversion.png" />
     <Content Include="Content\Images\papa-johns_05.png" />
     <Content Include="Content\Images\pizza-guys_05.png" />
     <Content Include="Content\Images\Pizza-Hut---Calendar.png" />
     <Content Include="Content\Images\Pizza-Hut---Coldwell-Banker-%281%29.png" />
     <Content Include="Content\Images\pizza-hut_05.png" />
+    <Content Include="Content\Images\Pizza-Inn-Cowboys.png" />
     <Content Include="Content\Images\pizza-inn_05.png" />
     <Content Include="Content\Images\pizza-ranch_05.png" />
     <Content Include="Content\Images\PizzaHut-Kitchen-Conversion-Magnet_03.png" />
@@ -445,6 +449,7 @@
     <Content Include="Content\Images\Products\Pizza-Palace-Tote.png" />
     <Content Include="Content\Images\reasons_bubbles_03.png" />
     <Content Include="Content\Images\Rosa---Kitchen-Conversion.png" />
+    <Content Include="Content\Images\Rosa---Kitchen-Conversion_Tilt.png" />
     <Content Include="Content\Images\Splash\Brick_Background_02.png" />
     <Content Include="Content\Images\Splash\Magnets_Collection_06.png" />
     <Content Include="Content\Images\Splash\Pizza_02.png" />
