@@ -40,9 +40,20 @@
             color: $font-red;
         }
     }
+
+    @media (min-width: 1350px) {
+        .col-lg-8 {
+            max-width: 842px;
+        }
+    }
 }
 
 .funnel-form {
+
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
 
     iframe {
         border: solid 6px rgb(23, 92, 141);
@@ -116,7 +127,19 @@
     }
 }
 
+.pizza-image {
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
+}
+
 .get-started {
+
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
 
     .btn {
         color: #fff;
@@ -175,6 +198,12 @@
 }
 
 .but-wait {
+
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
+
     h4 {
         font-size: 66px;
         color: rgba(5, 0, 0, 0.95);
@@ -214,6 +243,12 @@
 }
 
 .double {
+
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
+
     h6 {
         font-size: 48px;
         color: rgb(25, 31, 38);
@@ -268,6 +303,12 @@ hr {
 }
 
 .magnets-section {
+
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
+
     p {
         font-size: 20px;
         font-family: "Open Sans", Helvetica, sans-serif !important;
@@ -282,6 +323,11 @@ hr {
 }
 
 .distribution-partners {
+
+    @media (min-width: 1350px) {
+        max-width: 1263px;
+        margin: 0 auto;
+    }
 
     .btn {
         color: #fff;
