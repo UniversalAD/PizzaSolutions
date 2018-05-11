@@ -1485,63 +1485,36 @@ video {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.advertiser-header.partnership {
-  color: #fff; }
-  .advertiser-header.partnership h2 {
+.partnership {
+  background-color: #fff;
+  margin-top: 89px; }
+  @media (max-width: 767px) {
+    .partnership {
+      margin-top: 59px; } }
+  @media (min-width: 1350px) {
+    .partnership .row:nth-of-type(2) {
+      max-width: 1263px;
+      margin: 0 auto; } }
+  .partnership h2 {
     position: relative;
-    text-align: right;
-    padding-right: 105px;
-    z-index: 5; }
-    @media (max-width: 768px) {
-      .advertiser-header.partnership h2 {
-        padding-right: 0; } }
-    .advertiser-header.partnership h2:before {
-      content: 'PARTNERSHIP AGREEMENT';
+    background-color: #000;
+    padding: 10px;
+    font-family: "webfontregular";
+    font-style: italic;
+    font-size: 2.4em;
+    color: #fff; }
+    .partnership h2:after {
+      content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
-      color: #3d0709;
-      z-index: -1; }
-    .advertiser-header.partnership h2:after {
-      top: -23px; }
-      @media (min-width: 1400px) {
-        .advertiser-header.partnership h2:after {
-          right: 1%; } }
-  .advertiser-header.partnership .black-box {
-    height: 100%;
-    padding-bottom: 25px; }
-    @media (max-width: 480px) {
-      .advertiser-header.partnership .black-box h3 {
-        font-size: 10vw; } }
-    .advertiser-header.partnership .black-box p {
-      border-top: none;
-      font-family: "myriadpro-regular";
-      font-size: 14px;
-      text-align: left; }
-    .advertiser-header.partnership .black-box.row {
-      margin-right: auto;
-      margin-left: auto;
-      z-index: auto; }
-    .advertiser-header.partnership .black-box img {
-      max-width: 448px;
-      width: 100%; }
-
-.disclaimer {
-  background-color: #d4d4d4;
-  height: 250px;
-  overflow: scroll;
-  padding: 5px;
-  color: #000; }
-  .disclaimer ul {
-    list-style-type: decimal; }
-    .disclaimer ul .special {
-      font-weight: 900; }
-  .disclaimer h5 {
-    font-size: 24px;
-    font-weight: 900; }
-
-.form-horizontal {
-  padding: 15px 0; }
+      right: 0;
+      bottom: 4px;
+      width: 100px;
+      height: 3px;
+      background-color: #fff; }
+      .partnership h2:after:before {
+        position: absolute;
+        left: 0;
+        transform: skew(15deg, 15deg); }
 
 #error, #Parterror {
   color: red; }

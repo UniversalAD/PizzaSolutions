@@ -2,19 +2,16 @@
 @{
     ViewBag.Title = "Partnership";
 }
-
-@Html.Partial("_VideoPartial")
-
-@*@Html.Partial("_MagnetPartial")*@
-
-<section id="advertiser-header" class="advertiser-header slices">
-    <h2 id="header-2"></h2>
+<section class="partnership">
     <div class="row">
-        <div class="col-md-9 col-lg-8 center-block row black-box">
-            <h3 id="header-3" class="text-center font-white"></h3>
-            <p id="para1" class="text-center font-red"></p>
-            <div class="col-lg-12">
-                @Html.Partial("_PartnershipAgreementPartial")
+        <div class="col-lg-5 col-lg-push-7 no-gutters">
+            <h2>Agreement</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-11 center-block">
+            <h3>Sign Up</h3>
+            @Html.Partial("_PartnershipAgreementPartial")
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img id="img" src="" class="img-responsive" />
@@ -26,13 +23,10 @@
             <p id="para6"></p>
             <p id="para6"></p>
         </div>
-        </div>
     </div>
 </section>
 
 @Html.Partial("_EmailContact")
-
-
 
 @section Scripts {
     <script>
