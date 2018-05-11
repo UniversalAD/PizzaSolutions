@@ -233,6 +233,7 @@
     }
 
     p {
+        padding-top: 15px;
         border-top: solid 1px #000;
         color: #000;
         font-family: $futura-bt-book;
@@ -262,7 +263,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-58%, -60%);
+            transform: translate(-58%, -90%);
             font-size: 46px;
             font-style: italic;
             font-family: $futura_bdcn_btbold;
@@ -272,15 +273,24 @@
 
             @media (max-width: 955px) {
                 font-size: 4.6vw;
+                transform: translate(-58%, -85%);
             }
 
             @media (max-width: 767px) {
                 font-size: 8.4vw;
-                transform: translate(-58%, -76%);
+                transform: translate(-58%, -116%);
+            }
+
+            @media (max-width: 600px) {
+                transform: translate(-58%, -106%);
             }
 
             @media (max-width: 480px) {
-                transform: translate(-58%, -43%);
+                transform: translate(-58%, -86%);
+            }
+
+            @media (max-width: 480px) {
+                transform: translate(-58%, -76%);
             }
         }
     }

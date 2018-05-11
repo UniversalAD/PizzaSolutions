@@ -778,6 +778,7 @@ section {
       max-width: 1263px;
       margin: 0 auto; } }
   .about-us p {
+    padding-top: 15px;
     border-top: solid 1px #000;
     color: #000;
     font-family: "futura_bk_btbook"; }
@@ -800,7 +801,7 @@ section {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-58%, -60%);
+      transform: translate(-58%, -90%);
       font-size: 46px;
       font-style: italic;
       font-family: "futura_bdcn_btbold";
@@ -809,14 +810,21 @@ section {
       cursor: pointer; }
       @media (max-width: 955px) {
         .about-us .btn-wrapper p {
-          font-size: 4.6vw; } }
+          font-size: 4.6vw;
+          transform: translate(-58%, -85%); } }
       @media (max-width: 767px) {
         .about-us .btn-wrapper p {
           font-size: 8.4vw;
-          transform: translate(-58%, -76%); } }
+          transform: translate(-58%, -116%); } }
+      @media (max-width: 600px) {
+        .about-us .btn-wrapper p {
+          transform: translate(-58%, -106%); } }
       @media (max-width: 480px) {
         .about-us .btn-wrapper p {
-          transform: translate(-58%, -43%); } }
+          transform: translate(-58%, -86%); } }
+      @media (max-width: 480px) {
+        .about-us .btn-wrapper p {
+          transform: translate(-58%, -76%); } }
 
 .clients {
   background-color: #ed1c24;
