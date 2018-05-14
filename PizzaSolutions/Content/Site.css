@@ -536,6 +536,21 @@ section {
 .z-index {
   z-index: 100; }
 
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -1498,7 +1513,7 @@ video {
   .partnership h2 {
     position: relative;
     background-color: #000;
-    padding: 10px;
+    padding: 15px;
     font-family: "webfontregular";
     font-style: italic;
     font-size: 2.4em;
@@ -1506,15 +1521,83 @@ video {
     .partnership h2:after {
       content: '';
       position: absolute;
-      right: 0;
+      right: 12px;
       bottom: 4px;
       width: 100px;
       height: 3px;
       background-color: #fff; }
-      .partnership h2:after:before {
-        position: absolute;
-        left: 0;
-        transform: skew(15deg, 15deg); }
+    .partnership h2:before {
+      content: '';
+      position: absolute;
+      right: 109px;
+      transform: skew(-62deg, 0deg);
+      height: 3px;
+      width: 8px;
+      bottom: 4px;
+      background-color: #fff; }
+    .partnership h2 span {
+      position: absolute;
+      right: 9px;
+      transform: skew(62deg, 0deg);
+      height: 3px;
+      width: 8px;
+      bottom: 4px;
+      background-color: #fff; }
+  .partnership h3 {
+    font-size: 44px;
+    font-weight: bold;
+    font-family: "futura_mdcn_btmedium";
+    font-style: italic; }
+  @media (max-width: 900px) and (min-width: 767px) {
+    .partnership .community-guide .p-top-50 {
+      padding-top: 0; } }
+  @media (max-width: 767px) {
+    .partnership .community-guide img {
+      width: 100%;
+      max-width: 480px; } }
+
+.partnershipform .form-control {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #000; }
+
+.partnershipform .disclaimer {
+  border: solid 1px #000;
+  height: 350px;
+  overflow-y: scroll; }
+
+.partnershipform input[type="file"]:before {
+  position: absolute;
+  content: 'Choose File';
+  background-color: #231f20;
+  width: 91px;
+  height: 100%;
+  color: #fff;
+  text-align: center; }
+
+.partnershipform input[type="checkbox"]:after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-color: #231f20; }
+
+.partnershipform input[type="checkbox"]:checked:after {
+  position: absolute;
+  content: 'X';
+  font-size: 12px;
+  color: #fff;
+  text-align: center; }
+
+.partnershipform .btn {
+  border-radius: 0;
+  background-color: #231f20;
+  color: #fff;
+  width: 100px; }
 
 #error, #Parterror {
   color: red; }
