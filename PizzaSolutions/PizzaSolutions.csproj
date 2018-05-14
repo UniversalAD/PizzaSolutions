@@ -592,7 +592,7 @@
     <Content Include="Views\Home\Distributors.cshtml" />
     <Content Include="Views\Home\Partnership.cshtml" />
     <Content Include="Views\Shared\_MagnetPartial.cshtml" />
-    <Content Include="Views\Home\_PartnershipAgreementPartial.cshtml" />
+    <Content Include="Views\Shared\_PartnershipAgreementPartial.cshtml" />
     <Content Include="Views\Shared\_EmailSuccessModal.cshtml" />
     <Content Include="Views\Home\MessageSend.cshtml" />
     <Content Include="Views\Shared\_EmailContact.cshtml" />

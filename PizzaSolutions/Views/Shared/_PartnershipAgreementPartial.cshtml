@@ -30,12 +30,12 @@
                 <div class="form-group">
                     <div class="col-xs-6 col-md-6">
                         @Html.LabelFor(m => m.PartnershipEmail, new { @class = "form-label" })
-                        @Html.TextBoxFor(m => m.PartnershipEmail, new { @class = "form-control", required = "required", placeholder = "yourname@emailEXT.com", type = "email" })
+                        @Html.TextBoxFor(m => m.PartnershipEmail, new { @class = "form-control", required = "required", type = "email" })
 
                     </div>
                     <div class="col-xs-6 col-md-6">
                         @Html.LabelFor(m => m.PartnershipPhone, new { @class = "form-label" })
-                        @Html.TextBoxFor(m => m.PartnershipPhone, new { @class = "form-control", required = "required", placeholder = "XXX-XXX-XXXX", type = "phone" })
+                        @Html.TextBoxFor(m => m.PartnershipPhone, new { @class = "form-control", required = "required", type = "phone" })
                         <p id="partnershipPhoneStatus"></p>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                     <div class="col-sm-4 col-md-4">
                         @Html.LabelFor(m => m.Attachment, new { @class = "form-label" })
                     </div>
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-sm-5 col-md-4">
                         @Html.TextBox("file", "", new { type = "file" })
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <input type="submit" class="btn btn-default" id="submit" value="Send" />
                     </div>
                 </div>

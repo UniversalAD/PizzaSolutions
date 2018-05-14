@@ -536,6 +536,21 @@ section {
 .z-index {
   z-index: 100; }
 
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 @font-face {
   font-family: 'futura_bk_btbook';
   src: url("Fonts/futuran-webfont.woff2") format("woff2"), url("Fonts/futuran-webfont.woff") format("woff");
@@ -1485,63 +1500,104 @@ video {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.advertiser-header.partnership {
-  color: #fff; }
-  .advertiser-header.partnership h2 {
+.partnership {
+  background-color: #fff;
+  margin-top: 89px; }
+  @media (max-width: 767px) {
+    .partnership {
+      margin-top: 59px; } }
+  @media (min-width: 1350px) {
+    .partnership .row:nth-of-type(2) {
+      max-width: 1263px;
+      margin: 0 auto; } }
+  .partnership h2 {
     position: relative;
-    text-align: right;
-    padding-right: 105px;
-    z-index: 5; }
-    @media (max-width: 768px) {
-      .advertiser-header.partnership h2 {
-        padding-right: 0; } }
-    .advertiser-header.partnership h2:before {
-      content: 'PARTNERSHIP AGREEMENT';
+    background-color: #000;
+    padding: 15px;
+    font-family: "webfontregular";
+    font-style: italic;
+    font-size: 2.4em;
+    color: #fff; }
+    .partnership h2:after {
+      content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
-      color: #3d0709;
-      z-index: -1; }
-    .advertiser-header.partnership h2:after {
-      top: -23px; }
-      @media (min-width: 1400px) {
-        .advertiser-header.partnership h2:after {
-          right: 1%; } }
-  .advertiser-header.partnership .black-box {
-    height: 100%;
-    padding-bottom: 25px; }
-    @media (max-width: 480px) {
-      .advertiser-header.partnership .black-box h3 {
-        font-size: 10vw; } }
-    .advertiser-header.partnership .black-box p {
-      border-top: none;
-      font-family: "myriadpro-regular";
-      font-size: 14px;
-      text-align: left; }
-    .advertiser-header.partnership .black-box.row {
-      margin-right: auto;
-      margin-left: auto;
-      z-index: auto; }
-    .advertiser-header.partnership .black-box img {
-      max-width: 448px;
-      width: 100%; }
+      right: 12px;
+      bottom: 4px;
+      width: 100px;
+      height: 3px;
+      background-color: #fff; }
+    .partnership h2:before {
+      content: '';
+      position: absolute;
+      right: 109px;
+      transform: skew(-62deg, 0deg);
+      height: 3px;
+      width: 8px;
+      bottom: 4px;
+      background-color: #fff; }
+    .partnership h2 span {
+      position: absolute;
+      right: 9px;
+      transform: skew(62deg, 0deg);
+      height: 3px;
+      width: 8px;
+      bottom: 4px;
+      background-color: #fff; }
+  .partnership h3 {
+    font-size: 44px;
+    font-weight: bold;
+    font-family: "futura_mdcn_btmedium";
+    font-style: italic; }
+  @media (max-width: 900px) and (min-width: 767px) {
+    .partnership .community-guide .p-top-50 {
+      padding-top: 0; } }
+  @media (max-width: 767px) {
+    .partnership .community-guide img {
+      width: 100%;
+      max-width: 480px; } }
 
-.disclaimer {
-  background-color: #d4d4d4;
-  height: 250px;
-  overflow: scroll;
-  padding: 5px;
-  color: #000; }
-  .disclaimer ul {
-    list-style-type: decimal; }
-    .disclaimer ul .special {
-      font-weight: 900; }
-  .disclaimer h5 {
-    font-size: 24px;
-    font-weight: 900; }
+.partnershipform .form-control {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #000; }
 
-.form-horizontal {
-  padding: 15px 0; }
+.partnershipform .disclaimer {
+  border: solid 1px #000;
+  height: 350px;
+  overflow-y: scroll; }
+
+.partnershipform input[type="file"]:before {
+  position: absolute;
+  content: 'Choose File';
+  background-color: #231f20;
+  width: 91px;
+  height: 100%;
+  color: #fff;
+  text-align: center; }
+
+.partnershipform input[type="checkbox"]:after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-color: #231f20; }
+
+.partnershipform input[type="checkbox"]:checked:after {
+  position: absolute;
+  content: 'X';
+  font-size: 12px;
+  color: #fff;
+  text-align: center; }
+
+.partnershipform .btn {
+  border-radius: 0;
+  background-color: #231f20;
+  color: #fff;
+  width: 100px; }
 
 #error, #Parterror {
   color: red; }
