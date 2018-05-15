@@ -3,9 +3,54 @@
     ViewBag.Title = "Distributers";
 }
 
-@Html.Partial("_VideoPartial")
+<section class="partnership">
+    <div class="row">
+        <div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-5 col-md-push-7 col-lg-5 col-lg-push-7 no-gutters">
+            <h2>Distributors<span></span></h2>
+        </div>
+    </div>
+</section>
 
-@Html.Partial("_MagnetPartial")
+<section class="big about-us">
+    <div class="row">
+        <div class="col-lg-11 center-block">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <img src="@Url.Content("/Content/Images/big-beautiful_03.png")" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <img src="@Url.Content("/Content/Images/bianco-pizza_03.png")" class="img-responsive bianco" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>We provide your pizzeria with Free Pizza Magnets! All you have to do is hand a magnet out to each one of your customers with every single order going out your doors, And the best part is... your magnets are provided to you 100% FREE!</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>We encourage distributors to keep a small stock of the magnets at the register for dine-in and carry-out customers, in addition to the ones being handed out on delivery orders. Unlike direct mailers, which have a much higher TTT Rate, or Toss To Trash Rate, not one magnet will go to waste with our guaranteed customer connection solution.</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>Tip: Offer the magnet at the door. This will reduce the risk of unwanted, wasted magnets and leave more for the customers who use magnets.</p>
+                    <div class="btn-wrapper center-block">
+                        <img src="@Url.Content("~/Content/Images/Free-Design-Btn.png")" class="img-responsive center-block relative" />
+                        <p class="text-center" onclick="location.href='Products'">MORE PRODUCTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faded-orange relative">
+    <img src="@Url.Content("/Content/Images/pizza-hut-cowboys-magnet_09.png")" class="img-responsive pizza-hut" />
+    <img src="@Url.Content("/Content/Images/papa-johns-emergency-magnet_07.png")" class="img-responsive papa-johns" />   
+</section>
+
+<section class="pizza-girl">
+    <div class="row">
+        <div class="col-lg-10 center-block bricks"></div>
+    </div>
+</section>
 
 @Html.Partial("_EmailContact")
 

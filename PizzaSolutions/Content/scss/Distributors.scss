@@ -1,52 +1,87 @@
 ﻿@import 'Typography.scss';
 
-.advertiser-header {
+.about-us {
 
-    &.distributors {
-        h2 {
-            word-spacing: -1px;
+    &.big {
 
-            &:after {
-                right: 1%;
-                top: -5px;
-                font-size: 7vw;
-
-                @media (min-width: 1400px) {
-                    top: -11px;
-                }
-            }
-        }
-
-        .black-box {
-            height: 500px;
-
-            @media (min-width: 1600px) {
-                height: 650px !important;
-            }
-
-            @media (min-width: 1400px) {
-                height: 550px;
-            }
-            
-            @media (max-width: 767px) {
-                height: 100%;
-            }
-
-            .btn {
-                display: block;
-                max-width: 200px;
-                font-family: $futura-bt-book;
-
-                &.red {
-                    background-color: $font-red;
-                    color: $font-white;
-                    margin:  0 auto;
-                }
-            }
-        }
-        
         p {
-            text-align: left;
+            border: none;
         }
+
+        .btn-wrapper {
+            p {
+                font-size: 41px;
+
+                @media (max-width: 955px) {
+                    font-size: 3.8vw;
+                    transform: translate(-58%, -79%);
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 9.5vw;
+                    transform: translate(-58%, -116%);
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 9.5vw;
+                    transform: translate(-58%, -106%);
+                }
+
+                @media (max-width: 480px) {
+                    transform: translate(-58%, -84%);
+                }
+            }
+        }
+
+        img {
+            &.bianco {
+                max-height: 346px;
+                margin: 0 auto;
+                border: solid 2px #09744c;
+                border-radius: 5px;
+
+                @media (max-width: 767px) {
+                    max-height: none;
+                }
+            }
+        }
+    }
+}
+
+.faded-orange {
+    background-image: url("/Content/Images/Backgrounds/feided-orange-bg_06.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+
+    @media (max-width: 480px) {
+        height: 220px;
+    }
+
+    img {
+        position: absolute;
+        max-height: 583px;
+
+        @media (max-width: 700px) {
+            display: none;
+        }
+
+        &.pizza-hut {
+            right: 0;
+        }
+
+        &.papa-johns {
+            right: 0;
+        }
+    }
+}
+
+.pizza-girl {
+    .bricks {
+        background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+        background-size: cover;
+        background-position: center;
+        height: 235px;
     }
 }

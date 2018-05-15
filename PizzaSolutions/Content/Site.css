@@ -836,9 +836,6 @@ section {
           transform: translate(-58%, -106%); } }
       @media (max-width: 480px) {
         .about-us .btn-wrapper p {
-          transform: translate(-58%, -86%); } }
-      @media (max-width: 480px) {
-        .about-us .btn-wrapper p {
           transform: translate(-58%, -76%); } }
 
 .clients {
@@ -1398,38 +1395,61 @@ video {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.advertiser-header.distributors h2 {
-  word-spacing: -1px; }
-  .advertiser-header.distributors h2:after {
-    right: 1%;
-    top: -5px;
-    font-size: 7vw; }
-    @media (min-width: 1400px) {
-      .advertiser-header.distributors h2:after {
-        top: -11px; } }
+.about-us.big p {
+  border: none; }
 
-.advertiser-header.distributors .black-box {
-  height: 500px; }
-  @media (min-width: 1600px) {
-    .advertiser-header.distributors .black-box {
-      height: 650px !important; } }
-  @media (min-width: 1400px) {
-    .advertiser-header.distributors .black-box {
-      height: 550px; } }
+.about-us.big .btn-wrapper p {
+  font-size: 41px; }
+  @media (max-width: 955px) {
+    .about-us.big .btn-wrapper p {
+      font-size: 3.8vw;
+      transform: translate(-58%, -79%); } }
   @media (max-width: 767px) {
-    .advertiser-header.distributors .black-box {
-      height: 100%; } }
-  .advertiser-header.distributors .black-box .btn {
-    display: block;
-    max-width: 200px;
-    font-family: "futura_bk_btbook"; }
-    .advertiser-header.distributors .black-box .btn.red {
-      background-color: #ff0000;
-      color: #fff;
-      margin: 0 auto; }
+    .about-us.big .btn-wrapper p {
+      font-size: 9.5vw;
+      transform: translate(-58%, -116%); } }
+  @media (max-width: 600px) {
+    .about-us.big .btn-wrapper p {
+      font-size: 9.5vw;
+      transform: translate(-58%, -106%); } }
+  @media (max-width: 480px) {
+    .about-us.big .btn-wrapper p {
+      transform: translate(-58%, -84%); } }
 
-.advertiser-header.distributors p {
-  text-align: left; }
+.about-us.big img.bianco {
+  max-height: 346px;
+  margin: 0 auto;
+  border: solid 2px #09744c;
+  border-radius: 5px; }
+  @media (max-width: 767px) {
+    .about-us.big img.bianco {
+      max-height: none; } }
+
+.faded-orange {
+  background-image: url("/Content/Images/Backgrounds/feided-orange-bg_06.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%; }
+  @media (max-width: 480px) {
+    .faded-orange {
+      height: 220px; } }
+  .faded-orange img {
+    position: absolute;
+    max-height: 583px; }
+    @media (max-width: 700px) {
+      .faded-orange img {
+        display: none; } }
+    .faded-orange img.pizza-hut {
+      right: 0; }
+    .faded-orange img.papa-johns {
+      right: 0; }
+
+.pizza-girl .bricks {
+  background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+  background-size: cover;
+  background-position: center;
+  height: 235px; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
