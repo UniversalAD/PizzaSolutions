@@ -208,28 +208,32 @@ nav ul li {
 
 .social {
   position: fixed;
-  width: 4vw;
   left: -2%;
+  top: 16%;
   z-index: 100; }
-  @media (max-width: 680px) {
+  @media (max-width: 1200px) and (min-width: 767px) {
     .social {
-      left: -6%;
-      padding-top: 6px; } }
+      left: -3%;
+      /*top: 11%;*/ } }
+  @media (max-width: 767px) {
+    .social {
+      left: -5%;
+      top: 14%; } }
   @media (max-width: 480px) {
     .social {
-      left: -10%; } }
+      left: -8%; } }
+  @media (max-width: 414px) {
+    .social {
+      top: 19%; } }
   .social ul {
     list-style-type: none; }
     .social ul li {
-      margin: 15px 0; }
-      @media (max-width: 680px) {
+      margin: 5px 0; }
+      @media (max-width: 767px) {
         .social ul li {
           margin: 1px 0; } }
       .social ul li img {
-        width: 4vw; }
-        @media (max-width: 480px) {
-          .social ul li img {
-            min-width: 25px; } }
+        width: 51px; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -930,63 +934,94 @@ section {
   @media (max-width: 767px) {
     .partners img {
       margin-top: 25px; } }
-  .partners .left-curve {
-    background-color: #ed1c24;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 102%;
-    height: 300px;
-    margin-top: 54px; }
+  .partners h2 {
+    font-family: "webfontregular-impact";
+    font-size: 2vw; }
+    @media (max-width: 768px) {
+      .partners h2 {
+        font-size: 4vw;
+        margin-bottom: 0; } }
+    @media (max-width: 480px) {
+      .partners h2 {
+        font-size: 7vw; } }
+  .partners p {
+    color: #fff;
+    font-family: "futura_bk_btbook";
+    margin: 5px 0;
+    font-size: 16px; }
     @media (min-width: 1400px) {
-      .partners .left-curve {
-        height: 385px; } }
-    @media (max-width: 1000px) {
-      .partners .left-curve {
-        height: 100%;
+      .partners p {
+        font-size: 18px;
+        margin: 25px 0; } }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      .partners p {
+        margin: 0;
+        font-size: 20px; } }
+    @media (max-width: 767px) {
+      .partners p {
+        margin: 25px 0; } }
+    @media (max-width: 767px) {
+      .partners p:nth-of-type(1) {
+        padding-top: 10px; } }
+  .partners video {
+    height: 100%;
+    width: 100%;
+    margin: 25px 0;
+    min-height: 250px; }
+    @media (min-width: 1400px) {
+      .partners video {
         width: 100%;
-        padding: 10px 0; } }
-    .partners .left-curve h2 {
-      font-family: "webfontregular-impact";
-      font-size: 2vw; }
-      @media (max-width: 768px) {
-        .partners .left-curve h2 {
-          font-size: 4vw;
-          margin-bottom: 0; } }
-      @media (max-width: 480px) {
-        .partners .left-curve h2 {
-          font-size: 7vw; } }
-    .partners .left-curve p {
-      color: #fff;
-      font-family: "futura_bk_btbook";
-      margin: 5px 0;
-      font-size: 16px; }
-      @media (min-width: 1400px) {
-        .partners .left-curve p {
-          font-size: 18px;
-          margin: 25px 0; } }
-      @media (min-width: 768px) and (max-width: 1000px) {
-        .partners .left-curve p {
-          margin: 0;
-          font-size: 20px; } }
-      @media (max-width: 767px) {
-        .partners .left-curve p {
-          margin: 25px 0; } }
-      @media (max-width: 767px) {
-        .partners .left-curve p:nth-of-type(1) {
-          padding-top: 10px; } }
-    .partners .left-curve video {
-      height: 100%;
-      width: 100%;
-      margin: 25px 0;
-      min-height: 250px; }
-      @media (min-width: 1400px) {
-        .partners .left-curve video {
-          width: 100%;
-          height: 100%;
-          max-height: 350px; } }
-      @media (max-width: 480px) {
-        .partners .left-curve video {
-          min-height: inherit; } }
+        height: 100%;
+        max-height: 350px; } }
+    @media (max-width: 480px) {
+      .partners video {
+        min-height: inherit; } }
+
+.pageheading {
+  background-color: #fff;
+  padding-top: 89px;
+  padding-bottom: 25px; }
+  @media (max-width: 767px) {
+    .pageheading {
+      padding-top: 59px;
+      padding-bottom: 50px;
+      margin-bottom: -1px; } }
+  .pageheading h2 {
+    position: relative;
+    background-color: #000;
+    padding: 15px;
+    font-family: "webfontregular";
+    font-style: italic;
+    font-size: 2.4em;
+    color: #fff; }
+    .pageheading h2:after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      bottom: 4px;
+      width: 100px;
+      height: 3px;
+      background-color: #fff; }
+    .pageheading h2:before {
+      content: '';
+      position: absolute;
+      right: 109px;
+      transform: skew(-62deg, 0deg);
+      height: 3px;
+      width: 8px;
+      bottom: 4px;
+      background-color: #fff; }
+    .pageheading h2 span {
+      position: absolute;
+      right: 9px;
+      transform: skew(62deg, 0deg);
+      height: 3px;
+      width: 8px;
+      bottom: 4px;
+      background-color: #fff; }
+  @media (max-width: 767px) {
+    .pageheading .col-xs-8 {
+      float: right; } }
 
 .contact-email h3 {
   font-size: 35px;
@@ -1184,147 +1219,115 @@ video {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.advertiser-header {
-  position: relative;
-  padding: 15px 0;
-  height: 100%; }
-  .advertiser-header h2 {
-    background-color: #000;
-    color: #ed1c24;
-    font-size: 4.4vw;
-    font-family: "webfontregular";
-    text-transform: uppercase;
-    word-spacing: 35px;
-    text-align: center;
-    margin-top: 0; }
-    .advertiser-header h2:after {
-      content: '///';
-      position: absolute;
-      right: 2%;
-      top: -5px;
-      font-size: 7vw;
-      letter-spacing: -6px; }
-      @media (min-width: 1400px) {
-        .advertiser-header h2:after {
-          font-size: 6vw; } }
-      @media (max-width: 768px) {
-        .advertiser-header h2:after {
-          display: none; } }
-    .advertiser-header h2 span {
-      color: #3d0709; }
-  .advertiser-header .black-box {
-    background-color: #000;
-    border-radius: 15px;
-    padding: 5px 5px 10px 5px;
-    height: 465px; }
-    @media (min-width: 1400px) {
-      .advertiser-header .black-box {
-        height: 550px; } }
-    @media (max-width: 767px) {
-      .advertiser-header .black-box {
-        height: 100%;
-        border-radius: 0; } }
-    @media (min-width: 1400px) {
-      .advertiser-header .black-box img {
-        margin: 0 auto;
-        display: block;
-        float: none; } }
-    @media (max-width: 767px) {
-      .advertiser-header .black-box img {
-        margin: 0 auto;
-        display: block;
-        float: none; } }
-    .advertiser-header .black-box h3 {
-      font-family: "futura_bt_extrablack";
-      font-size: 3vw; }
-      @media (max-width: 480px) {
-        .advertiser-header .black-box h3 {
-          font-size: 4vw; } }
-    .advertiser-header .black-box p {
-      border-top: solid 2px #ff0000;
-      margin: 0 15px;
-      font-family: "futura_mdcn_btmedium";
-      font-size: 1.7vw;
-      margin-bottom: 10px; }
-      @media (max-width: 767px) {
-        .advertiser-header .black-box p {
-          font-size: 2.7vw; } }
-    .advertiser-header .black-box .ad-body {
-      border-top: none;
-      font-family: "myriadpro-regular";
-      font-size: 14px; }
-      @media (min-width: 1400px) {
-        .advertiser-header .black-box .ad-body {
-          font-size: 17px; } }
+.hand-out {
+  background-color: #fff; }
+  @media (min-width: 1350px) {
+    .hand-out .row {
+      max-width: 1263px;
+      margin: 0 auto; } }
   @media (max-width: 767px) {
-    .advertiser-header #para2 {
-      margin-top: 25px; } }
+    .hand-out img {
+      margin: 0 auto; } }
+  .hand-out img.guy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 410px;
+    z-index: 10; }
+    @media (max-width: 900px) and (min-width: 767px) {
+      .hand-out img.guy {
+        width: 350px; } }
+    @media (max-width: 480px) {
+      .hand-out img.guy {
+        max-width: 350px; } }
+    @media (max-width: 375px) {
+      .hand-out img.guy {
+        max-width: 290px; } }
+  .hand-out img.out {
+    position: absolute;
+    top: -60px;
+    left: 40px;
+    width: 100%;
+    max-width: 410px;
+    z-index: 5; }
+    @media (max-width: 1024px) and (min-width: 900px) {
+      .hand-out img.out {
+        left: 0;
+        max-width: 390px;
+        top: -33px; } }
+    @media (max-width: 900px) and (min-width: 767px) {
+      .hand-out img.out {
+        left: -10px;
+        top: 0;
+        max-width: 350px; } }
+    @media (max-width: 767px) {
+      .hand-out img.out {
+        top: -18px; } }
+    @media (max-width: 600px) {
+      .hand-out img.out {
+        left: -1px;
+        max-width: 380px; } }
+    @media (max-width: 480px) {
+      .hand-out img.out {
+        max-width: 280px;
+        top: 0; } }
+    @media (max-width: 375px) {
+      .hand-out img.out {
+        max-width: 230px; } }
+  .hand-out img.calendar {
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    width: 100%;
+    max-width: 480px;
+    z-index: 0; }
+    @media (max-width: 900px) and (min-width: 767px) {
+      .hand-out img.calendar {
+        max-width: 370px; } }
+    @media (max-width: 480px) {
+      .hand-out img.calendar {
+        max-width: 310px; } }
+  .hand-out p {
+    font-size: 1.3em;
+    font-family: "futura_mdcn_btmedium"; }
+  .hand-out .slogan-section {
+    height: 480px; }
+    @media (max-width: 767px) {
+      .hand-out .slogan-section {
+        margin-bottom: 25px;
+        height: 500px; } }
+    @media (max-width: 480px) {
+      .hand-out .slogan-section {
+        height: 410px; } }
+    @media (max-width: 375px) {
+      .hand-out .slogan-section {
+        height: 350px; } }
 
 .convinced {
-  position: relative; }
+  background-color: #ed1d24; }
   .convinced h2 {
-    color: #ed1c24;
-    font-size: 4.4vw;
-    font-family: "webfontregular";
-    z-index: 5;
-    margin: 0 5px; }
-    .convinced h2:before {
-      content: 'STILL NOT CONVINCED?';
-      position: absolute;
-      top: 0;
-      left: 15%;
-      color: #3d0709;
-      z-index: -1; }
-    .convinced h2:after {
-      content: '///';
-      position: absolute;
-      right: 4%;
-      top: -58px;
-      font-size: 15.3vw;
-      letter-spacing: -28px; }
-      @media (min-width: 768px) and (max-width: 1200px) {
-        .convinced h2:after {
-          top: -37px;
-          letter-spacing: -21px; } }
-      @media (max-width: 767px) {
-        .convinced h2:after {
-          display: none; } }
-    .convinced h2 span:before {
-      content: 'HERE ARE 8 REASON TO CHANGE YOUR MIND.';
-      position: absolute;
-      bottom: 0;
-      left: 9%;
-      font-size: 4.4vw;
-      color: #3d0709;
-      z-index: -1; }
+    font-family: "myriadpro-regular";
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 15px 0; }
+    @media (max-width: 1100px) {
+      .convinced h2 {
+        font-size: 5.7vw; } }
 
-.add-words {
-  height: 100%;
-  padding: 25px 0;
-  background-image: url("Images/Backgrounds/pizza-slice-bg_03.png"); }
-  .add-words .black-box {
-    background-color: #000;
-    border-radius: 15px;
-    padding: 15px;
-    height: 100%; }
-    .add-words .black-box ul li {
-      color: #fff;
-      font-family: "myriadpro-regular"; }
-      @media (min-width: 1400px) {
-        .add-words .black-box ul li {
-          font-size: 17px; } }
-      .add-words .black-box ul li span {
-        color: #ff0000; }
-  .add-words .one {
-    position: absolute;
-    top: 2%;
-    left: 21%;
-    width: 23%;
-    padding: 15px;
-    font-size: 18.2px; }
-    .add-words .one h3 {
-      font-size: 45px;
-      font-family: "futura_md_btbold"; }
+.reasons.bricks {
+  background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25px 0; }
+
+@media (min-width: 1350px) {
+  .reasons .row {
+    max-width: 1263px;
+    margin: 0 auto; } }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -1521,48 +1524,11 @@ video {
   font-family: "webfontregular-impact" important; }
 
 .partnership {
-  background-color: #fff;
-  margin-top: 89px; }
-  @media (max-width: 767px) {
-    .partnership {
-      margin-top: 59px; } }
+  background-color: #fff; }
   @media (min-width: 1350px) {
-    .partnership .row:nth-of-type(2) {
+    .partnership .row {
       max-width: 1263px;
       margin: 0 auto; } }
-  .partnership h2 {
-    position: relative;
-    background-color: #000;
-    padding: 15px;
-    font-family: "webfontregular";
-    font-style: italic;
-    font-size: 2.4em;
-    color: #fff; }
-    .partnership h2:after {
-      content: '';
-      position: absolute;
-      right: 12px;
-      bottom: 4px;
-      width: 100px;
-      height: 3px;
-      background-color: #fff; }
-    .partnership h2:before {
-      content: '';
-      position: absolute;
-      right: 109px;
-      transform: skew(-62deg, 0deg);
-      height: 3px;
-      width: 8px;
-      bottom: 4px;
-      background-color: #fff; }
-    .partnership h2 span {
-      position: absolute;
-      right: 9px;
-      transform: skew(62deg, 0deg);
-      height: 3px;
-      width: 8px;
-      bottom: 4px;
-      background-color: #fff; }
   .partnership h3 {
     font-size: 44px;
     font-weight: bold;

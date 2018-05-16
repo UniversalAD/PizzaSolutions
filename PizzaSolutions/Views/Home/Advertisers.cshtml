@@ -2,20 +2,37 @@
     ViewBag.Title = "Advertising";
 }
 
-@Html.Partial("_VideoPartial")
+@Html.Partial("_PageHeading")
 
-
-@Html.Partial("_MagnetPartial")
-
-
-<section class="convinced">
-    <h2>STILL NOT CONVINCED? <br />HERE ARE 8 REASONS CHANGE YOUR MIND. <span></span></h2>
+<section class="hand-out">
+    <div class="row">
+        <div class="col-sm-12 col-lg-11 center-block">
+            <div class="col-sm-7 col-md-7 relative slogan-section">
+                <img src="@Url.Content("/Content/Images/Advertisers/hand-them-out_03.png")" class="img-responsive out" />
+                <img src="@Url.Content("/Content/Images/Advertisers/pizza-guy-with-hand-out_06.png")" class="img-responsive guy" />
+                <img src="@Url.Content("/Content/Images/Advertisers/calendar-magnets_09.png")" class="img-responsive calendar" />
+            </div>
+            <div class="col-sm-5 col-md-5">
+                <img src="@Url.Content("/Content/Images/Advertisers/pizza-delivery-guy_09.png")" class="img-responsive" />
+                <p>
+                    As a business leader you have 2 very important jobs, not only do you have to run your business, but also you need to grow your business. We're here to help you with the latter. You know, the stuff you don't really have time for. We'll custom design your ad for free and ship them to the pizzeria for you. From there, the pizza place hands one out to each customer with every order going out their doors. It's really that simple.
+                    Let us prove why our 40 years of experience can.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="slices add-words">
+<section class="convinced">
+    <div class="col-lg-11 center-block">
+        <h2 class="text-center">Still not convinced? <br />Here are 8 reasons to change your mind.</h2>
+    </div>
+</section>
+
+<section class="reasons bricks">
     <div class="row">
         <div class="col-lg-11 center-block relative">
-            <img src="~/Content/Images/reasons_bubbles_03.png" class="img-responsive" />
+            <img src="@Url.Content("/Content/Images/Advertisers/reasons_bubbles_03.png")" class="img-responsive" />
         </div>
     </div>
 </section>

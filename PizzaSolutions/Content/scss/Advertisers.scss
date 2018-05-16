@@ -1,199 +1,152 @@
 ﻿@import 'Typography.scss';
 
-.advertiser-header {
-    position: relative;
-    padding: 15px 0;
-    height: 100%;
+.hand-out {
+    background-color: $font-white;
 
-    h2 {
-        background-color: #000;
-        color: #ed1c24;
-        font-size: 4.4vw;
-        font-family: $myriad_pro_regular_boldit;
-        text-transform: uppercase;
-        word-spacing: 35px;
-        text-align: center;
-        margin-top: 0;
-
-        &:after {
-            content: '///';
-            position: absolute;
-            right: 2%;
-            top: -5px;
-            font-size: 7vw;
-            letter-spacing: -6px;
-
-            @media (min-width: 1400px) {
-                font-size: 6vw;
-            }
-
-            @media (max-width: 768px) {
-                display: none;
-            }
-        }
-
-        span {
-            color: #3d0709;
+    .row {
+        @media (min-width: 1350px) {
+            max-width: 1263px;
+            margin: 0 auto;
         }
     }
 
-    .black-box {
-        background-color: #000;
-        border-radius: 15px;
-        padding: 5px 5px 10px 5px;
-        height: 465px;
-
-        @media (min-width: 1400px) {
-            height: 550px;
-        }
+    img {
 
         @media (max-width: 767px) {
-            height: 100%;
-            border-radius: 0;
+            margin: 0 auto;
         }
 
-        img {
-            @media (min-width: 1400px) {
-                margin: 0 auto;
-                display: block;
-                float: none;
-            }
+        &.guy {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            max-width: 410px;
+            z-index: 10;
 
-            @media (max-width: 767px) {
-                margin: 0 auto;
-                display: block;
-                float: none;
+            @media (max-width: 900px) and (min-width: 767px) {
+                width: 350px;
             }
-        }
-
-        h3 {
-            font-family: $futura_bt_extra_black;
-            font-size: 3vw;
 
             @media (max-width: 480px) {
-                font-size: 4vw;
+                max-width: 350px;
+            }
+
+            @media (max-width: 375px) {
+                max-width: 290px;
             }
         }
 
-        p {
-            border-top: solid 2px $font-red;
-            margin: 0 15px;
-            font-family: $futura-bt-condensed;
-            font-size: 1.7vw;
-            margin-bottom: 10px;
+        &.out {
+            position: absolute;
+            top: -60px;
+            left: 40px;
+            width: 100%;
+            max-width: 410px;
+            z-index: 5;
+
+            @media (max-width: 1024px) and (min-width: 900px) {
+                left: 0;
+                max-width: 390px;
+                top: -33px;
+            }
+
+            @media (max-width: 900px) and (min-width: 767px) {
+                left: -10px;
+                top: 0;
+                max-width: 350px;
+            }
 
             @media (max-width: 767px) {
-                font-size: 2.7vw;
+                top: -18px;
+            }
+
+            @media (max-width: 600px) {
+                left: -1px;
+                max-width: 380px;
+            }
+
+            @media (max-width: 480px) {
+                max-width: 280px;
+                top: 0;
+            }
+
+            @media (max-width: 375px) {
+                max-width: 230px;
             }
         }
 
-        .ad-body {
-            border-top: none;
-            font-family: $myriad_pro_regular;
-            font-size: 14px;
+        &.calendar {
+            position: absolute;
+            left: 2px;
+            bottom: 0;
+            width: 100%;
+            max-width: 480px;
+            z-index: 0;
 
-            @media (min-width: 1400px) {
-                font-size: 17px;
+            @media (max-width: 900px) and (min-width: 767px) {
+                max-width: 370px;
+            }
+
+            @media (max-width: 480px) {
+                max-width: 310px;
             }
         }
     }
 
-    #para2 {
+    p {
+        font-size: 1.3em;
+        font-family: $futura-bt-condensed;
+    }
+
+    .slogan-section {
+        height: 480px;
+
         @media (max-width: 767px) {
-            margin-top: 25px;
+            margin-bottom: 25px;
+            height: 500px;
+        }
+
+        @media (max-width: 480px) {
+            height: 410px;
+        }
+
+        @media (max-width: 375px) {
+            height: 350px;
         }
     }
 }
 
 .convinced {
-    position: relative;
+    background-color: #ed1d24;
 
     h2 {
-        color: #ed1c24;
-        font-size: 4.4vw;
-        font-family: $myriad_pro_regular_boldit;
-        z-index: 5;
-        margin: 0 5px;
+        font-family: $myriad_pro_regular;
+        font-size: 4.5em;
+        font-weight: bold;
+        color: #000;
+        margin: 0;
+        padding: 15px 0;
 
-        &:before {
-            content: 'STILL NOT CONVINCED?';
-            position: absolute;
-            top: 0;
-            left: 15%;
-            color: #3d0709;
-            z-index: -1;
-        }
-
-        &:after {
-            content: '///';
-            position: absolute;
-            right: 4%;
-            top: -58px;
-            font-size: 15.3vw;
-            letter-spacing: -28px;
-
-            @media (min-width: 768px) and (max-width: 1200px) {
-                top: -37px;
-                letter-spacing: -21px;
-            }
-
-            @media (max-width: 767px) {
-                display: none;
-            }
-        }
-
-        span {
-            &:before {
-                content: 'HERE ARE 8 REASON TO CHANGE YOUR MIND.';
-                position: absolute;
-                bottom: 0;
-                left: 9%;
-                font-size: 4.4vw;
-                color: #3d0709;
-                z-index: -1;
-            }
+        @media (max-width: 1100px) {
+            font-size: 5.7vw;
         }
     }
 }
 
-.add-words {
-    height: 100%;
-    padding: 25px 0;
-    background-image: url('Images/Backgrounds/pizza-slice-bg_03.png');
-
-    .black-box {
-        background-color: #000;
-        border-radius: 15px;
-        padding: 15px;
-        height: 100%;
-
-        ul {
-            li {
-                color: $font-white;
-                font-family: $myriad_pro_regular;
-
-                @media (min-width: 1400px) {
-                    font-size: 17px;
-                }
-
-                span {
-                    color: $font-red;
-                }
-            }
-        }
+.reasons {
+    &.bricks {
+        background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 25px 0;
     }
 
-    .one {
-        position: absolute;
-        top: 2%;
-        left: 21%;
-        width: 23%;
-        padding: 15px;
-        font-size: 18.2px;
-
-        h3 {
-            font-size: 45px;
-            font-family: $furara_md_btbold;
+    .row {
+        @media (min-width: 1350px) {
+            max-width: 1263px;
+            margin: 0 auto;
         }
     }
 }
