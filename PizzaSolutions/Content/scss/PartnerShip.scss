@@ -20,8 +20,8 @@
 
     .community-guide {
         .p-top-50 {
-            @media (max-width: 900px) and (min-width: 767px) {
-                padding-top: 0;
+            @media (max-width: 900px) and (min-width: 360px) {
+                padding-top: 10px;
             }
         }
 

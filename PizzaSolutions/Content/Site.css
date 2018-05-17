@@ -208,23 +208,12 @@ nav ul li {
 
 .social {
   position: fixed;
-  left: -2%;
-  top: 16%;
+  left: -28px;
+  top: 145px;
   z-index: 100; }
-  @media (max-width: 1200px) and (min-width: 767px) {
-    .social {
-      left: -3%;
-      /*top: 11%;*/ } }
   @media (max-width: 767px) {
     .social {
-      left: -5%;
-      top: 14%; } }
-  @media (max-width: 480px) {
-    .social {
-      left: -8%; } }
-  @media (max-width: 414px) {
-    .social {
-      top: 19%; } }
+      top: 125px; } }
   .social ul {
     list-style-type: none; }
     .social ul li {
@@ -511,13 +500,13 @@ section {
   color: #fff; }
 
 .font-red {
-  color: #ff0000; }
+  color: #ed1c24; }
 
 .relative {
   position: relative; }
 
 .error {
-  color: #ff0000 !important; }
+  color: #ed1c24 !important; }
 
 .p-bottom-25 {
   padding-bottom: 25px; }
@@ -624,72 +613,71 @@ section {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.splash.home video {
-  transform: translate(0, -30%); }
-  @media (max-width: 767px) {
-    .splash.home video {
-      transform: translate(0, -50%); } }
-
-.splash.home img {
-  z-index: 0; }
-  .splash.home img.rosa {
-    position: absolute;
-    transform: translate(-15%, -55%);
-    max-width: 500px; }
-    @media (max-width: 1150px) {
-      .splash.home img.rosa {
-        max-width: 400px;
-        transform: translate(0, -68%); } }
+.splash.home {
+  background-color: #000; }
+  .splash.home video {
+    transform: translate(0, -30%); }
     @media (max-width: 767px) {
-      .splash.home img.rosa {
-        display: none; } }
-  .splash.home img.inn {
-    position: absolute;
-    transform: translate(-26%, -16%);
-    max-width: 500px; }
-    @media (max-width: 1150px) {
-      .splash.home img.inn {
-        max-width: 400px;
-        transform: translate(0, -27%); } }
+      .splash.home video {
+        transform: translate(0, -50%); } }
+  .splash.home img {
+    z-index: 0; }
+    .splash.home img.rosa {
+      position: absolute;
+      transform: translate(-15%, -55%);
+      max-width: 500px; }
+      @media (max-width: 1150px) {
+        .splash.home img.rosa {
+          max-width: 400px;
+          transform: translate(0, -68%); } }
+      @media (max-width: 767px) {
+        .splash.home img.rosa {
+          display: none; } }
+    .splash.home img.inn {
+      position: absolute;
+      transform: translate(-26%, -16%);
+      max-width: 500px; }
+      @media (max-width: 1150px) {
+        .splash.home img.inn {
+          max-width: 400px;
+          transform: translate(0, -27%); } }
+      @media (max-width: 767px) {
+        .splash.home img.inn {
+          display: none; } }
+    .splash.home img.howies {
+      position: absolute;
+      right: 0;
+      transform: translate(15%, -55%);
+      max-width: 500px; }
+      @media (max-width: 1150px) {
+        .splash.home img.howies {
+          max-width: 400px;
+          transform: translate(0, -68%); } }
+      @media (max-width: 767px) {
+        .splash.home img.howies {
+          display: none; } }
+    .splash.home img.johns {
+      position: absolute;
+      right: 0;
+      transform: translate(20%, -21%);
+      max-width: 500px; }
+      @media (max-width: 1150px) {
+        .splash.home img.johns {
+          max-width: 400px;
+          transform: translate(0, -27%); } }
+      @media (max-width: 767px) {
+        .splash.home img.johns {
+          display: none; } }
+  .splash.home p {
+    color: #f5f5f5;
+    font-size: 1.3em;
+    margin-top: -20%;
+    text-shadow: 1px 1px 0 #000; }
     @media (max-width: 767px) {
-      .splash.home img.inn {
-        display: none; } }
-  .splash.home img.howies {
-    position: absolute;
-    right: 0;
-    transform: translate(15%, -55%);
-    max-width: 500px; }
-    @media (max-width: 1150px) {
-      .splash.home img.howies {
-        max-width: 400px;
-        transform: translate(0, -68%); } }
-    @media (max-width: 767px) {
-      .splash.home img.howies {
-        display: none; } }
-  .splash.home img.johns {
-    position: absolute;
-    right: 0;
-    transform: translate(20%, -21%);
-    max-width: 500px; }
-    @media (max-width: 1150px) {
-      .splash.home img.johns {
-        max-width: 400px;
-        transform: translate(0, -27%); } }
-    @media (max-width: 767px) {
-      .splash.home img.johns {
-        display: none; } }
-
-.splash.home p {
-  color: #f5f5f5;
-  font-size: 1.3em;
-  margin-top: -20%;
-  text-shadow: 1px 1px 0 #000; }
-  @media (max-width: 767px) {
-    .splash.home p {
-      margin-top: -26%; } }
-
-.splash.home .bricks {
-  padding-bottom: 75px; }
+      .splash.home p {
+        margin-top: -26%; } }
+  .splash.home .bricks {
+    padding-bottom: 75px; }
 
 .slices {
   background-image: url("Images/Backgrounds/slices_bg_02.png");
@@ -984,7 +972,7 @@ section {
   @media (max-width: 767px) {
     .pageheading {
       padding-top: 59px;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
       margin-bottom: -1px; } }
   .pageheading h2 {
     position: relative;
@@ -1023,17 +1011,17 @@ section {
     .pageheading .col-xs-8 {
       float: right; } }
 
-.contact-email h3 {
-  font-size: 35px;
-  font-family: "futura_hv_btheavy"; }
-
-.contact-email .form-horizontal .form-group label, .contact-email .form-horizontal .form-group p {
-  color: #fff;
-  font-family: "futura_bk_btbook"; }
-
-.contact-email .form-horizontal .form-group input[type="checkbox"] {
-  vertical-align: top;
-  margin-left: 5px; }
+.contact-email {
+  background-color: #000; }
+  .contact-email h3 {
+    font-size: 35px;
+    font-family: "futura_hv_btheavy"; }
+  .contact-email .form-horizontal .form-group label, .contact-email .form-horizontal .form-group p {
+    color: #fff;
+    font-family: "futura_bk_btbook"; }
+  .contact-email .form-horizontal .form-group input[type="checkbox"] {
+    vertical-align: top;
+    margin-left: 5px; }
 
 video {
   width: 100%; }
@@ -1303,6 +1291,11 @@ video {
     @media (max-width: 375px) {
       .hand-out .slogan-section {
         height: 350px; } }
+  .hand-out .delivery-column {
+    border-left: solid 2px #ed1c24; }
+    @media (max-width: 767px) {
+      .hand-out .delivery-column {
+        border: 0; } }
 
 .convinced {
   background-color: #ed1d24; }
@@ -1448,11 +1441,13 @@ video {
     .faded-orange img.papa-johns {
       right: 0; }
 
-.pizza-girl .bricks {
-  background-image: url("/Content/Images/Splash/Brick_Background_02.png");
-  background-size: cover;
-  background-position: center;
-  height: 235px; }
+.pizza-girl {
+  background-color: #000; }
+  .pizza-girl .bricks {
+    background-image: url("/Content/Images/Splash/Brick_Background_02.png");
+    background-size: cover;
+    background-position: center;
+    height: 235px; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
@@ -1534,9 +1529,9 @@ video {
     font-weight: bold;
     font-family: "futura_mdcn_btmedium";
     font-style: italic; }
-  @media (max-width: 900px) and (min-width: 767px) {
+  @media (max-width: 900px) and (min-width: 360px) {
     .partnership .community-guide .p-top-50 {
-      padding-top: 0; } }
+      padding-top: 10px; } }
   @media (max-width: 767px) {
     .partnership .community-guide img {
       width: 100%;
@@ -1832,7 +1827,7 @@ video {
   .products .box.yellow-back {
     background-color: #fff100; }
   .products .box.red-back {
-    background-color: #ff0000; }
+    background-color: #ed1c24; }
   .products .box.orange-back {
     background-color: #bd6928; }
   .products .box.maroon-back {
@@ -2093,7 +2088,8 @@ video {
   font-family: "webfontregular-impact" important; }
 
 .splash {
-  margin-top: 89px; }
+  margin-top: 89px;
+  background-color: #000; }
   @media (max-width: 767px) {
     .splash {
       margin-top: 59px; } }
@@ -2229,7 +2225,7 @@ video {
 .funnel-heading h1 {
   font-size: 54px; }
   .funnel-heading h1 span {
-    color: #ff0000; }
+    color: #ed1c24; }
 
 @media (min-width: 1350px) {
   .funnel-heading .col-lg-8 {
@@ -2456,7 +2452,7 @@ hr {
 
 body {
   padding-top: 50px;
-  background-color: #000; }
+  background-color: #fff; }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
