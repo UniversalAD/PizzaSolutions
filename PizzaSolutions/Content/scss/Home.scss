@@ -3,6 +3,7 @@
 .splash {
 
     &.home {
+        background-color: #000;
 
         video {
             transform: translate(0, -30%);
@@ -283,10 +284,6 @@
 
             @media (max-width: 600px) {
                 transform: translate(-58%, -106%);
-            }
-
-            @media (max-width: 480px) {
-                transform: translate(-58%, -86%);
             }
 
             @media (max-width: 480px) {

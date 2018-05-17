@@ -328,17 +328,23 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\167608_PM_GA_Cobb-Co%28Pizza-Hut-kitchen%29.png" />
     <Content Include="Content\Images\168005_PM_MI_Oakland-Co-%28Hungry-Howies-Pizza-Kitchen%29.png" />
+    <Content Include="Content\Images\Advertisers\calendar-magnets_09.png" />
+    <Content Include="Content\Images\Advertisers\hand-them-out_03.png" />
+    <Content Include="Content\Images\Advertisers\pizza-delivery-guy_09.png" />
+    <Content Include="Content\Images\Advertisers\pizza-guy-with-hand-out_06.png" />
     <Content Include="Content\Images\advertisers_03.png" />
+    <Content Include="Content\Images\agreement-magnet_03.png" />
     <Content Include="Content\Images\Angie-Grace---Keller-Williams.png" />
     <Content Include="Content\Images\Angie-Thomas---Keller-Williams.png" />
+    <Content Include="Content\Images\Backgrounds\feided-orange-bg_06.png" />
     <Content Include="Content\Images\Backgrounds\partner-bg_02.png" />
     <Content Include="Content\Images\Backgrounds\pizza-slice-bg_03.png" />
     <Content Include="Content\Images\Backgrounds\ripped-button-background_07.png" />
     <Content Include="Content\Images\Backgrounds\slices_bg_02.png" />
     <Content Include="Content\Images\Backgrounds\wood-bg_03.png" />
     <Content Include="Content\Images\bianco-pizza_03.png" />
+    <Content Include="Content\Images\big-beautiful_03.png" />
     <Content Include="Content\Images\blitz_05.png" />
-    <Content Include="Content\Images\agreement_magnet.png" />
     <Content Include="Content\Images\ClickFunnels\Lego-Pizza-Guy.jpg" />
     <Content Include="Content\Images\ClickFunnels\Location-Map.png" />
     <Content Include="Content\Images\ClickFunnels\Papa-John-Magnet_03.png" />
@@ -383,10 +389,14 @@
     <Content Include="Content\Images\Papa-Johns---Hopper-Properties-Realtor-%281%29.png" />
     <Content Include="Content\Images\Papa-Johns---Kitchen-Conversion-Tilt.png" />
     <Content Include="Content\Images\Papa-Johns---Kitchen-Conversion.png" />
+    <Content Include="Content\Images\papa-johns-emergency-magnet.png" />
+    <Content Include="Content\Images\papa-johns-emergency-magnet_07.png" />
     <Content Include="Content\Images\papa-johns_05.png" />
     <Content Include="Content\Images\pizza-guys_05.png" />
     <Content Include="Content\Images\Pizza-Hut---Calendar.png" />
     <Content Include="Content\Images\Pizza-Hut---Coldwell-Banker-%281%29.png" />
+    <Content Include="Content\Images\pizza-hut-cowboys-magnet.png" />
+    <Content Include="Content\Images\pizza-hut-cowboys-magnet_09.png" />
     <Content Include="Content\Images\pizza-hut_05.png" />
     <Content Include="Content\Images\Pizza-Inn-Cowboys.png" />
     <Content Include="Content\Images\pizza-inn_05.png" />
@@ -447,7 +457,7 @@
     <Content Include="Content\Images\Products\Pizza-Palace---Front_Scott-La.png" />
     <Content Include="Content\Images\Products\Pizza-Palace-of-Scott.png" />
     <Content Include="Content\Images\Products\Pizza-Palace-Tote.png" />
-    <Content Include="Content\Images\reasons_bubbles_03.png" />
+    <Content Include="Content\Images\Advertisers\reasons_bubbles_03.png" />
     <Content Include="Content\Images\Rosa---Kitchen-Conversion.png" />
     <Content Include="Content\Images\Rosa---Kitchen-Conversion_Tilt.png" />
     <Content Include="Content\Images\Splash\Brick_Background_02.png" />
@@ -544,7 +554,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\MagnetPartial.js" />
+    <Content Include="Scripts\PageHeading.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\nav.js" />
     <Content Include="Scripts\products.js" />
@@ -610,6 +620,7 @@
     <Content Include="Views\Shared\_ClickFunnelSignUp.cshtml" />
     <Content Include="Views\Shared\_CDNFonts.cshtml" />
     <Content Include="Views\Shared\_Pizza.cshtml" />
+    <Content Include="Views\Shared\_PageHeading.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Images\" />

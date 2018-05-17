@@ -29,7 +29,7 @@
             height: 0;
         }
     }
-    
+
     .logo {
         max-width: 200px;
     }
@@ -184,35 +184,26 @@ nav {
 
 .social {
     position: fixed;
-    width: 4vw;
-    left: -2%;
+    left: -28px;
+    top: 145px;
     z-index: 100;
 
-    @media (max-width: 680px) {
-        left: -6%;
-        padding-top: 6px;
-    }
-
-    @media (max-width: 480px) {
-        left: -10%;
+    @media (max-width: 767px) {
+        top: 125px;
     }
 
     ul {
         list-style-type: none;
 
         li {
-            margin: 15px 0;
+            margin: 5px 0;
 
-            @media (max-width: 680px) {
+            @media (max-width: 767px) {
                 margin: 1px 0;
             }
 
             img {
-                width: 4vw;
-
-                @media (max-width: 480px) {
-                    min-width: 25px;
-                }
+                width: 51px;
             }
         }
     }

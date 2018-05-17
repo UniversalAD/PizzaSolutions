@@ -10,7 +10,7 @@
             $('body').removeClass('menu-open');
             $('.navbar-inverse').css('height', '90px');
             $(".border-bottom").show();
-            $(".navbar").css("overflow", "inherit");
+            //$(".navbar").css("overflow", "inherit");
         }
 
         else {
@@ -20,7 +20,7 @@
 
 
             if ($(window).width() < 767) {
-                $('.navbar').css("overflow", "scroll");
+                //$('.navbar').css("overflow", "scroll");
                 $('.border-bottom').hide();
             }
 
@@ -39,7 +39,7 @@
             $('.js-menu').removeClass('active');
             $('body').removeClass('menu-open');
             $('.navbar-inverse').css('height', '85px');
-            $(".navbar").css("overflow", "inherit");
+            //$(".navbar").css("overflow", "inherit");
             $(".border-bottom").show();
             isActive = !isActive;
 
