@@ -210,7 +210,7 @@ nav ul li {
   position: fixed;
   left: -28px;
   top: 145px;
-  z-index: 100; }
+  z-index: 110; }
   @media (max-width: 767px) {
     .social {
       top: 125px; } }
@@ -909,62 +909,6 @@ section {
 .impact {
   font-family: "webfontregular-impact" important; }
 
-.partners {
-  background-image: url("Images/Backgrounds/partner-bg_02.png");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  margin-top: 89px;
-  padding: 15px 0; }
-  @media (max-width: 767px) {
-    .partners {
-      margin-top: 59px; } }
-  @media (max-width: 767px) {
-    .partners img {
-      margin-top: 25px; } }
-  .partners h2 {
-    font-family: "webfontregular-impact";
-    font-size: 2vw; }
-    @media (max-width: 768px) {
-      .partners h2 {
-        font-size: 4vw;
-        margin-bottom: 0; } }
-    @media (max-width: 480px) {
-      .partners h2 {
-        font-size: 7vw; } }
-  .partners p {
-    color: #fff;
-    font-family: "futura_bk_btbook";
-    margin: 5px 0;
-    font-size: 16px; }
-    @media (min-width: 1400px) {
-      .partners p {
-        font-size: 18px;
-        margin: 25px 0; } }
-    @media (min-width: 768px) and (max-width: 1000px) {
-      .partners p {
-        margin: 0;
-        font-size: 20px; } }
-    @media (max-width: 767px) {
-      .partners p {
-        margin: 25px 0; } }
-    @media (max-width: 767px) {
-      .partners p:nth-of-type(1) {
-        padding-top: 10px; } }
-  .partners video {
-    height: 100%;
-    width: 100%;
-    margin: 25px 0;
-    min-height: 250px; }
-    @media (min-width: 1400px) {
-      .partners video {
-        width: 100%;
-        height: 100%;
-        max-height: 350px; } }
-    @media (max-width: 480px) {
-      .partners video {
-        min-height: inherit; } }
-
 .pageheading {
   background-color: #fff;
   padding-top: 89px;
@@ -1108,7 +1052,10 @@ video {
         max-width: 100%; } }
   .magnets p {
     font-family: "futura_mdcn_btmedium";
-    height: 75px; }
+    height: 75px;
+    width: 100%;
+    max-width: 361px;
+    margin: 0 auto; }
     @media (max-width: 767px) {
       .magnets p {
         height: auto; } }
@@ -1125,7 +1072,7 @@ video {
       width: 100%;
       font-size: 24px;
       font-family: "futura_hv_btheavy"; }
-      @media (max-width: 1350px) {
+      @media (max-width: 480px) {
         .magnets .btn-wrapper .btn.ripped {
           background-size: contain; } }
     .magnets .btn-wrapper .btn.orange {
@@ -1134,9 +1081,16 @@ video {
       font-family: "webfontregular";
       max-width: 120px;
       border-radius: 0; }
+  @media (min-width: 1350px) {
+    .magnets .row {
+      max-width: 1263px;
+      margin: 0 auto; } }
 
 .black-border {
   border-bottom: 2px solid #000; }
+
+#carouselModal .modal-header {
+  border-bottom: 0; }
 
 @font-face {
   font-family: 'futura_bk_btbook';
