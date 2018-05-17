@@ -19,6 +19,9 @@
     p {
         font-family: $futura-bt-condensed;
         height: 75px;
+        width: 100%;
+        max-width: 361px;
+        margin: 0 auto;
 
         @media (max-width: 767px) {
             height: auto;
@@ -39,9 +42,9 @@
                 border: none;
                 width: 100%;
                 font-size: 24px;
-                font-family: $futura_hv_heavy;
+                font-family: $futura_hv_heavy;                
 
-                @media (max-width: 1350px) {
+                @media (max-width: 480px) {
                     background-size: contain;
                 }
             }
@@ -55,8 +58,21 @@
             }
         }
     }
+
+    .row {
+        @media (min-width: 1350px) {
+            max-width: 1263px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .black-border {
     border-bottom: 2px solid #000;
+}
+
+#carouselModal {
+    .modal-header {
+        border-bottom: 0;
+    }
 }
